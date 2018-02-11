@@ -3,15 +3,21 @@
 	<head>
 		<title>Trial Experiment</title>
         <script src="jsPsych/jspsych.js"></script>
-        <script src="jsPsych/plugins/jspsych-instructions.js"></script>
-        <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
-        <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    <script src="jsPsych/plugins/jspsych-instructions.js"></script>
+    <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="./sudokuJS.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="./sudokuJS.css">
+    <script src="jsPsych/plugins/jspsych-plugin-sudoku.js"></script>	
 	</head>
 	<body>
 	</body>
 	<script>
 
 		var timeline = []
+
 		
 		var welcome = {
 			type: 'instructions',
@@ -20,16 +26,15 @@
 			'Instruction Set 1', 
 			'Instruction Set 2',
 			],
-			show_clickable_nav: true
+			show_clickable_nav: true,
 		}
-		timeline.push(welcome);
 
 		var ready = {
 			type: 'html-keyboard-response',
 			stimulus: 'Are you ready to do the trial? Press R if you want to repeat or C to continue.',
-			choices: ['r', 'c']
+			choices: ['r', 'c'],
+			
 		}
-		timeline.push(ready);
 
 		var if_node = {
 		    timeline: [welcome, ready],
@@ -44,12 +49,21 @@
 		 }
 		 timeline.push(if_node);
 
+		 var sudo = {
+		 	type: 'sudoku_trial',
+		 	trial_duration: 30000  /*currently only for half minute */
+
+		 }
+		 timeline.push(sudo); 
+		 timeline.push(sudo);
+
+
 		
 
 		jsPsych.init({
 			timeline: timeline,
 			on_finish: function(){ jsPsych.data.displayData(); },
-    		default_iti: 200
+    		default_iti: 250
 		})
 
 

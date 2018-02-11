@@ -1,0 +1,110 @@
+/* sudokuJS v0.4.4 - CSS
+// https://github.com/pocketjoso/sudokuJS
+// Author: Jonas Ohlsson
+// License: MIT
+*/
+
+.sudoku-board {
+	min-height: 22.75rem;
+	margin-bottom: 5em;
+}
+	/*cell (wrapper) contains both cell input and candidates div*/
+	.sudoku-board-cell {
+		display: inline-block;
+		position: relative;
+		border: 1px solid #ddd;
+		background: white;
+		max-width: 11.11111%;
+	}
+		/*rules for drawing the black lines dividing houses
+			-- specific for board size 9! need diff rules for diff board sizes
+		*/
+		[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(8n+1){
+			border-left-width: 2px;
+			border-left-color: #808080;
+		}
+		[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n):nth-of-type(-n+8){
+			border-top-width: 2px;
+			border-top-color: #808080;
+		}
+		[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(2n){
+			border-right-width: 2px;
+			border-right-color: #808080;
+		}
+		[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n+25):nth-of-type(-n+32),
+		[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n+57):nth-of-type(-n+64){
+			border-bottom-width: 2px;
+			border-bottom-color: #808080;
+		}
+
+		/* the input for the value of each cell (i.e. 1-9 or empty for standard sudoku*/
+		.sudoku-board-cell input {
+			background: none;
+			font-size: 19.2px;
+			font-size: 1.2rem;
+			text-align: center;
+			width: 2em;
+			max-width: 100%;
+			height: 2em;
+			border: 0;
+			position: relative;
+			z-index: 1; /*on top of candidates*/
+		}
+
+			/*highlight new input in board cell*/
+			.sudoku-board-cell .highlight-val {
+				color: #00d;
+			}
+			/*highligt incorrect input*/
+			.sudoku-board-cell .board-cell--error {
+				background: #d00;
+				color: #eee;
+			}
+				
+
+* {
+	margin:0; padding:0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+     
+
+
+
+
+span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-weight: bold;
+	font-size: 60px;
+}	
+
+
+
+.sudoku-board-cell input {
+  		background: none;
+  		font-size: 16px;
+      }
+
+.wrap {
+	position: relative;
+	padding: 2em 1em;
+	width: 400px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+@media(min-width: 30em){
+	.wrap{
+		width: 490px;
+	}
+	.sudoku-board input {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+	
+}

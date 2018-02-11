@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel="stylesheet" media="all" type="text/css" href="../sudoku2x4.css">
+		
+
+
+		<title></title>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../sudoku2x4.js"></script>
+		<script type="text/javascript" src="../timer.js"></script>
+	</head>
+
+	<body>
+	<div class="wrap">
+		<!--h1>SudokuJS simple demo</h1-->
+
+		<!--Solve button || Remove after testing -->
+
+
+		<div id="sudoku" class="sudoku-board">
+		</div>
+		
+		<!--timer-->
+		<span id="time"></span>
+
+
+
+	</div>
+
+	<script>
+
+		var board = [
+			6,7,1, , ,5,8,4
+			,8,2,5, ,4, , ,1
+			, ,1, ,2, ,8,5, 
+			,5, ,8,6,7,1, ,2
+			,1,6, ,4,8, ,2, 
+			,2,3,6, ,5,4, ,8
+			, ,8, ,5, , ,4,3
+			,4, ,7,8,3,2, ,6		//have undefined on last (if empty) cell
+			
+		]
+
+
+		var	mySudokuJS = $("#sudoku").sudokuJS({
+			board: board
+			
+		});
+		
+		
+	</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Read ID attribute (from DevCurry.com)</title>
+<script type="text/javascript"
+src="http://ajax.microsoft.com/ajax/jquery/jquery-1.5.2.min.js">
+</script>
+
+
+</head>
+<body>
+	<input id="tx1" type="text" value="one"/>
+	<input id="tx2" type="text" value="two"/>
+	<input id="tx3" type="text" value="three"/>
+</body>
+<script type="text/javascript">
+$(function () {
+ var ids = $("input[type=text]")
+  .map(function () {
+   return this.value; 
+  }).get();
+  alert(ids);
+});
+</script>
+</html>

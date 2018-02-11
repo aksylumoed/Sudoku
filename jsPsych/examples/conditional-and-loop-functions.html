@@ -2,12 +2,22 @@
 <html>
   <head>
     <script src="../jspsych.js"></script>
+    <script src="../plugins/jspsych-instructions.js"></script>
     <script src="../plugins/jspsych-html-keyboard-response.js"></script>
     <link rel="stylesheet" href="../css/jspsych.css"></link>
   </head>
   <body></body>
   <script>
 
+  var welcome = {
+      type: 'instructions',
+      pages: [
+      'Welcome to the experiment. Click next to begin.',
+      'Instruction Set 1', 
+      'Instruction Set 2',
+      ],
+      show_clickable_nav: true
+    } 
   var trial = {
     type: 'html-keyboard-response',
     stimulus: 'Hello. This is in a loop. Press R to repeat this trial, or C to continue.',
