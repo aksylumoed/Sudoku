@@ -80,7 +80,7 @@ pause: function() {
 
 
 window.onload = function () {
-    var twoMinutes = 60 * .2,
+    var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
     Clock.startTimer(twoMinutes, display);
 };
