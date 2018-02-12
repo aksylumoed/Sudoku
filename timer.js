@@ -59,7 +59,7 @@ var Clock = {
         if (diff <= 0) {
             // add one second so that the count down starts at the full duration
             // example 05:00 not 04:59
-            start = Date.now() + 1000;
+            Clock.pause();
         }
     };
     timer();
@@ -80,7 +80,7 @@ pause: function() {
 
 
 window.onload = function () {
-    var twoMinutes = 60 * 2,
+    var twoMinutes = 60 * .2,
         display = document.querySelector('#time');
     Clock.startTimer(twoMinutes, display);
 };

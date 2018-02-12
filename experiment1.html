@@ -18,26 +18,48 @@
 
 		var timeline = []
 
-		
-		var welcome = {
+		/* var welcome = {
 			type: 'instructions',
 			pages: [
-			'Welcome to the experiment. Click next to begin.',
-			'Instruction Set 1', 
-			'Instruction Set 2',
+			'Thank you for agreeing to participate in the study. During this session, you will solve a series of tasks with a time limit and answer a few questions about your experiences. <br> <br>  This session will be split into three stages. At the first stage, you will solve letter Sudoku puzzles of three levels of difficulty (easy, moderately difficult, and very difficult ones). You will have 120 seconds to solve each of those puzzles. When you are half way through, we will also ask you to answer a few questions about your experiences with the puzzles. <br> After that, you will be presented with a variety of different tasks and asked to indicate whether or not you feel capable of solving them. Finally, you will solve those tasks. You will have 120 seconds to solve each of those tasks. <br> <br> After you click NEXT button, you will read the rules that explain how to solve letter Sudoku puzzles and do a practice session to familiarize yourself with the format.'
+			],
+			show_clickable_nav: true,
+		}
+		timeline.push(welcome); */
+
+		
+		var instructions = {
+			type: 'instructions',
+			pages: [
+			
+			"A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier." ,
+
+			 
+			/* "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D) only once. <br><br> Please click NEXT to see the solution. ",
+			"<img src='img/3.png'></img> <br><br> Step 1 <br><br> Look at Column 1. You see that it already contains A and C, hence B and D are missing. So in which cells would B and D go? Either in Cell 2x1, or in Cell 3x1. Looking at the respective Lines 2 and 3, you see that Line 2 already has B, so B can’t go into the same line. Thus, B goes to Cell 3x1, and D – in the remaining cell. ",
+			"<img src='img/4.png'></img> <br><br> Step 2: <br><br> Once Column 1 is completed, Line 2 contains 3 letters out of 4. Thus, you complete it with a remaining letter C.",
+			"<img src='img/5.png'></img> <br><br> Step 3: <br><br> Now you see that Region 4 contains 3 letters out of 4. Thus, you complete it with a remaining letter A. ",
+			"<img src='img/6.png'></img> <br><br> Step 4: <br><br> Now you see that Column 2 is almost completed and all you have to do is to add a remaining letter B.",
+			"<img src='img/7.png'></img> <br><br> Step 5: <br><br> Now you see that Line 3 is almost completed and all you need is to add a remaining letter D.",
+			"<img src='img/8.png'></img> <br><br> Step 6: <br><br> Now you want to complete Line 1. The remaining letters are C and D. Look at Line 3 – it has D and C in Cells 3x3 and 3x4, respectively. Since the column can contain each letter only once, C and D go into Cells 1x4 and 1x3 respectively. Look at Column 4 – it lacks B, which goes to Cell 4x4",
+			"<img src='img/9.png'></img> <br><br> Step 7: <br><br> Finally, look at Columns 3 and 4 – they are missing letters A and B. They go into Cells 4x3 and 4x3, respectively, following the same logic that each line and column can only contain each letter once. ",
+			"The Sudoku that you will solve will have different grid sizes. The grid size indicates the difficulty of the puzzle. Easy puzzles are those with 2x2 grid, moderately difficult puzzles are those with 2x3 grid, and very difficult puzzles are those with 2x4 grid. Depending on the grid size, you will have to enter either ABCD (for easy puzzles), or ABCDEF (for moderately difficult puzzles), or ABCDEFGH (for very difficult puzzles). <br> <br> Remember, no matter how difficult the puzzle is, the rules that apply are always the same. <br> <br> <img src='img/10.png'></img>", */
+
+
 			],
 			show_clickable_nav: true,
 		}
 
+
 		var ready = {
 			type: 'html-keyboard-response',
-			stimulus: 'Are you ready to do the trial? Press R if you want to repeat or C to continue.',
+			stimulus: 'Did you understand the rules and feel ready to do the practice session? <br><br> Yes, I understood the rules and am ready to do the test session (Press C) <br><br> No, I did not understand the rules and would like to read them once again (Press R)',
 			choices: ['r', 'c'],
 			
 		}
 
 		var if_node = {
-		    timeline: [welcome, ready],
+		    timeline: [instructions, ready],
 		    loop_function: function(data){
 		      var data = jsPsych.data.get().last(1).values()[0];
 		      if(data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode('c')){
