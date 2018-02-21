@@ -404,7 +404,6 @@
 				//check if that finished board
 				if(isBoardFinished()){
 					boardFinished = true;
-					alert("done!");
 					if(typeof opts.boardFinishedFn === "function"){
 						opts.boardFinishedFn({
 							//we rate the board via what strategies was used to solve it

@@ -485,7 +485,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       boardFinishedFn: function(){
       
       Clock.pause();
-      alert("Good!");
+      alert("Congratulations! You got this one right!");
       end_trial();
 
     
@@ -506,6 +506,9 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       // clear the display
       display_element.innerHTML = '';
 
+      document.getElementById('sudocss').disabled  = true;
+      document.getElementById('jscss').disabled = false;
+
       // move on to the next trial
       jsPsych.finishTrial(trial_data);
     };
@@ -520,8 +523,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
   };
 
-  document.getElementById('sudocss').disabled  = true;
-  document.getElementById('jscss').disabled = false;
+  
 
   return plugin;
 })();
