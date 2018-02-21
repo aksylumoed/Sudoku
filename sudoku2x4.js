@@ -29,9 +29,7 @@
 			boardError = false,
 
 			board = [],
-			boardH,	 // 2
-			boardV,  // 4
-			boardSize = boardH*boardV,
+			boardSize, //boardH*boardV
 			boardNumbers,  // change to letters
 
 
@@ -108,25 +106,28 @@
 			
 
 			for(var i=0; i < 8; i++){
-				var hrow = []; //horisontal row
-				var vrow = []; //vertical row
-				var box = [];
-				for(var j=0; j < 8; j++){
-					hrow.push(8*i + j);
-					vrow.push(8*j + i);
+				var hrow = [], //horisontal row
+					vrow = [], //vertical row
+					box = [],
+					boardV = boardSize/2,
+					boardH = 2;
 
-					if(j < 4){
+				for(var j=0; j < boardSize; j++){
+					hrow.push(boardSize*i + j);
+					vrow.push(boardSize*j + i);
+
+					if(j < boardV){
 						for(var k=0; k < 2; k++){
 							//0, 0,0, 27, 27,27, 54, 54, 54 for a standard sudoku
 							//0, 0, 0, 0, 32, 32, 32, 32
-							var a = Math.floor(i/4) * 8 * 4;
+							var a = Math.floor(i/boardV) * boardSize * boardV;
 							//[0-2] for a standard sudoku
-							var b = (i%4) * 2;
+							var b = (i%boardV) * 2;
 							var boxStartIndex = a + b;  // 0, 2, 4, 6, 32, 34, 36, 38
 							//0 3 6 27 30 33 54 57 60 on standard sudoku
 
 
-							box.push(boxStartIndex + 8*j + k);
+							box.push(boxStartIndex + boardSize*j + k);
 						}
 					}
 				}
@@ -145,7 +146,7 @@
 			var alreadyEnhanced = (board[0] !== null && typeof board[0] === "object");
 			
       		boardNumbers = [];
-			boardSize = 8; //(!board.length && opts.boardSize) || Math.sqrt(board.length) || 9
+			boardSize = Math.sqrt(board.length); //(!board.length && opts.boardSize) || Math.sqrt(board.length) || 9
 			$board.attr("data-board-size", boardSize);
 
 			/* if(boardSize % 1 !== 0 || Math.sqrt(boardSize) % 1 !== 0) {
@@ -313,6 +314,7 @@
 
 		var housesWithCell = function(cellIndex){
 			// var boxSideSize = Math.sqrt(boardSize);
+			var boardV = boardSize/2;
 			var houses = [];
 			//horisontal row
 			var hrow = Math.floor(cellIndex/boardSize);
@@ -321,7 +323,7 @@
 			var vrow = Math.floor(cellIndex%boardSize);
 			houses.push(vrow);
 			//box
-			var box = (Math.floor(hrow/4)*4) + Math.floor(vrow/2);
+			var box = (Math.floor(hrow/boardV)*boardV) + Math.floor(vrow/2);
 			houses.push(box);
 
 			return houses;
@@ -445,7 +447,7 @@
 		 *-----------*/
 		if(opts.board) {
 			board = opts.board;
-			initBoard();
+			initBoard(opts);
 			renderBoard();
 		}
 

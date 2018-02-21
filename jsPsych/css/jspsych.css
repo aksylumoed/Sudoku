@@ -7,7 +7,7 @@
 
  /* Container holding jsPsych content */
 
- .jspsych-display-element {
+ .jspsych-display-element{
    display: flex;
    flex-direction: column;
    /*justify-content: center;
@@ -30,7 +30,7 @@
    width: 100%;
  }
 
- .jspsych-content {
+ .jspsych-content  {
    max-width: 95%; /* this is mainly an IE 10-11 fix */
    text-align: center;
    margin: auto; /* this is for overflowing content */
@@ -40,7 +40,7 @@
    align-items: flex-start;
  }
 
- .jspsych-middle {
+ .jspsych-middle{
    align-items: center;
  }
 
@@ -50,21 +50,21 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
-.jspsych-display-element {
+.jspsych-display-element{
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 1.6em;
 }
 
-/* Form elements like input fields and buttons */
 
-input[type="text"] {
+
+input[type="text"]{
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
 }
 
 /* borrowing Bootstrap style for btn elements, but combining styles a bit */
-.jspsych-btn {
+.jspsych-btn{
   display: inline-block;
   padding: 6px 12px;
   margin: 0px;
@@ -131,3 +131,9 @@ input[type="text"] {
 #jspsych-data-display {
   text-align: left;
 }
+
+
+
+/* ----------------------------*********----------------------------------*/
+
+
