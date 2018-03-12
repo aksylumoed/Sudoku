@@ -1,0 +1,17 @@
+.sudoku-board-cell:nth-of-type(4n+1){
+  border-left-width: 2px;
+  border-left-color: #808080;
+}
+.sudoku-board-cell:nth-of-type(n):nth-of-type(-n+4){
+  border-top-width: 2px;
+  border-top-color: #808080;
+}
+.sudoku-board-cell:nth-of-type(2n){
+  border-right-width: 2px;
+  border-right-color: #808080;
+}
+.sudoku-board-cell:nth-of-type(n+5):nth-of-type(-n+8),
+.sudoku-board-cell:nth-of-type(n+13):nth-of-type(-n+16) {
+  border-bottom-width: 2px;
+  border-bottom-color: #808080;
+}

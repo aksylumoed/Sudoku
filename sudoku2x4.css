@@ -22,65 +22,6 @@
 */
 
 
-[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(8n+1){
-  border-left-width: 2px;
-  border-left-color: #808080;
-}
-[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n):nth-of-type(-n+8){
-  border-top-width: 2px;
-  border-top-color: #808080;
-}
-[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(2n){
-  border-right-width: 2px;
-  border-right-color: #808080;
-}
-[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n+25):nth-of-type(-n+32),
-[data-board-size="8"].sudoku-board .sudoku-board-cell:nth-of-type(n+57):nth-of-type(-n+64){
-  border-bottom-width: 2px;
-  border-bottom-color: #808080;
-}
-
-[data-board-size="4"].sudoku-board .sudoku-board-cell:nth-of-type(4n+1){
-  border-left-width: 2px;
-  border-left-color: #808080;
-}
-[data-board-size="4"].sudoku-board .sudoku-board-cell:nth-of-type(n):nth-of-type(-n+4){
-  border-top-width: 2px;
-  border-top-color: #808080;
-}
-[data-board-size="4"].sudoku-board .sudoku-board-cell:nth-of-type(2n){
-  border-right-width: 2px;
-  border-right-color: #808080;
-}
-[data-board-size="4"].sudoku-board .sudoku-board-cell:nth-of-type(n+5):nth-of-type(-n+8),
-[data-board-size="4"].sudoku-board .sudoku-board-cell:nth-of-type(n+13):nth-of-type(-n+16) {
-  border-bottom-width: 2px;
-  border-bottom-color: #808080;
-}
-
-[data-board-size="6"].sudoku-board .sudoku-board-cell:nth-of-type(6n+1){
-  border-left-width: 2px;
-  border-left-color: #5A5A5A;
-}
-[data-board-size="6"].sudoku-board .sudoku-board-cell:nth-of-type(n):nth-of-type(-n+6){
-  border-top-width: 2px;
-  border-top-color: #5A5A5A;
-}
-[data-board-size="6"].sudoku-board .sudoku-board-cell:nth-of-type(2n){
-  border-right-width: 2px;
-  border-right-color: #5A5A5A;
-}
-
-[data-board-size="6"].sudoku-board .sudoku-board-cell:nth-of-type(n+13):nth-of-type(-n+18),
-[data-board-size="6"].sudoku-board .sudoku-board-cell:nth-of-type(n+31):nth-of-type(-n+36) {
-  border-bottom-width: 2px;
-  border-bottom-color: #5A5A5A;
-}
-
-
-
-
-
 
 
   /* the input for the value of each cell (i.e. 1-9 or empty for standard sudoku*/

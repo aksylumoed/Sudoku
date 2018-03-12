@@ -47,6 +47,12 @@
 			$boardInputs; //created
 
 
+		function log(msg){
+			if(window.console && console.log)
+			 console.log(msg);
+		}
+
+
 		var contains = function(a, obj) {
 			for (var i = 0; i < a.length; i++) {
 				if (a[i] === obj) {

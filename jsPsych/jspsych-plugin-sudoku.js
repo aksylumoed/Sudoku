@@ -418,9 +418,9 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
 
 
-     var b2x2A = boards2x2.slice(0,5),
-         b2x2B = boards2x2.slice(5,10),
-         b2x2C = boards.slice()
+   var b2x2A = boards2x2.slice(0,5),
+       b2x2B = boards2x2.slice(5,10),
+       b2x2C = boards.slice();
 
 
 
@@ -461,8 +461,11 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     // $('link[title=jscss]').prop('disabled',true);
 
+    var new_html = '';
 
-    var new_html = '<body><div class="wrap">';
+    new_html += '';  
+
+    new_html = '<body><div class="wrap">';
 
     new_html += '<div id="sudoku" class"=sudoku-board"></div>'; 
 
@@ -475,17 +478,33 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     reset();
 
+    if (trial.board_size == 'boards2x3'){
+      document.getElementById('x2').disabled  = true;
+      document.getElementById('x4').disabled  = true;
+    } else if (trial.board_size == 'boards2x2') {
+      document.getElementById('x3').disabled  = true;
+      document.getElementById('x4').disabled  = true;
+    } else if (trial.board_size == 'boards2x4') {
+      document.getElementById('x2').disabled  = true;
+      document.getElementById('x3').disabled  = true;
+    } 
     document.getElementById('sudocss').disabled  = false;
     document.getElementById('jscss').disabled = true;
 
-    
+
+
+    var index = Math.floor(Math.random() * boards.length);
+
+    var success = false;
+
     var mySudokuJS = $("#sudoku").sudokuJS({
-      board: boards[Math.floor(Math.random() * boards.length)],
+      board: boards[index],
       //boardSize: 8,
       boardFinishedFn: function(){
       
       Clock.pause();
       alert("Congratulations! You got this one right!");
+      success = true;
       end_trial();
 
     
@@ -500,7 +519,10 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
       // gather the data to store for the trial
       var trial_data = {
-        parameter_name: 'parameter value'
+        board_size:trial.board_size,
+        board_set: trial.board_set,
+        board_no: index,
+        success: success
       };
 
       // clear the display
@@ -508,6 +530,10 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
       document.getElementById('sudocss').disabled  = true;
       document.getElementById('jscss').disabled = false;
+      document.getElementById('x2').disabled  = false;
+      document.getElementById('x3').disabled  = false;
+      document.getElementById('x4').disabled  = false;
+
 
       // move on to the next trial
       jsPsych.finishTrial(trial_data);
