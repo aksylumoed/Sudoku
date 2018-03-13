@@ -1,7 +1,9 @@
 
 .sudoku-board {
+  position: absolute;
   min-height: 22.75rem;
   margin-bottom: 5em;
+  left: 40px;
 
 }
 /*cell (wrapper) contains both cell input and candidates div*/
@@ -65,8 +67,7 @@
 span {
   position: absolute;
   bottom: 0;
-  margin-left: 30px;
-  right: 0;
+  right: 20px;
   font-weight: bold;
   font-size: 60px;
 } 
@@ -85,7 +86,7 @@ span {
 .wrap {
   position: fixed;
   padding: 2em 1em;
-  width: 400px;
+  width: 600px;
   max-width: 100%;
   
   margin-bottom: 20px;
@@ -96,7 +97,7 @@ span {
 
 @media(min-width: 30em){
   .wrap{
-    width: 490px;
+    width: 590px;
   }
   .sudoku-board input {
     font-size: 24px;

@@ -113,7 +113,7 @@
      }
      var s4 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 3000,  /*currently only for one minute */
       board_size: 'boards2x3',
       board_set: 'a'
      }
@@ -148,7 +148,7 @@
       board_set: 'c'
      }
 
-     var s_array = [s2, s6, s7];
+     var s_array = [s1,s4,s7];
 
      var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
 

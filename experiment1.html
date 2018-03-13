@@ -53,14 +53,13 @@
       "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier." ,
 
        
-      "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D) only once. <br><br> Please click NEXT to see the solution. ",
-      "<img src='img/3.png'></img> <br><br> Step 1 <br><br> Look at Column 1. You see that it already contains A and C, hence B and D are missing. So in which cells would B and D go? Either in Cell 2x1, or in Cell 3x1. Looking at the respective Lines 2 and 3, you see that Line 2 already has B, so B can’t go into the same line. Thus, B goes to Cell 3x1, and D – in the remaining cell. ",
-      "<img src='img/4.png'></img> <br><br> Step 2: <br><br> Once Column 1 is completed, Line 2 contains 3 letters out of 4. Thus, you complete it with a remaining letter C.",
-      "<img src='img/5.png'></img> <br><br> Step 3: <br><br> Now you see that Region 4 contains 3 letters out of 4. Thus, you complete it with a remaining letter A. ",
-      "<img src='img/6.png'></img> <br><br> Step 4: <br><br> Now you see that Column 2 is almost completed and all you have to do is to add a remaining letter B.",
-      "<img src='img/7.png'></img> <br><br> Step 5: <br><br> Now you see that Line 3 is almost completed and all you need is to add a remaining letter D.",
-      "<img src='img/8.png'></img> <br><br> Step 6: <br><br> Now you want to complete Line 1. The remaining letters are C and D. Look at Line 3 – it has D and C in Cells 3x3 and 3x4, respectively. Since the column can contain each letter only once, C and D go into Cells 1x4 and 1x3 respectively. Look at Column 4 – it lacks B, which goes to Cell 4x4",
-      "<img src='img/9.png'></img> <br><br> Step 7: <br><br> Finally, look at Columns 3 and 4 – they are missing letters A and B. They go into Cells 4x3 and 4x3, respectively, following the same logic that each line and column can only contain each letter once. ",
+      "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D E F) only once. <br><br> Please click NEXT to see the solution. ",
+
+      "<img src='img/3.png'></img> <br><br> Step 1: <br><br> Look at Regions that already contain five letters out of six. These are Regions 1, 2 and 4. Fill the missing letters: F in Region 1 and E in Regions 2 and 4. ",
+
+      "<img src='img/4.png'></img> <br><br> Step 2: <br><br> Look at the Columns and Lines that already contain five letters out of six. These are Columns 1, 5 and 6, and Line 6. Fill the missing letters: D in Column 1, E in Column 5 and Line 6, and A in Column 6. ",
+
+      "<img src='img/5.png'></img> <br><br> Step 3: <br><br> Only three letters are missing now. Column 2 misses A and Line 5 misses D. When you fill them, you will see that the remaining letter in Column 4 is E. ",
        
 
 
@@ -89,7 +88,32 @@
      }
      timeline.push(if_node);
 
-     
+     var pre_test = {
+      type: 'instructions',
+      pages: [
+      'You will now do a brief practice session to familiarize yourself with the format. <br><br> During the practice session, you will solve a few letter Sudoku puzzles. There will be no time limit. The results of the practice session will not be taken into account when calculating your final success ratio. <br><br> Please click NEXT to start the practice session. <br><br>'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(pre_test);   
+
+    var s0 = {
+      type: 'sudoku_trial',
+      trial_duration: 600000,
+      board_size: 'boards2x3',
+      board_set: 'd',
+      timer: false,
+    }
+    timeline.push(s0);
+
+    var post_test = {
+      type: 'instructions',
+      pages: [
+      'The practice session is over. You are all set now to start the real test session! <br> As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. <br><br> You will have 120 seconds to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. As soon as the puzzle is solved, or when the time is up, you will be presented with a new puzzle. <br><br> Please be focused and do not get distracted. <br><br> Please click NEXT to start solving the puzzles. <br><br>'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(post_test);   
 
 
      

@@ -31,6 +31,12 @@ jsPsych.plugins["sudoku_trial"] = (function() {
         pretty_name: 'Board Set',
         default: '',
         description: 'So there are no repeats in randomization.'
+      },
+      timer: {
+        type: jsPsych.plugins.parameterType.BOOL,
+        pretty_name: 'Timer',
+        default: true,
+        description: 'Remove timer.'
       }
     }
   }
@@ -412,7 +418,15 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,1,4, , ,3, 
       ,2,3,4, , ,6
       ,5, ,3,2, ,1
-      ]
+      ],
+
+      [4, ,3,1,5,2
+      ,2, , ,5, ,6
+      ,5,3,2,6,1, 
+      ,6, ,1,3, ,5
+      , ,4,5, ,6,1
+      ,1,5,6,4, ,3
+      ],
 
     ]
 
@@ -439,8 +453,10 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       boards = boards.slice(0,5);
     } else if (trial.board_set == 'b'){
       boards = boards.slice(5,10);
-    } else {
+    } else if (trial.board_set == 'c'){
       boards = boards.slice(10,15);
+    } else {
+      boards = boards.slice(15,16);
     }
 
 
@@ -463,13 +479,17 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     var new_html = '';
 
-    new_html += '';  
-
     new_html = '<body><div class="wrap">';
 
-    new_html += '<div id="sudoku" class"=sudoku-board"></div>'; 
+    new_html += '<div id="sudoku" class"=sudoku-board">'; 
 
-    new_html += '<span id="time"></span></div>';
+    if(trial.timer){
+      new_html += '<span id="time"></span>';
+    } else {
+      new_html += '<span id="time" style="color:white"></span>';
+    }
+
+    new_html += '</div>';
 
     new_html += '<p id="result"></p></body>';
 
