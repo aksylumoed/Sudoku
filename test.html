@@ -1,47 +1,218 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>Trial Experiment</title>
+
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku2x4.css">
+  <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
+  <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
+  <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+
     <script src="jsPsych/jspsych.js"></script>
+    <script src="jsPsych/plugins/jspsych-fullscreen.js"></script>
     <script src="jsPsych/plugins/jspsych-instructions.js"></script>
     <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
-    <link href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src="./sudokuJS.js"></script>
-    <script type="text/javascript" src="./timer.js"></script>
-    <link rel="stylesheet" media="all" type="text/css" href="./sudokuJS.css">
-    <script src="jsPsych/plugins/jspsych-plugin-sudoku.js"></script>
-    
-</head>
-<body></body>
-<script>
-  var trial_1 = {
-    type: 'sudoku_trial',
-    trial_duration: 5000
-  }
+    <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
 
-  var trial_2 = {
-    type: 'html-keyboard-response',
-    stimulus: '<p style="color: red; font-size: 48px; font-weight: bold;">RED</p>',
-    choices: ['y', 'n'],
-    trial_duration: 5000,
-    prompt: '<p>Does the color match the word? (Y or N; 5s time limit)</p>'
-  }
+    <!--script type="text/javascript" src="./sudokuJS.js"></script-->
+    <script type="text/javascript" src="sudoku2x4.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" src="jsPsych/jspsych-plugin-sudoku.js"></script>
+  </head>
+  <script>
 
-  var trial_3 = {
-    type: 'html-keyboard-response',
-    stimulus: '<p style="color: orange; font-size: 48px; font-weight: bold;">BLUE</p>',
-    choices: jsPsych.NO_KEYS,
-    trial_duration: 2000,
-    prompt: '<p>No response allowed. 2s wait.</p>'
-  }
+    var timeline = [];
 
-  jsPsych.init({
-    timeline: [trial_1, trial_2, trial_3],
-    on_finish: function() {
-      jsPsych.data.displayData();
-    },
-    default_iti: 250
-  });
-</script>
+    // timeline.push({
+    //   type: 'fullscreen',
+    //   fullscreen_mode: true,
+    //   message: "Click the button to enter fullscreen mode.<br><br>",
+    //   button_label: "Start"
+    // });
 
+
+    var welcome = {
+      type: 'instructions',
+      pages: [
+      'Thank you for agreeing to participate in the study. During this session, you will solve a series of tasks with a time limit and answer a few questions about your experiences. <br> <br>  This session will be split into three stages. At the first stage, you will solve letter Sudoku puzzles of three levels of difficulty (easy, moderately difficult, and very difficult ones). You will have 120 seconds to solve each of those puzzles. When you are half way through, we will also ask you to answer a few questions about your experiences with the puzzles. <br> After that, you will be presented with a variety of different tasks and asked to indicate whether or not you feel capable of solving them. Finally, you will solve those tasks. You will have 120 seconds to solve each of those tasks. <br> <br> After you click NEXT button, you will read the rules that explain how to solve letter Sudoku puzzles and do a practice session to familiarize yourself with the format.'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(welcome);
+
+
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier." ,
+
+
+      "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D E F) only once. <br><br> Please click NEXT to see the solution. ",
+
+      "<img src='img/3.png'></img> <br><br> Step 1: <br><br> Look at Regions that already contain five letters out of six. These are Regions 1, 2 and 4. Fill the missing letters: F in Region 1 and E in Regions 2 and 4. ",
+
+      "<img src='img/4.png'></img> <br><br> Step 2: <br><br> Look at the Columns and Lines that already contain five letters out of six. These are Columns 1, 5 and 6, and Line 6. Fill the missing letters: D in Column 1, E in Column 5 and Line 6, and A in Column 6. ",
+
+      "<img src='img/5.png'></img> <br><br> Step 3: <br><br> Only three letters are missing now. Column 2 misses A and Line 5 misses D. When you fill them, you will see that the remaining letter in Column 4 is E. ",
+
+
+
+      ],
+      show_clickable_nav: true,
+    }
+
+
+    var ready = {
+      type: 'html-keyboard-response',
+      stimulus: 'Did you understand the rules and feel ready to do the practice session? <br><br> Yes, I understood the rules and am ready to do the test session (Press C) <br><br> No, I did not understand the rules and would like to read them once again (Press R)',
+      choices: ['r', 'c'],
+
+    }
+
+    /* Checks if the user entered R or C */
+
+    var if_node = {
+        timeline: [instructions, ready],
+        loop_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          if(data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode('c')){
+            return false;
+          } else {
+            return true;
+          }
+        }
+     }
+     timeline.push(if_node);
+
+     var pre_test = {
+      type: 'instructions',
+      pages: [
+      'You will now do a brief practice session to familiarize yourself with the format. <br><br> During the practice session, you will solve a few letter Sudoku puzzles. There will be no time limit. The results of the practice session will not be taken into account when calculating your final success ratio. <br><br> Please click NEXT to start the practice session. <br><br>'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(pre_test);
+
+
+    /* Sudoku pre-test WITHOUT TIMER */
+
+    // var s0 = {
+    //   type: 'sudoku_trial',
+    //   trial_duration: 600000,
+    //   board_size: 'boards2x3',
+    //   board_set: 'd',
+    //   timer: false,
+    // }
+    // timeline.push(s0);
+
+    var post_test = {
+      type: 'instructions',
+      pages: [
+      ''
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(post_test);
+
+
+
+    /* ------------- SUDOKU TRIALS ------------------- */
+
+     var s1 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x4',
+      board_set: 'a'
+     }
+     var s2 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x4',
+      board_set: 'b'
+     }
+     var s3 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x4',
+      board_set: 'c'
+     }
+     var s4 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x3',
+      board_set: 'a'
+     }
+     var s5 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x3',
+      board_set: 'b'
+     }
+     var s6 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x3',
+      board_set: 'c'
+     }
+     var s7 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x2',
+      board_set: 'a'
+     }
+     var s8 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x2',
+      board_set: 'b'
+     }
+     var s9 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  /*currently only for one minute */
+      board_size: 'boards2x2',
+      board_set: 'c'
+     }
+
+     var s_array = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
+
+     var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
+
+
+     timeline.push.apply(timeline, sudo_trials);
+
+     var end_trial = {
+      type: 'instructions',
+      pages: [
+      'ADD TEXT'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(end_trial);
+
+     timeline.push({
+      type: 'html-keyboard-response',
+      stimulus: 'Press any key to quit.'
+    });
+
+    //  // exit fullscreen mode
+    // timeline.push({
+    //   type: 'fullscreen',
+    //   fullscreen_mode: false
+    // });
+
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function(){ jsPsych.data.displayData(); },
+        default_iti: 250
+    })
+
+
+
+  </script>
 </html>
