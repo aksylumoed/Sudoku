@@ -239,7 +239,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,4,2, , 
       ,2,4, ,3
       , ,3,2,undefined
-      ],
+      ],                    // 5
 
       [1, , ,3
       , ,2, ,1
@@ -269,7 +269,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,4, , , 
       ,3, , ,1
       , ,1,3,undefined
-      ],
+      ],                    // 10
 
       [2,3,4, 
       , ,4, , 
@@ -287,7 +287,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       , , ,1, 
       , ,2,3, 
       ,4, , ,2
-      ],
+      ],                    // EDIT
 
       [ , ,3,2
       ,2,3, , 
@@ -337,7 +337,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,1,6, , ,5, 
       , , ,5,2,3,6
       ,5,2, , , ,1
-      ],  
+      ],                    // EDIT
 
       [ ,3,2, ,1, 
       ,6, ,5,1,4,3

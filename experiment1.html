@@ -75,6 +75,8 @@
       
     }
 
+    /* Checks if the user entered R or C */
+
     var if_node = {
         timeline: [instructions, ready],
         loop_function: function(data){
@@ -97,25 +99,30 @@
     }
     timeline.push(pre_test);   
 
-    var s0 = {
-      type: 'sudoku_trial',
-      trial_duration: 600000,
-      board_size: 'boards2x3',
-      board_set: 'd',
-      timer: false,
-    }
-    timeline.push(s0);
+
+    /* Sudoku pre-test WITHOUT TIMER */
+
+    // var s0 = {
+    //   type: 'sudoku_trial',
+    //   trial_duration: 600000,
+    //   board_size: 'boards2x3',
+    //   board_set: 'd',
+    //   timer: false,
+    // }
+    // timeline.push(s0);
 
     var post_test = {
       type: 'instructions',
       pages: [
-      'The practice session is over. You are all set now to start the real test session! <br> As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. <br><br> You will have 120 seconds to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. As soon as the puzzle is solved, or when the time is up, you will be presented with a new puzzle. <br><br> Please be focused and do not get distracted. <br><br> Please click NEXT to start solving the puzzles. <br><br>'
+      ''
       ],
       show_clickable_nav: true,
     }
     timeline.push(post_test);   
 
 
+
+    /* ------------- SUDOKU TRIALS ------------------- */
      
      var s1 = {
       type: 'sudoku_trial',
@@ -174,11 +181,19 @@
 
      var s_array = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 
-     var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
+     var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array); 
 
 
      timeline.push.apply(timeline, sudo_trials);
 
+     var end_trial = {
+      type: 'instructions',
+      pages: [
+      'ADD TEXT'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(end_trial);
 
      timeline.push({
       type: 'html-keyboard-response',
