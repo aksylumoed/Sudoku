@@ -39,7 +39,7 @@
     var welcome = {
       type: 'instructions',
       pages: [
-      'Thank you for agreeing to participate in the study. During this session, you will solve a series of tasks with a time limit and answer a few questions about your experiences. <br> <br>  This session will be split into three stages. At the first stage, you will solve letter Sudoku puzzles of three levels of difficulty (easy, moderately difficult, and very difficult ones). You will have 120 seconds to solve each of those puzzles. When you are half way through, we will also ask you to answer a few questions about your experiences with the puzzles. <br> After that, you will be presented with a variety of different tasks and asked to indicate whether or not you feel capable of solving them. Finally, you will solve those tasks. You will have 120 seconds to solve each of those tasks. <br> <br> After you click NEXT button, you will read the rules that explain how to solve letter Sudoku puzzles and do a practice session to familiarize yourself with the format.'
+      'During this session, you will solve letter Sudoku puzzles with different levels of difficulty. You will solve these puzzles with a time limit. You will have two minutes to solve each puzzle. <br> <br> We ask you to stay focused and not get distracted while solving the puzzles. The average time of puzzles completion will be used in other studies testing people’s ability to solve different tasks. That is why it is crucially important that the time limit we set is an accurate representation of the time needed to solve the puzzles. <br> <br> After you click NEXT, you will read the rules that explain how to solve letter Sudoku puzzles and do a practice session to familiarize yourself with the format.'
       ],
       show_clickable_nav: true,
     }
@@ -93,7 +93,7 @@
      var pre_test = {
       type: 'instructions',
       pages: [
-      'You will now do a brief practice session to familiarize yourself with the format. <br><br> During the practice session, you will solve a few letter Sudoku puzzles. There will be no time limit. The results of the practice session will not be taken into account when calculating your final success ratio. <br><br> Please click NEXT to start the practice session. <br><br>'
+      'Now you will do a brief practice session to familiarize yourself with the format. <br> <br> During the practice session, you will solve one letter Sudoku puzzle. There will be no time limit, so you can try to solve the puzzle for as long as you can. <br> <br> To navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br> If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, please make sure that you exit the last filled cell - only in that case the puzzle will be completed. <br> <br> Please click NEXT to start the practice session.'
       ],
       show_clickable_nav: true,
     }
@@ -102,19 +102,19 @@
 
     /* Sudoku pre-test WITHOUT TIMER */
 
-    // var s0 = {
-    //   type: 'sudoku_trial',
-    //   trial_duration: 600000,
-    //   board_size: 'boards2x3',
-    //   board_set: 'd',
-    //   timer: false,
-    // }
-    // timeline.push(s0);
+    var s0 = {
+      type: 'sudoku_trial',
+      trial_duration: 600000,
+      board_size: 'boards2x3',
+      board_set: 'd',
+      timer: false,
+    }
+    timeline.push(s0);
 
     var post_test = {
       type: 'instructions',
       pages: [
-      ''
+      'The practice session is over. You are all set now to start the real test session!  As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. <br> <br> As in the practice session, to navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br>  If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, please make sure that you exit the last filled cell. <br> <br> Please click NEXT to start solving the puzzles.'
       ],
       show_clickable_nav: true,
     }
@@ -189,7 +189,7 @@
      var end_trial = {
       type: 'instructions',
       pages: [
-      'ADD TEXT'
+      'Thank you for participating in the study!'
       ],
       show_clickable_nav: true,
     }
