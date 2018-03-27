@@ -483,15 +483,22 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     new_html += '<div id="sudoku" class"=sudoku-board">';
 
-    if(trial.timer){
-      new_html += '<span id="time"></span>';
-    } else {
-      new_html += '<span id="time" style="color:white"></span>';
+    if (trial.board_size == 'boards2x2'){
+      new_html += '<span class="letters">Please use letters A B C D <br> to solve the puzzle</span>';
+    } else if (trial.board_size == 'boards2x3') {
+      new_html += '<span class="letters">Please use letters A B C D E F <br> to solve the puzzle</span>';
+
+    } else if (trial.board_size == 'boards2x4') {
+      new_html += '<span class="letters">Please use letters A B C D E F G H <br> to solve the puzzle</span>';
     }
 
-    new_html += '</div>';
+    if(trial.timer){
+      new_html += '<span id="time" class="timer"></span>';
+    } else {
+      new_html += '<span id="time" class="hidden"></span>';
+    }
 
-    new_html += '<p id="result"></p></body>';
+    new_html += '</div></body>';
 
 
     display_element.innerHTML = new_html;
@@ -511,6 +518,8 @@ jsPsych.plugins["sudoku_trial"] = (function() {
     document.getElementById('sudocss').disabled  = false;
     document.getElementById('jscss').disabled = true;
 
+    var start = new Date().getTime();
+    var elapsed;
 
 
     var index = Math.floor(Math.random() * boards.length);
@@ -524,6 +533,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
       Clock.pause();
       alert("Congratulations! You got this one right!");
+      elapsed = new Date().getTime() - start;
       success = true;
       end_trial();
 
@@ -539,6 +549,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
       // gather the data to store for the trial
       var trial_data = {
+        success_time: elapsed,
         board_size:trial.board_size,
         board_set: trial.board_set,
         board_no: index,

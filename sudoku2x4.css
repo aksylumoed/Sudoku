@@ -64,17 +64,34 @@
 
 
 
-span {
+.timer {
   position: absolute;
   bottom: 0;
   right: 20px;
   font-weight: bold;
   font-size: 60px;
+  width: 200px;
+  text-align: center;
 } 
 
-.result {
-  text-align: center;
+.hidden
+{
+    display: none;
 }
+
+
+.letters{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
+  color: #808080;
+
+}
+
 
 
 

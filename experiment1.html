@@ -17,6 +17,7 @@
     <script src="jsPsych/plugins/jspsych-fullscreen.js"></script>
     <script src="jsPsych/plugins/jspsych-instructions.js"></script>
     <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="jsPsych/plugins/jspsych-survey-text.js"></script>
     <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"></link>
 
     <!--script type="text/javascript" src="./sudokuJS.js"></script-->
@@ -35,6 +36,12 @@
     //   button_label: "Start"
     // });
 
+    var password = {
+      type: 'survey-text',
+      questions: [{prompt: 'Please enter the password that you created earlier. This password should consist of: <br><br> - the first two letters of your last name;<br> - the last two letters of your first name;<br> - the last two digits of the year you were born; <br><br><br>',
+               value: '', rows: 1, columns: 20}],
+    };
+    timeline.push(password);
 
     var welcome = {
       type: 'instructions',
@@ -126,55 +133,55 @@
 
      var s1 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x4',
       board_set: 'a'
      }
      var s2 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x4',
       board_set: 'b'
      }
      var s3 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x4',
       board_set: 'c'
      }
      var s4 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x3',
       board_set: 'a'
      }
      var s5 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000, 
       board_size: 'boards2x3',
       board_set: 'b'
      }
      var s6 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x3',
       board_set: 'c'
      }
      var s7 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000, 
       board_size: 'boards2x2',
       board_set: 'a'
      }
      var s8 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x2',
       board_set: 'b'
      }
      var s9 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x2',
       board_set: 'c'
      }
