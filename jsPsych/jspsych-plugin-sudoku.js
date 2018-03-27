@@ -59,7 +59,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,2, ,1,8, ,4, ,6    //have undefined on last (if empty) cell
       ],
 
-      [ ,1, ,5,4, ,3,
+      [ ,1, ,5,4, ,3,8
       ,3,4,1, ,8, ,2,
       ,2, ,6,8,3,5, ,1
       ,5, , ,3, , ,6,7
@@ -76,17 +76,17 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,3, , ,8,1, , ,5
       ,7,6, ,2, ,5, ,3
       ,1,8,4, ,3,2,7,
-      ,5, , ,3, ,4, ,7    //have undefined on last (if empty) cell
+      ,5, , ,3, ,4, ,8    //have undefined on last (if empty) cell
       ],
 
       [3,2,1,5, ,6, ,4
       , ,7, ,4, , ,8,3
       ,4, ,8, ,1,7,2,
       , ,8,2,7, ,4, ,1
-      ,6, ,4, ,, 2,3,
-      , ,6, , ,3, ,2,4
-      ,7,4,3,2, ,1,8,5
-      ,2, ,1,8, ,4, ,6    //have undefined on last (if empty) cell
+      ,6, ,4, , , ,1,
+      ,2, ,5,6, ,8,3,7
+      , ,4,3, ,2, ,5,
+      , , ,7, ,6,3, ,2    //have undefined on last (if empty) cell
       ],
 
       [2, ,6, ,4,5,7,
@@ -94,14 +94,14 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,4, , ,8, , ,2,6
       ,3, ,1,2,7, , ,
       , ,2, ,6, ,7,3,8
-      , ,3,2, ,8, ,7,
+      , ,3,2, ,8, ,6,
       ,6, , ,7,5, , ,2
       , ,1, ,5, ,2,4,undefined  //have undefined on last (if empty) cell
       ],
 
       [4, ,1, , ,7, ,8
-      ,1,8,6, , ,5,2,
-      , ,5,2,7,1, ,6,
+      ,1,8,6, , ,5,3,
+      , ,5,3,7,1, ,6,
       ,3,7,8, ,6, ,5,1
       ,7,3,5,1, ,6, ,2
       ,6, , ,3,2, ,8,
@@ -155,7 +155,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       , ,1,5,3, , , ,6
       ,6, , ,7,1,2,4,5
       ,5,7,2, ,8,3, ,
-      , ,2, ,8, ,6,3,6    //have undefined on last (if empty) cell
+      , ,2, ,8, ,6,3,7    //have undefined on last (if empty) cell
       ,1, ,6, , ,4, ,undefined
       ],
 
@@ -194,7 +194,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       ,7,3, ,2, ,4, ,1
       , ,5,6, ,3, ,8,
       ,8,7,3,5,2, ,1,
-      ,3,1, , ,2,5, ,6
+      ,3,1, , ,4,5, ,6
       ,4, ,7,1,8, ,2,5    //have undefined on last (if empty) cell
       , ,2, ,6, ,7, ,8
       ],
