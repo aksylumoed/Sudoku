@@ -111,10 +111,19 @@
     // }
     // timeline.push(s0);
 
+    var s0 = {
+      type: 'sudoku_trial',
+      trial_duration: 600000,
+      board_size: 'boards2x3',
+      board_set: 'd',
+      timer: false,
+    }
+    timeline.push(s0);
+
     var post_test = {
       type: 'instructions',
       pages: [
-      ''
+      'The practice session is over. You are all set now to start the real test session!  As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. As in the practice session, to navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. As soon as you are done solving the puzzle, please make sure that you exit the last filled cell.  <br> <br> Please click NEXT to start solving the puzzles. '
       ],
       show_clickable_nav: true,
     }
