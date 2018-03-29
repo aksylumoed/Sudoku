@@ -29,12 +29,8 @@
 
     var timeline = [];
 
-    // timeline.push({
-    //   type: 'fullscreen',
-    //   fullscreen_mode: true,
-    //   message: "Click the button to enter fullscreen mode.<br><br>",
-    //   button_label: "Start"
-    // });
+
+
 
     var password = {
       type: 'survey-text',
@@ -111,7 +107,7 @@
 
     var s0 = {
       type: 'sudoku_trial',
-      trial_duration: 600000,
+      trial_duration: 800000,
       board_size: 'boards2x3',
       board_set: 'd',
       timer: false,
@@ -207,18 +203,22 @@
       stimulus: 'Press any key to quit.'
     });
 
-    //  // exit fullscreen mode
-    // timeline.push({
-    //   type: 'fullscreen',
-    //   fullscreen_mode: false
-    // });
+   
 
+    // function saveData(name, data){
+    //   var xhr = new XMLHttpRequest();
+    //   xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+    //   xhr.setRequestHeader('Content-Type', 'application/json');
+    //   xhr.send(JSON.stringify({filename: name, filedata: data}));
+    // }
+
+    
     jsPsych.init({
       timeline: timeline,
+      /* on_finish: function(){ saveData("experiment_data.csv", jsPsych.data.get().csv()); */
       on_finish: function(){ jsPsych.data.displayData(); },
         default_iti: 250
     })
-
 
 
   </script>

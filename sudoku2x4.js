@@ -219,10 +219,22 @@
 						// "<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
 					  "</div>";
 			} else {
-				return "<div class='sudoku-board-cell'>" +
+				if (boardSize == 4){
+					return "<div class='sudoku-board-cell'>" +
+						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 68) || (event.charCode >= 97 && event.charCode <= 100))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
+						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
+					   "</div>";
+				} else if (boardSize == 6){
+					return "<div class='sudoku-board-cell'>" +
+						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 70) || (event.charCode >= 97 && event.charCode <= 102))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
+						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
+					   "</div>";
+				} else {
+					return "<div class='sudoku-board-cell'>" +
 						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 72) || (event.charCode >= 97 && event.charCode <= 104))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
 						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
 					   "</div>";
+				}	
 			}
 			
 		};

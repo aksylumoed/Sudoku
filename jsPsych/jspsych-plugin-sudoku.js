@@ -550,7 +550,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       // gather the data to store for the trial
       var trial_data = {
         success_time: elapsed,
-        board_size:trial.board_size,
+        board_size: trial.board_size,
         board_set: trial.board_set,
         board_no: index,
         success: success
