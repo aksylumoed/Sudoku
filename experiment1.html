@@ -4,14 +4,14 @@
     <title>Trial Experiment</title>
 
 
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-  <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku2x4.css">
-  <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
-  <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
-  <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku2x4.css">
+    <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
+    <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
+    <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 
     <script src="jsPsych/jspsych.js"></script>
     <script src="jsPsych/plugins/jspsych-fullscreen.js"></script>
@@ -28,9 +28,6 @@
   <script>
 
     var timeline = [];
-
-
-
 
     var password = {
       type: 'survey-text',
@@ -53,8 +50,7 @@
       type: 'instructions',
       pages: [
 
-      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier." ,
-
+      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier.",
 
       "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D E F) only once. <br><br> Please click NEXT to see the solution. ",
 
@@ -105,14 +101,14 @@
 
     /* Sudoku pre-test WITHOUT TIMER */
 
-    // var s0 = {
-    //   type: 'sudoku_trial',
-    //   trial_duration: 800000,
-    //   board_size: 'boards2x3',
-    //   board_set: 'd',
-    //   timer: false,
-    // }
-    // timeline.push(s0);
+    var s0 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,
+      board_size: 'boards2x3',
+      board_set: 'd',
+      timer: false,
+    }
+    timeline.push(s0);
 
     var post_test = {
       type: 'instructions',
@@ -127,62 +123,62 @@
 
     /* ------------- SUDOKU TRIALS ------------------- */
 
-     // var s1 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x4',
-     //  board_set: 'a'
-     // }
-     // var s2 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x4',
-     //  board_set: 'b'
-     // }
-     // var s3 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x4',
-     //  board_set: 'c'
-     // }
-     // var s4 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x3',
-     //  board_set: 'a'
-     // }
-     // var s5 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000, 
-     //  board_size: 'boards2x3',
-     //  board_set: 'b'
-     // }
-     // var s6 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x3',
-     //  board_set: 'c'
-     // }
-     // var s7 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000, 
-     //  board_size: 'boards2x2',
-     //  board_set: 'a'
-     // }
-     // var s8 = {
-     //  type: 'sudoku_trial',
-     //  trial_duration: 120000,  
-     //  board_size: 'boards2x2',
-     //  board_set: 'b'
-     // }
+     var s1 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x4',
+      board_set: 'a'
+     }
+     var s2 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x4',
+      board_set: 'b'
+     }
+     var s3 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x4',
+      board_set: 'c'
+     }
+     var s4 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x3',
+      board_set: 'a'
+     }
+     var s5 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000, 
+      board_size: 'boards2x3',
+      board_set: 'b'
+     }
+     var s6 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x3',
+      board_set: 'c'
+     }
+     var s7 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000, 
+      board_size: 'boards2x2',
+      board_set: 'a'
+     }
+     var s8 = {
+      type: 'sudoku_trial',
+      trial_duration: 3000,  
+      board_size: 'boards2x2',
+      board_set: 'b'
+     }
      var s9 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 3000,  
       board_size: 'boards2x2',
       board_set: 'c'
      }
 
-     var s_array = [/*s1, s2, s3, s4, s5, s6, s7, s8,*/ s9];
+     var s_array = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 
      var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
 
@@ -205,42 +201,30 @@
 
    
 
-    // function save_data(data){
-    //    var data_table = "my_experiment_table"; // change this for different experiments
-    //    $.ajax({
-    //       type:'post',
-    //       cache: false,
-    //       url: 'write_data.php', // change this to point to your php file.
-    //       // opt_data is to add additional values to every row, like a subject ID
-    //       // replace 'key' with the column name, and 'value' with the value.
-    //       data: {
-    //           table: data_table,
-    //           json: JSON.stringify(data),
-    //       },
-    //       success: function(output) { console.log(output); } // write the result to javascript console
-    //    });
-    // }
-
-
-
-    function saveData(filename, filedata){
+    function save_data(data){
+       var data_table = "my_experiment_table"; // change this for different experiments
        $.ajax({
           type:'post',
           cache: false,
-          url: 'write_data.php', // this is the path to the above PHP script
-          data: {filename: filename, filedata: filedata}
+          url: 'write_data.php', // change this to point to your php file.
+          // opt_data is to add additional values to every row, like a subject ID
+          // replace 'key' with the column name, and 'value' with the value.
+          data: {
+              table: data_table,
+              json: JSON.stringify(data),
+          },
+          success: function(output) { console.log(output); } // write the result to javascript console
        });
     }
 
-    var time = Date.now();
+    
     jsPsych.init({
       timeline: timeline,
-      on_finish: on_finish: function(){ saveData("subject-"+time+".csv", jsPsych.data.get().csv()); }
-      // on_finish: function() {
-      //   var alldata = jsPsych.data.get();
-      //   save_data(alldata);
-      //   jsPsych.data.displayData();
-      // }
+      on_finish: function() {
+        var alldata = jsPsych.data.get();
+        save_data(alldata);
+        jsPsych.data.get().uniqueNames();
+      }
       // on_finish: function(){ jsPsych.data.displayData(); },
       //   default_iti: 250
     })
