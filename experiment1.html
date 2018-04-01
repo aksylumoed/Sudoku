@@ -210,7 +210,7 @@
           // opt_data is to add additional values to every row, like a subject ID
           // replace 'key' with the column name, and 'value' with the value.
           data: {
-              table: data_table,
+              table: Users,
               json: JSON.stringify(data),
           },
           success: function(output) { console.log(output); } // write the result to javascript console
@@ -221,8 +221,8 @@
     jsPsych.init({
       timeline: timeline,
       on_finish: function() {
-        var alldata = jsPsych.data.get();
-        save_data(alldata);
+        // var alldata = jsPsych.data.get();
+        // save_data(alldata);
         jsPsych.data.get().uniqueNames();
       }
       // on_finish: function(){ jsPsych.data.displayData(); },
