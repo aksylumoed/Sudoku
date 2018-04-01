@@ -205,30 +205,42 @@
 
    
 
-    function save_data(data){
-       var data_table = "my_experiment_table"; // change this for different experiments
+    // function save_data(data){
+    //    var data_table = "my_experiment_table"; // change this for different experiments
+    //    $.ajax({
+    //       type:'post',
+    //       cache: false,
+    //       url: 'write_data.php', // change this to point to your php file.
+    //       // opt_data is to add additional values to every row, like a subject ID
+    //       // replace 'key' with the column name, and 'value' with the value.
+    //       data: {
+    //           table: data_table,
+    //           json: JSON.stringify(data),
+    //       },
+    //       success: function(output) { console.log(output); } // write the result to javascript console
+    //    });
+    // }
+
+
+
+    function saveData(filename, filedata){
        $.ajax({
           type:'post',
           cache: false,
-          url: 'write_data.php', // change this to point to your php file.
-          // opt_data is to add additional values to every row, like a subject ID
-          // replace 'key' with the column name, and 'value' with the value.
-          data: {
-              table: data_table,
-              json: JSON.stringify(data),
-          },
-          success: function(output) { console.log(output); } // write the result to javascript console
+          url: 'write_data.php', // this is the path to the above PHP script
+          data: {filename: filename, filedata: filedata}
        });
     }
 
-    
+    var time = Date.now();
     jsPsych.init({
       timeline: timeline,
-      on_finish: function() {
-        var alldata = jsPsych.data.get();
-        save_data(alldata);
-        jsPsych.data.displayData('csv');
-      }
+      on_finish: on_finish: function(){ saveData("subject-"+time+".csv", jsPsych.data.get().csv()); }
+      // on_finish: function() {
+      //   var alldata = jsPsych.data.get();
+      //   save_data(alldata);
+      //   jsPsych.data.displayData();
+      // }
       // on_finish: function(){ jsPsych.data.displayData(); },
       //   default_iti: 250
     })
