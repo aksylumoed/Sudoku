@@ -225,7 +225,7 @@
     jsPsych.init({
       timeline: timeline,
       on_finish: function() {
-        var alldata = jsPsych.data.getData();
+        var alldata = jsPsych.data.get();
         save_data(alldata);
         jsPsych.data.displayData('csv');
       }
