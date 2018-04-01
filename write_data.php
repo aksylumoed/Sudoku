@@ -1,58 +1,55 @@
-<!-- <?php
-// the $_POST[] array will contain the passed in filename and filedata
-// the directory "data" must be writable by the server
-// $filename = "data/".$_POST['filename'];
-// $data = $_POST['filedata'];
-// // write the file to disk
-// file_put_contents($filename, $data);
-?> -->
-
 
 <?php
 
-// this path should point to your configuration file.
+// Submit Data to mySQL database
+// Josh de Leeuw
+
+// Edit this line to include your database connection script
+//
+//  The script you link should contain the following two lines:
+//
+//  $dbc = mysql_connect('localhost', 'username', 'password');
+//  mysql_select_db('databasename', $dbc);
+//
 include('database_config.php');
 
-$data_array = json_decode(file_get_contents('php://input'), true);
+// You should not need to edit below this line
 
-try {
-  $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  // First stage is to get all column names from the table and store
-  // them in $col_names array.
-  $stmt = $conn->prepare("SHOW COLUMNS FROM `$table`");
-  $stmt->execute();
-  $col_names = array();
-  while($row = $stmt->fetchColumn()) {
-    $col_names[] = $row;
-  }
-  // Second stage is to create prepared SQL statement using the column
-  // names as a guide to what values might be in the JSON.
-  // If a value is missing from a particular trial, then NULL is inserted
-  $sql = "INSERT INTO $table VALUES(";
-  for($i = 0; $i < count($col_names); $i++){
-    $name = $col_names[$i];
-    $sql .= ":$name";
-    if($i != count($col_names)-1){
-      $sql .= ", ";
-    }
-  }
-  $sql .= ");";
-  $insertstmt = $conn->prepare($sql);
-  for($i=0; $i < count($data_array); $i++){
-    for($j = 0; $j < count($col_names); $j++){
-      $colname = $col_names[$j];
-      if(!isset($data_array[$i][$colname])){
-        $insertstmt->bindValue(":$colname", null, PDO::PARAM_NULL);
-      } else {
-        $insertstmt->bindValue(":$colname", $data_array[$i][$colname]);
-      }
-    }
-    $insertstmt->execute();
-  }
-  echo '{"success": true}';
-} catch(PDOException $e) {
-  echo '{"success": false, "message": ' . $e->getMessage();
+function mysql_insert($table, $inserts) {
+    $values = array_map('mysql_real_escape_string', array_values($inserts));
+    $keys = array_keys($inserts);
+
+    return mysql_query('INSERT INTO `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
 }
-$conn = null;
+
+// get the table name
+$tab = $_POST['table'];
+
+// decode the data object from json
+$trials = json_decode($_POST['json']);
+
+// get the optional data (decode as array)
+$opt_data = json_decode($_POST['opt_data'], true);
+$opt_data_names = array_keys($opt_data);
+
+var_dump($trials);
+
+// for each element in the trials array, insert the row into the mysql table
+for($i=0;$i<count($trials);$i++)
+{
+	$to_insert = (array)($trials[$i]);
+	// add any optional, static parameters that got passed in (like subject id or condition)
+	for($j=0;$j<count($opt_data_names);$j++){
+		$to_insert[$opt_data_names[$j]] = $opt_data[$opt_data_names[$j]];
+	}
+	$result = mysql_insert($tab, $to_insert);
+}
+
+// confirm the results
+if (!$result) {
+	die('Invalid query: ' . mysql_error());
+} else {
+	print "successful insert!";
+}
+
 ?>
