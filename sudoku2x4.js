@@ -361,7 +361,7 @@
 		var keyboardMoveBoardFocus = function(currentId, keyCode){
 			var newId = currentId;
 			//right
-			if(keyCode ===39)
+			if(keyCode ===39 || keyCode === 13) // added enter key (for checking solution)
 				newId++;
 			//left
 			else if(keyCode === 37)
@@ -473,7 +473,7 @@
 			var $this = $(this);
 			var id = parseInt($this.attr("id").replace("input-",""));
 			//allow keyboard movements
-			if(e.keyCode >=37 && e.keyCode <= 40){// || e.keyCode ===48){
+			if((e.keyCode >=37 && e.keyCode <= 40) || e.keyCode === 13){// || e.keyCode ===48){
 				keyboardMoveBoardFocus(id, e.keyCode);
 			}
 		});
