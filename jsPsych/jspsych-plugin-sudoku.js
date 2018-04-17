@@ -484,12 +484,12 @@ jsPsych.plugins["sudoku_trial"] = (function() {
     new_html += '<div id="sudoku" class"=sudoku-board">';
 
     if (trial.board_size == 'boards2x2'){
-      new_html += '<span class="letters">Please use letters A B C D <br> to solve the puzzle</span>';
+      new_html += '<span class="letters">Use letters <br> A B C D <br> to solve the puzzle <br> <br> Please press Enter as soon as you complete the puzzle </span>';
     } else if (trial.board_size == 'boards2x3') {
-      new_html += '<span class="letters">Please use letters A B C D E F <br> to solve the puzzle</span>';
+      new_html += '<span class="letters">Use letters <br> A B C D E F <br> to solve the puzzle <br> <br> Please press Enter as soon as you complete the puzzle</span>';
 
     } else if (trial.board_size == 'boards2x4') {
-      new_html += '<span class="letters">Please use letters A B C D E F G H <br> to solve the puzzle</span>';
+      new_html += '<span class="letters">Use letters <br> A B C D E F G H <br> to solve the puzzle <br> <br> Please press Enter as soon as you complete the puzzle</span>';
     }
 
     if(trial.timer){

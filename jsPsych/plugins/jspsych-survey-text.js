@@ -80,6 +80,8 @@ jsPsych.plugins['survey-text'] = (function() {
       }
     }
 
+    
+
     // show preamble text
     var html = '<div id="jspsych-survey-text-preamble" class="jspsych-survey-text-preamble">'+trial.preamble+'</div>';
 
@@ -88,13 +90,14 @@ jsPsych.plugins['survey-text'] = (function() {
       html += '<div id="jspsych-survey-text-"'+i+'" class="jspsych-survey-text-question" style="margin: 2em 0em;">';
       html += '<p class="jspsych-survey-text">' + trial.questions[i].prompt + '</p>';
       if(trial.questions[i].rows == 1){
-        html += '<input type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'">'+trial.questions[i].value+'</input>';
+        html += '<input onblur="checklength(this)" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'">'+trial.questions[i].value+'</input>';
       } else {
-        html += '<textarea name="#jspsych-survey-text-response-' + i + '" cols="' + trial.questions[i].columns + '" rows="' + trial.questions[i].rows + '">'+trial.questions[i].value+'</textarea>';
+        html += '<textarea onblur="checklength(this)" name="#jspsych-survey-text-response-' + i + '" cols="' + trial.questions[i].columns + '" rows="' + trial.questions[i].rows + '">'+trial.questions[i].value+'</textarea>';
       }
       html += '</div>';
     }
 
+    
     // add submit button
     html += '<button id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text">'+trial.button_label+'</button>';
 
