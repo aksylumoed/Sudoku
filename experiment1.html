@@ -39,7 +39,7 @@
     var welcome = {
       type: 'instructions',
       pages: [
-      'During this session, you will solve letter Sudoku puzzles with different levels of difficulty. You will solve these puzzles with a time limit. You will have two minutes to solve each puzzle. <br> <br> We ask you to stay focused and not get distracted while solving the puzzles. The average time of puzzles completion will be used in other studies testing people’s ability to solve different tasks. That is why it is crucially important that the time limit we set is an accurate representation of the time needed to solve the puzzles. <br> <br> After you click NEXT, you will read the rules that explain how to solve letter Sudoku puzzles and do a practice session to familiarize yourself with the format.'
+      'During this session, you will solve letter Sudoku puzzles with different levels of difficulty. You will have two minutes to try to solve each puzzle. <br> <br> Have never solved a Sudoku puzzle before? That is not a problem; you do not need to have any prior experience or special knowledge. The next few screens will explain what Sudoku are and how to solve them. After that you will have a chance to practice.'
       ],
       show_clickable_nav: true,
     }
@@ -50,7 +50,7 @@
       type: 'instructions',
       pages: [
 
-      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The objective of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters –respecting, of course, the three constraints mentioned earlier." ,
+      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The goal of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters, respecting the three constraints mentioned earlier." ,
 
 
       "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D E F) only once. <br><br> Please click NEXT to see the solution. ",
@@ -70,7 +70,7 @@
 
     var ready = {
       type: 'html-keyboard-response',
-      stimulus: 'Did you understand the rules and feel ready to do the practice session? <br><br> Yes, I understood the rules and am ready to do the test session (Press C) <br><br> No, I did not understand the rules and would like to read them once again (Press R)',
+      stimulus: 'Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)',
       choices: ['r', 'c'],
 
     }
@@ -93,12 +93,20 @@
      var pre_test = {
       type: 'instructions',
       pages: [
-      'Now you will do a brief practice session to familiarize yourself with the format. Please read the instructions carefully. <br> <br> During the practice session, you will solve one letter Sudoku puzzle. There will be no time limit, so you can try to solve the puzzle for as long as you can. <br> <br> To navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br> If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, you need to press ENTER key to complete the puzzle. Right after you press ENTER you will be presented with a new puzzle. <br> <br> Please click NEXT to start the practice session.'
+      'Now you will solve a practice Sudoku. <br> Please take a few moments to learn some technical tips.'
       ],
       show_clickable_nav: true,
     }
     timeline.push(pre_test);
 
+   var pre_test2 = {
+     type: 'instructions',
+     pages: [
+     'Here are a few technical tips: <br> <br> - To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> - If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one. <br> - To complete the puzzle and exit, please press Enter. <br> <br> Please click NEXT to start. Take your time to get familiar with the format.'
+     ],
+     show_clickable_nav: true,
+   }
+   timeline.push(pre_test2);
 
     /* Sudoku pre-test WITHOUT TIMER */
 
@@ -114,13 +122,20 @@
     var post_test = {
       type: 'instructions',
       pages: [
-      'The practice session is over. You are all set now to start the real test session! As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. <br> <br> As in the practice session, to navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br>  If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, you need to press ENTER key to complete the puzzle. Right after you press ENTER, you will be presented with a new puzzle. <br> <br> Please click NEXT to start solving the puzzles.'
+      'The practice session is over. You are all set to start the actual test session! <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left.'
       ],
       show_clickable_nav: true,
     }
     timeline.push(post_test);
 
-
+    var post_test2 = {
+      type: 'instructions',
+      pages: [
+      'We will very much appreciate if you stay focused and will not get distracted while you are solving the puzzles. The results obtained in this study will be used to design a new psychological instrument. That is why it is crucial that they are as accurate as possible. <br> <br> We very much value your time and effort and appreciate your cooperation. <br> <br> Please click NEXT to start solving the puzzles.'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(post_test2);
 
     /* ------------- SUDOKU TRIALS ------------------- */
 
