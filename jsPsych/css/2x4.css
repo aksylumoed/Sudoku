@@ -15,3 +15,12 @@
   border-bottom-width: 2px;
   border-bottom-color: #808080;
 }
+
+.sudoku-board-cell .highlight-val {
+  color: #00d;
+}
+/*highligt incorrect input*/
+.sudoku-board-cell .board-cell--error {
+  background: #d00;
+  color: #eee;
+}

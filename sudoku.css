@@ -1,42 +1,120 @@
-.sudoku2x4 {
-  margin: 7em auto;
-  border-collapse: collapse;
+
+.sudoku-board {
+  position: absolute;
+  min-height: 22.75rem;
+  margin-bottom: 5em;
+  left: 40px;
+
+}
+/*cell (wrapper) contains both cell input and candidates div*/
+.sudoku-board-cell {
+  display: inline-block;
+  position: relative;
+  border: 1.5px solid #ddd;
+  background: white;
+  max-width: 11.11111%;
+
 }
 
-.sudoku2x4 row,
-tbody {
-  border: solid medium;
-}
 
-.sudoku2x4 td {
-  height: 30px;
-  width: 30px;
-  border: solid thin;
+
+
+  /* the input for the value of each cell (i.e. 1-9 or empty for standard sudoku*/
+.sudoku-board-cell input {
+  background: none;
+  font-size: 19.2px;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 0;
+  width: 2em;
+  max-width: 100%;
+  height: 2em;
+  border: 0;
+  position: relative;
+  z-index: 1; /*on top of candidates*/
 }
 
-.sudoku2x4 input[type="text"] {
-  text-transform: uppercase;
-  height: 30px;
-  width: 30px;
-  border: none;
+/*highlight new input in board cell*/
+/*.sudoku-board-cell .highlight-val {
+  color: #00d;
+}*/
+
+
+/*highligt incorrect input*/
+.sudoku-board-cell .board-cell--error {
+  background: #d00;
+  color: #eee;
+}
+        
+
+
+* {
+  margin:0; padding:0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+     
+
+
+
+
+.timer {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  font-weight: bold;
+  font-size: 60px;
+  width: 200px;
   text-align: center;
-  padding: 0;
+} 
+
+.hidden
+{
+    display: none;
 }
 
-.sudoku2x4 tr:nth-of-type(4n) {
-  border-bottom: solid medium;
-}
 
-.sudoku2x4 td:nth-of-type(2n) {
-  border-right: solid medium;
-}
-
-.sudoku2x4 td {
-  border: solid thin;
-  height: 1.4em;
-  width: 1.4em;
+.letters{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
   text-align: center;
-  padding: 0;
+  color: #808080;
+
 }
+
+
+
+
+/*.sudoku-board-cell input {
+      background: none;
+      font-size: 16px;
+    }*/
+
+.wrap {
+  position: fixed;
+  padding: 2em 1em;
+  width: 600px;
+  max-width: 100%;
+  
+  margin-bottom: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(min-width: 30em){
+  .wrap{
+    width: 590px;
+  }
+  .sudoku-board input {
+    font-size: 24px;
+    font-size: 1.5rem;
+
+  }
+}
+  

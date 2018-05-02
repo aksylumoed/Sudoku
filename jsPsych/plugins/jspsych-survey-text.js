@@ -90,18 +90,27 @@ jsPsych.plugins['survey-text'] = (function() {
       html += '<div id="jspsych-survey-text-"'+i+'" class="jspsych-survey-text-question" style="margin: 2em 0em;">';
       html += '<p class="jspsych-survey-text">' + trial.questions[i].prompt + '</p>';
       if(trial.questions[i].rows == 1){
-        html += '<input onblur="checklength(this)" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'">'+trial.questions[i].value+'</input>';
+        
+        html += '<form><input onblur="checklength(this)" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'"autofocus>'+trial.questions[i].value+'</input>';
+        html += '<input id="show_button" type="button" value="Check"></input></form>';
       } else {
         html += '<textarea onblur="checklength(this)" name="#jspsych-survey-text-response-' + i + '" cols="' + trial.questions[i].columns + '" rows="' + trial.questions[i].rows + '">'+trial.questions[i].value+'</textarea>';
       }
       html += '</div>';
     }
 
-    
+
     // add submit button
-    html += '<button id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text">'+trial.button_label+'</button>';
+    html += '<button id="jspsych-survey-text-next" style= "display:none" class="jspsych-btn jspsych-survey-text">'+trial.button_label+'</button>';
 
     display_element.innerHTML = html;
+
+    function clickHandler() {
+
+      $('#jspsych-survey-text-next').toggle('fast');
+    }
+
+    display_element.querySelector('#show_button').addEventListener('click', clickHandler);
 
     display_element.querySelector('#jspsych-survey-text-next').addEventListener('click', function() {
       // measure response time

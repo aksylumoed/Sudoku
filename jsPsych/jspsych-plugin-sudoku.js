@@ -199,7 +199,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       , ,2, ,6, ,7, ,8
       ],
 
-    ]
+    ];
 
 
 
@@ -295,7 +295,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       , ,2, ,3
       ]
 
-    ]
+    ];
 
     var boards2x3 = [
 
@@ -422,13 +422,13 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
       [4, ,3,1,5,2
       ,2, , ,5, ,6
-      ,5,3,2,6,1,
+      ,5,3,2,6,1, 
       ,6, ,1,3, ,5
       , ,4,5, ,6,1
       ,1,5,6,4, ,3
       ],
 
-    ]
+    ];
 
 
 
@@ -479,7 +479,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     var new_html = '';
 
-    new_html = '<body><div class="wrap">';
+    new_html = '<div class="wrap">';
 
     new_html += '<div id="sudoku" class"=sudoku-board">';
 
@@ -498,7 +498,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       new_html += '<span id="time" class="hidden"></span>';
     }
 
-    new_html += '</div></body>';
+    new_html += '</div>';
 
 
     display_element.innerHTML = new_html;

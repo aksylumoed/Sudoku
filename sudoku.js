@@ -1,10 +1,6 @@
 (function (window, $, undefined) {
-
-
 	'use strict';
 	
-
-
 
 	/**
 	* Define a jQuery plugin
@@ -18,8 +14,8 @@
 		var DIFFICULTY_MEDIUM = "medium";
 
 		var DIFFICULTIES = [
-			DIFFICULTY_MEDIUM,
-		],
+			DIFFICULTY_MEDIUM
+		];
 
 
 		opts = opts || {};
@@ -111,7 +107,7 @@
 			]
 			
 
-			for(var i=0; i < 8; i++){
+			for(var i=0; i < boardSize; i++){
 				var hrow = [], //horisontal row
 					vrow = [], //vertical row
 					box = [],
@@ -140,7 +136,9 @@
 				houses[0].push(hrow);
 				houses[1].push(vrow);
 				houses[2].push(box);
-			}  
+			}
+			// log(houses);
+			// log("Generated House index list!");
 		};
 
 
@@ -177,6 +175,7 @@
 					};
 				}
 			}
+			// log("Initialized board!");
 		};
 
 
@@ -203,6 +202,8 @@
 
 			//save important board elements
 			$boardInputs = $board.find("input");
+
+			// log("Rendered Board!");
 		};
 
 
@@ -254,6 +255,8 @@
 					//}
 					
 				});
+
+			// log("Updating UI!");
 		};
 
 
@@ -271,6 +274,7 @@
 			$("#input-"+cellIndex)
 				.val(newVal)
 				.addClass("highlight-val");
+			// log("Updating UI!");
 			//}
 		};
 
@@ -307,11 +311,14 @@
 			var boardCell = board[cellIndex];
 			//update val
 			boardCell.val = val;
+
+			// log("Setting board cell!");
 			
 		};
 
 
 		var indexInHouse = function(digit, house){
+			// log("checking!");
 			for(var i=0; i < boardSize; i++){
 				if(board[house[i]].val===digit)
 					return i;
@@ -328,22 +335,22 @@
 		 * -----------------------------------------------------------------
 
 
-		 		EDIT THIS 		*/
+		 		THIS IS CORRECT 		*/
 
 		var housesWithCell = function(cellIndex){
 			// var boxSideSize = Math.sqrt(boardSize);
 			var boardV = boardSize/2;
 			var houses = [];
-			//horisontal row
+			// row
 			var hrow = Math.floor(cellIndex/boardSize);
 			houses.push(hrow);
-			//vertical row
+			// coloumn
 			var vrow = Math.floor(cellIndex%boardSize);
 			houses.push(vrow);
 			//box
 			var box = (Math.floor(hrow/boardV)*boardV) + Math.floor(vrow/2);
 			houses.push(box);
-
+			// log(houses);
 			return houses;
 		};
 
@@ -379,13 +386,22 @@
 
 			//focus input
 			$("#input-"+newId).focus();
+			
+			// log("focusing!");
 		};
 
 
 		/* keyboardNumberInput - update our board model
-		 * -----------------------------------------------------------------*/
+		 * -----------------------------------------------------------------
+		
+		   WHERE THE RED COLOUR IS ADDED
+		
+		 */
+
+
 		var keyboardNumberInput = function(input, id){
-			var val = input.val().charCodeAt() - 64;
+			// log("works!");
+			var val = input.val().charCodeAt() - 64;		// converting to int to char
 			
 
 
@@ -397,14 +413,15 @@
 
 					if(indexInHouse(val, houses[i][temp[i]])){
 						//digit already in house - board incorrect with user input
-						// log("board incorrect!");
+						log("input incorrect!");
 						var alreadyExistingCellInHouseWithDigit = houses[i][temp[i]][indexInHouse(val, houses[i][temp[i]])];
 
 						//this happens in candidate mode, if we highlight on ui board before entering value, and user then enters before us.
-						if(alreadyExistingCellInHouseWithDigit === id)
-							continue;
+						// if(alreadyExistingCellInHouseWithDigit === id)
+						// 	continue;
 
-						$("#input-" + alreadyExistingCellInHouseWithDigit + ", #input-"+id)
+						// $("#input-" + alreadyExistingCellInHouseWithDigit + ", #input-"+id)
+						$("#input-"+id)
 							.addClass("board-cell--error");
 						//make as incorrect in UI
 
@@ -446,8 +463,8 @@
 
 			//HACK: remove all errors as soon as they fix one - the other cells just get emptied on board (in UI; already were null in model)
 			if($("#input-"+id).hasClass("board-cell--error"))
-				$boardInputs.removeClass("board-cell--error");
-
+				// $boardInputs.removeClass("board-cell--error");
+				$("#input-"+id).removeClass("board-cell--error")
 			if(typeof opts.boardUpdatedFn === "function")
 				opts.boardUpdatedFn({cause: "user input", cellsUpdated: [id]});
 
