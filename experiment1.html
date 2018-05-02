@@ -79,7 +79,7 @@
 
     var ready = {
       type: 'html-keyboard-response',
-      stimulus: 'Did you understand the rules and feel ready to do the practice session? <br><br> Yes, I understood the rules and am ready to do the test session (Press C) <br><br> No, I did not understand the rules and would like to read them once again (Press R)',
+      stimulus: 'Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)',
       choices: ['r', 'c'],
 
     }
@@ -102,7 +102,8 @@
      var pre_test = {
       type: 'instructions',
       pages: [
-      'Now you will do a brief practice session to familiarize yourself with the format. Please read the instructions carefully. <br> <br> During the practice session, you will solve one letter Sudoku puzzle. There will be no time limit, so you can try to solve the puzzle for as long as you can. <br> <br> To navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br> If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, you need to press ENTER key to complete the puzzle. Right after you press ENTER you will be presented with a new puzzle. <br> <br> Please click NEXT to start the practice session.'
+      'Now you will solve a practice Sudoku. <br> Please take a few moments to learn some technical tips.',
+      "Here are a few technical tips: <br> <br> - To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> - If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one. <br> - To complete the puzzle and exit, please press Enter. <br> <br> Please click NEXT to start. Take your time to get familiar with the format."
       ],
       show_clickable_nav: true,
     }
@@ -123,7 +124,8 @@
     var post_test = {
       type: 'instructions',
       pages: [
-      'The practice session is over. You are all set now to start the real test session! As soon as you click NEXT, you will be presented with a series of letter Sudoku puzzles one at a time. <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left. <br> <br> As in the practice session, to navigate through the puzzle cells, you can either use a computer mouse or keyboard arrows. <br> <br>  If you make an error, you will be notified: the problem cell will be highlighted in red. You can correct the error by selecting the problem letter and inserting the correct one. <br> <br> As soon as you are done solving the puzzle, you need to press ENTER key to complete the puzzle. Right after you press ENTER, you will be presented with a new puzzle. <br> <br> Please click NEXT to start solving the puzzles.'
+      'The practice session is over. You are all set to start the actual test session! <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left.',
+      "We will very much appreciate if you stay focused and will not get distracted while you are solving the puzzles. The results obtained in this study will be used to design a new psychological instrument. That is why it is crucial that they are as accurate as possible. <br> <br> We very much value your time and effort and appreciate your cooperation. <br> <br> Please click NEXT to start solving the puzzles."
       ],
       show_clickable_nav: true,
     }
