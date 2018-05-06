@@ -91,8 +91,10 @@ jsPsych.plugins['survey-text'] = (function() {
       html += '<p class="jspsych-survey-text">' + trial.questions[i].prompt + '</p>';
       if(trial.questions[i].rows == 1){
         
-        html += '<form><input onblur="checklength(this)" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'"autofocus>'+trial.questions[i].value+'</input>';
-        html += '<input id="show_button" type="button" value="Check"></input></form>';
+        // html += '<form><input onblur="checklength(this)" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'"autofocus>'+trial.questions[i].value+'</input>';
+        // html += '<input id="show_button" type="button" value="Check"></input></form>';
+        html += '<input class="hello" maxlength="6" type="text" name="#jspsych-survey-text-response-' + i + '" size="'+trial.questions[i].columns+'"autofocus>'+trial.questions[i].value+'</input>';
+        html += '<input id="show_button" type="button" value="Check"></input>';
       } else {
         html += '<textarea onblur="checklength(this)" name="#jspsych-survey-text-response-' + i + '" cols="' + trial.questions[i].columns + '" rows="' + trial.questions[i].rows + '">'+trial.questions[i].value+'</textarea>';
       }
@@ -106,9 +108,35 @@ jsPsych.plugins['survey-text'] = (function() {
     display_element.innerHTML = html;
 
     function clickHandler() {
-
-      $('#jspsych-survey-text-next').toggle('fast');
+      if($('.hello').is(':focus')){
+        alert('Password must be exactly 6 characters');
+      } else {
+        $('#jspsych-survey-text-next').toggle('fast');
+      }
     }
+
+
+
+    $(function() {
+        $('.hello').bind('focusout', function(e) {
+            if(!isValid($(this).val())) {
+                e.preventDefault();
+                $(this).focus();
+            } else{
+
+            }
+        });
+    });
+        
+        function isValid(str) {
+            if(str.length != 6) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+
 
     display_element.querySelector('#show_button').addEventListener('click', clickHandler);
 

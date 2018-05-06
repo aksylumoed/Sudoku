@@ -320,11 +320,13 @@
 		var indexInHouse = function(digit, house){
 			// log("checking!");
 			for(var i=0; i < boardSize; i++){
-				if(board[house[i]].val===digit)
+				if(board[house[i]].val===digit){
+					// log(i);
 					return i;
+				}
 			}
 			//not in house
-			return false;
+			return -1;
 		};
 
 
@@ -350,7 +352,6 @@
 			//box
 			var box = (Math.floor(hrow/boardV)*boardV) + Math.floor(vrow/2);
 			houses.push(box);
-			// log(houses);
 			return houses;
 		};
 
@@ -410,11 +411,12 @@
 				var temp = housesWithCell(id);
 				//for each type of house
 				for(var i=0; i < houses.length; i++){
-
-					if(indexInHouse(val, houses[i][temp[i]])){
+					if(indexInHouse(val, houses[i][temp[i]]) > -1){
+						
 						//digit already in house - board incorrect with user input
 						log("input incorrect!");
 						var alreadyExistingCellInHouseWithDigit = houses[i][temp[i]][indexInHouse(val, houses[i][temp[i]])];
+						// log(alreadyExistingCellInHouseWithDigit);
 
 						//this happens in candidate mode, if we highlight on ui board before entering value, and user then enters before us.
 						// if(alreadyExistingCellInHouseWithDigit === id)
@@ -511,7 +513,7 @@
       		clearBoard(); // if any pre-existing
 			board = newBoard;
 			initBoard();
-			//visualEliminationOfCandidates();
+
 			updateUIBoard(false);
 		};
 
@@ -522,13 +524,6 @@
 			getBoard : getBoard,
 			setBoard : setBoard,
 
-			/* solveAll : solveAll,
-			solveStep : solveStep,
-			analyzeBoard : analyzeBoard,
-			hideCandidates : hideCandidates,
-			showCandidates : showCandidates,
-			setEditingCandidates: setEditingCandidates,
-			generateBoard : generateBoard */
 		};
 	};
 
