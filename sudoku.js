@@ -497,7 +497,7 @@
 			}
 		});
 		//listen on change because val is incorrect all the time on keyup, because have to filter out all other keys.
-		$boardInputs.on("change", function(){
+		$boardInputs.on("input", function(){
 			var $this = $(this);
 			var id = parseInt($this.attr("id").replace("input-",""));
 			keyboardNumberInput($this, id);
