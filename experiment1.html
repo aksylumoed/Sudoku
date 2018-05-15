@@ -11,18 +11,18 @@
     <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
     <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
     <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <script src="jsPsych/jspsych.js"></script>
+    <script type="text/javascript" src="jsPsych/jspsych.js"></script>
 
-    <script src="jsPsych/plugins/jspsych-call-function.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-call-function.js"></script>
     <script type="text/javascript" src="jsPsych/jspsych-plugin-sudoku.js"></script>
     <script type="text/javascript" src="sudoku.js"></script>
     <script type="text/javascript" src="timer.js"></script>
 
-    <script src="jsPsych/plugins/jspsych-instructions.js"></script>
-    <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
-    <script src="jsPsych/plugins/jspsych-survey-text.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-instructions.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-text.js"></script>
     <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css">
 
     
@@ -34,7 +34,7 @@
 
     function checklength(e1) {
       if (e1.value.length != 6) {
-        alert("Password must be exactly 6 characters")
+        alert("Password must be exactly 6 characters");
       }
     }
 
@@ -103,7 +103,7 @@
       type: 'instructions',
       pages: [
       'Now you will solve a practice Sudoku. <br> Please take a few moments to learn some technical tips.',
-      "Here are a few technical tips: <br> <br> - To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> - If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one. <br> - To complete the puzzle and exit, please press Enter. <br> <br> Please click NEXT to start. Take your time to get familiar with the format."
+      "Here are a few technical tips: <br> <br> - To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> - If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one. <br> <br> Please click NEXT to start. Take your time to get familiar with the format."
       ],
       show_clickable_nav: true,
     }

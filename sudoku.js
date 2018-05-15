@@ -222,17 +222,17 @@
 			} else {
 				if (boardSize == 4){
 					return "<div class='sudoku-board-cell'>" +
-						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 68) || (event.charCode >= 97 && event.charCode <= 100))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
+						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 68) || (event.charCode >= 97 && event.charCode <= 100) || event.keyCode === 8)' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
 						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
 					   "</div>";
 				} else if (boardSize == 6){
 					return "<div class='sudoku-board-cell'>" +
-						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 70) || (event.charCode >= 97 && event.charCode <= 102))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
+						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 70) || (event.charCode >= 97 && event.charCode <= 102) || event.keyCode === 8)' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
 						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
 					   "</div>";
 				} else {
 					return "<div class='sudoku-board-cell'>" +
-						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 72) || (event.charCode >= 97 && event.charCode <= 104))' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
+						"<input type='text' onkeypress='return ((event.charCode >= 65 && event.charCode <= 72) || (event.charCode >= 97 && event.charCode <= 104) || event.keyCode === 8)' oninput='this.value = this.value.toUpperCase()' novalidate id='input-"+id+"' value='"+val+"'"+maxlength+">" +
 						//"<div id='input-"+id+"-candidates' class='candidates'>" + candidatesString + "</div>" +
 					   "</div>";
 				}	
@@ -381,9 +381,14 @@
 			else if(keyCode ===38)
 				newId = newId - boardSize;
 
+			
+
+
 			//out of bounds
 			if(newId < 0 || newId > (boardSize*boardSize))
 				return;
+			
+
 
 			//focus input
 			$("#input-"+newId).focus();
@@ -402,7 +407,12 @@
 
 		var keyboardNumberInput = function(input, id){
 			// log("works!");
-			var val = input.val().charCodeAt() - 64;		// converting to int to char
+
+			// to check for BACKSPACE
+			if(parseInt(input.val()) !== 8){
+				var val = input.val().charCodeAt() - 64;		// converting to char to int
+			}
+			
 			
 
 

@@ -105,7 +105,11 @@ jsPsych.plugins['survey-text'] = (function() {
     // add submit button
     html += '<button id="jspsych-survey-text-next" style= "display:none" class="jspsych-btn jspsych-survey-text">'+trial.button_label+'</button>';
 
+    $('.hello').focus();
+    
     display_element.innerHTML = html;
+
+
 
     function clickHandler() {
       if($('.hello').is(':focus')){
@@ -113,28 +117,27 @@ jsPsych.plugins['survey-text'] = (function() {
       } else {
         $('#jspsych-survey-text-next').toggle('fast');
       }
-    }
+    };
 
 
 
     $(function() {
         $('.hello').bind('focusout', function(e) {
             if(!isValid($(this).val())) {
-                e.preventDefault();
-                $(this).focus();
+                setTimeout("$('.hello').focus();",1);
             } else{
 
             }
         });
     });
         
-        function isValid(str) {
-            if(str.length != 6) {
-                return false;
-            } else {
-                return true;
-            }
+    function isValid(str) {
+        if(str.length != 6) {
+            return false;
+        } else {
+            return true;
         }
+    };
 
 
 
