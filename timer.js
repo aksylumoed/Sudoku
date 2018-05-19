@@ -79,11 +79,11 @@ pause: function() {
 
 
 
-window.onload = function () {
-    var twoMinutes = 60 * 2,
-        display = document.querySelector('#time');
-    Clock.startTimer(twoMinutes, display);
-};
+// window.onload = function () {
+//     var twoMinutes = 60 * 2,
+//         display = document.querySelector('#time');
+//     Clock.startTimer(twoMinutes, display);
+// };
 
 
 function reset(){
