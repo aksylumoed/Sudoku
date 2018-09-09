@@ -39,6 +39,8 @@
 
 
 
+
+
 /*    function checklength(e1) {
       if (e1.value.length != 6) {
         alert("Password must be exactly 6 characters");
@@ -70,6 +72,11 @@
         options: ["I agree to participate in this research study", "I disagree to participate in this research study"], 
         required: true}],
         show_clickable_nav: true,
+        on_finish: function(data) {
+          if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
+            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');
+          }
+        }
     }
     timeline.push(multi_choice_block);
 
@@ -91,7 +98,7 @@
 
     var gse1 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can always manage to solve difficult problems if I try hard enough.", labels: scale, required: true}, {prompt: "If someone opposes me, I can find the means and ways to get what I want.", labels: scale, required: true}, {prompt: "It is easy for me to stick to my aims and accomplish my goals.", labels: scale, required: true}, {prompt: "I am confident that I can deal efficiently with unexpected events.", labels: scale, required: true}, {prompt: "Thanks to my resourcefullness, I know how to handle unforseen situations.", labels: scale, required: true}],
+        questions: [{prompt: "I can always manage to solve difficult problems if I try hard enough.", labels: scale, required: false}, {prompt: "If someone opposes me, I can find the means and ways to get what I want.", labels: scale, required: false}, {prompt: "It is easy for me to stick to my aims and accomplish my goals.", labels: scale, required: false}, {prompt: "I am confident that I can deal efficiently with unexpected events.", labels: scale, required: false}, {prompt: "Thanks to my resourcefullness, I know how to handle unforseen situations.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse1);
@@ -99,7 +106,7 @@
 
     var gse2 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can solve most problems if I invest the necessary effort.", labels: scale, required: true}, {prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities.", labels: scale, required: true}, {prompt: "When I am confronted with a problem, I can usually find several solutions.", labels: scale, required: true}, {prompt: "If I am in trouble, I can usually think of a solution.", labels: scale, required: true}],
+        questions: [{prompt: "I can solve most problems if I invest the necessary effort.", labels: scale, required: false}, {prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities.", labels: scale, required: false}, {prompt: "When I am confronted with a problem, I can usually find several solutions.", labels: scale, required: false}, {prompt: "If I am in trouble, I can usually think of a solution.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse2);
@@ -108,14 +115,14 @@
 
     var gse3 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can usually handle whatever comes my way.", labels: scale, required: true}, {prompt: "There is really no way I can solve some of the problems I have.", labels: scale, required: true}, {prompt: "Sometimes I feel that I am being pushed around in life.", labels: scale, required: true}, {prompt: "I have little control over things that happen to me", labels: scale, required: true}, {prompt: "I can do just about anything I really set my mind to", labels: scale, required: true}],
+        questions: [{prompt: "I can usually handle whatever comes my way.", labels: scale, required: false}, {prompt: "There is really no way I can solve some of the problems I have.", labels: scale, required: false}, {prompt: "Sometimes I feel that I am being pushed around in life.", labels: scale, required: false}, {prompt: "I have little control over things that happen to me", labels: scale, required: false}, {prompt: "I can do just about anything I really set my mind to", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse3);
 
     var gse4 = {
         type: 'survey-likert',
-        questions: [{prompt: "I often feel helpless in dealing with the problems of life.", labels: scale, required: true}, {prompt: "What happens to me in the future mostly depends on me.", labels: scale, required: true}, {prompt: "If you are reading this attentively, answer that you somewhat agree with this point.", labels: scale, required: true}, {prompt: "There is little I can do to change many of the important things in my life.", labels: scale, required: true}],
+        questions: [{prompt: "I often feel helpless in dealing with the problems of life.", labels: scale, required: false}, {prompt: "What happens to me in the future mostly depends on me.", labels: scale, required: false}, {prompt: "If you are reading this attentively, answer that you somewhat agree with this point.", labels: scale, required: false}, {prompt: "There is little I can do to change many of the important things in my life.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse4);
@@ -138,7 +145,7 @@
 
     var sudoku_competence = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "How good are you at Sudoku?", options: page_2_options, required: true}],
+        questions: [{prompt: "How good are you at Sudoku?", options: page_2_options, required: false}],
         show_clickable_nav: true,
     }
         // timeline.push(sudoku_competence);
@@ -251,7 +258,7 @@
 
     var current_status = {
         type: 'survey-likert',
-        questions: [{prompt: "I have enough money to buy things I want.", labels: scale, required: true}, {prompt: "I don't need to worry too much about paying my bills.", labels: scale, required: true}, {prompt: "I don't think I'll have to worry about money too much in the future.", labels: scale, required: true}],
+        questions: [{prompt: "I have enough money to buy things I want.", labels: scale, required: false}, {prompt: "I don't need to worry too much about paying my bills.", labels: scale, required: false}, {prompt: "I don't think I'll have to worry about money too much in the future.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(current_status);
@@ -266,7 +273,7 @@
 
     var child_status = {
         type: 'survey-likert',
-        questions: [{prompt: "My family usually had enough money for things when I was growing up.", labels: scale, required: true}, {prompt: "I grew up in a relatively wealthy neighbourhood.", labels: scale, required: true}, {prompt: "I felt relatively wealthy compared to the other kids in my school.", labels: scale, required: true}],
+        questions: [{prompt: "My family usually had enough money for things when I was growing up.", labels: scale, required: false}, {prompt: "I grew up in a relatively wealthy neighbourhood.", labels: scale, required: false}, {prompt: "I felt relatively wealthy compared to the other kids in my school.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(child_status);
@@ -275,7 +282,7 @@
 
     var age = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "In which age group do you belong?", options: age_options, required: true}],
+        questions: [{prompt: "In which age group do you belong?", options: age_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(age);
@@ -292,7 +299,7 @@
 
     var ethnicity = {
           type: 'survey-multi-choice',
-          questions: [{prompt: "Which category of the following best describes your ethnicity?", options: eth_options, required: true}],
+          questions: [{prompt: "Which category of the following best describes your ethnicity?", options: eth_options, required: false}],
           show_clickable_nav: true,
     }
     timeline.push(ethnicity);
@@ -468,7 +475,7 @@
       board_size: 'boards2x4',
       board_set: 'a'
      }
-     var s2 = {
+/*     var s2 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
       board_size: 'boards2x4',
@@ -479,9 +486,9 @@
       trial_duration: 120000,  
       board_size: 'boards2x4',
       board_set: 'c'
-     }
+     }*/
 
-     var s_array = [s1, s2, s3];
+     var s_array = [s1 /*, s2, s3*/];
 
      var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
 
@@ -501,14 +508,14 @@
 
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt challenged", labels: scale, required: true}, {prompt: "I felt nervous", labels: scale, required: true}, {prompt: "I felt hopeful", labels: scale, required: true}, {prompt: "I felt confident", labels: scale, required: true}, {prompt: "I felt sad", labels: scale, required: true}],
+         questions: [{prompt: "I felt challenged", labels: scale, required: false}, {prompt: "I felt nervous", labels: scale, required: false}, {prompt: "I felt hopeful", labels: scale, required: false}, {prompt: "I felt confident", labels: scale, required: false}, {prompt: "I felt sad", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
 
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt afraid", labels: scale, required: true}, {prompt: "I felt interested", labels: scale, required: true}, {prompt: "I felt apathetic", labels: scale, required: true}, {prompt: "I felt bored", labels: scale, required: true}, {prompt: "I felt resigned", labels: scale, required: true}],
+         questions: [{prompt: "I felt afraid", labels: scale, required: false}, {prompt: "I felt interested", labels: scale, required: false}, {prompt: "I felt apathetic", labels: scale, required: false}, {prompt: "I felt bored", labels: scale, required: false}, {prompt: "I felt resigned", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
@@ -533,14 +540,14 @@
 
      var attribution1 = {
          type: 'survey-likert',
-         questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: true}, {prompt: "The cause is controllable by you or other people", labels: scale, required: true}, {prompt: "The cause is something that is permanent", labels: scale, required: true}, {prompt: "The cause is something that is outside of you", labels: scale, required: true}],
+         questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people", labels: scale, required: false}, {prompt: "The cause is something that is permanent", labels: scale, required: false}, {prompt: "The cause is something that is outside of you", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(attribution1);
 
      var attribution1_1 = {
          type: 'survey-likert',
-         questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: true}, {prompt: "The cause is something about you", labels: scale, required: true}, {prompt: "The cause is something that is changeable", labels: scale, required: true}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: true}],
+         questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: false}, {prompt: "The cause is something about you", labels: scale, required: false}, {prompt: "The cause is something that is changeable", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(attribution1_1);
@@ -556,7 +563,7 @@
 
     var appraisal2 = {
         type: 'survey-likert',
-        questions: [{prompt: "Please indicate how certain you are that you will be able to solve the next puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: true}],
+        questions: [{prompt: "Please indicate how certain you are that you will be able to solve the next puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(appraisal2);
@@ -688,14 +695,14 @@
 
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt challenged", labels: scale, required: true}, {prompt: "I felt nervous", labels: scale, required: true}, {prompt: "I felt hopeful", labels: scale, required: true}, {prompt: "I felt confident", labels: scale, required: true}, {prompt: "I felt sad", labels: scale, required: true}],
+         questions: [{prompt: "I felt challenged", labels: scale, required: false}, {prompt: "I felt nervous", labels: scale, required: false}, {prompt: "I felt hopeful", labels: scale, required: false}, {prompt: "I felt confident", labels: scale, required: false}, {prompt: "I felt sad", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
 
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt afraid", labels: scale, required: true}, {prompt: "I felt interested", labels: scale, required: true}, {prompt: "I felt apathetic", labels: scale, required: true}, {prompt: "I felt bored", labels: scale, required: true}, {prompt: "I felt resigned", labels: scale, required: true}],
+         questions: [{prompt: "I felt afraid", labels: scale, required: false}, {prompt: "I felt interested", labels: scale, required: false}, {prompt: "I felt apathetic", labels: scale, required: false}, {prompt: "I felt bored", labels: scale, required: false}, {prompt: "I felt resigned", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
@@ -721,14 +728,14 @@
 
     var attribution2 = {
         type: 'survey-likert',
-        questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: true}, {prompt: "The cause is controllable by you or other people", labels: scale, required: true}, {prompt: "The cause is something that is permanent", labels: scale, required: true}, {prompt: "The cause is something that is outside of you", labels: scale, required: true}],
+        questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people", labels: scale, required: false}, {prompt: "The cause is something that is permanent", labels: scale, required: false}, {prompt: "The cause is something that is outside of you", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(attribution1);
 
     var attribution2_2 = {
         type: 'survey-likert',
-        questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: true}, {prompt: "The cause is something about you", labels: scale, required: true}, {prompt: "The cause is something that is changeable", labels: scale, required: true}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: true}],
+        questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: false}, {prompt: "The cause is something about you", labels: scale, required: false}, {prompt: "The cause is something that is changeable", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(attribution1_1);
@@ -745,7 +752,7 @@
 
       var appraisal3 = {
           type: 'survey-likert',
-          questions: [{prompt: "Please indicate how certain you are that you will be able to solve the puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: true}],
+          questions: [{prompt: "Please indicate how certain you are that you will be able to solve the puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: false}],
           show_clickable_nav: true,
       }
       timeline.push(appraisal2);
