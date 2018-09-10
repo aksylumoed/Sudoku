@@ -87,7 +87,7 @@
     }
     timeline.push(instructions);
 
-    var scale = ["Strongly Disagree", "Somewhat Disagree", "Somewhat Agree", "Strongly Agree"];
+    var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
     var gse1 = {
         type: 'survey-likert',
@@ -96,7 +96,7 @@
     }
     timeline.push(gse1);
 
-    var scale = ["Strongly Disagree", "Somewhat Disagree", "Somewhat Agree", "Strongly Agree"];
+    var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
     var gse2 = {
         type: 'survey-likert',
@@ -106,7 +106,7 @@
     timeline.push(gse2);
 
 
-    var scale = ["Strongly Disagree", "Somewhat Disagree", "Somewhat Agree", "Strongly Agree"];
+    var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
     var gse3 = {
         type: 'survey-likert',
@@ -115,7 +115,7 @@
     }
     timeline.push(gse3);
 
-    var scale = ["Strongly Disagree", "Somewhat Disagree", "Somewhat Agree", "Strongly Agree"];
+    var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
     var gse4 = {
         type: 'survey-likert',
@@ -189,7 +189,7 @@
         }
         timeline.push(instructions);
 
-        var scale = ["Strongly Disagree", "Somewhat Disagree", "Neither Agree, nor Disagree", "Somewhat Agree", "Strongly Agree"];
+        var scale = ["Strongly disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
 
         var current_status = {
             type: 'survey-likert',
@@ -205,7 +205,7 @@
         }
         timeline.push(instructions);
 
-        var scale = ["Strongly Disagree", "Somewhat Disagree", "Neither Agree, nor Disagree", "Somewhat Agree", "Strongly Agree"];
+        var scale = ["Strongly disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
 
         var child_status = {
             type: 'survey-likert',
@@ -365,7 +365,7 @@
      var instructions = {
        type: 'instructions',
        pages: [
-       'On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the puzzle (1 = did not feel this way at all, 5 = felt so to a moderate extent; 9 = felt so to a great extent)'
+       'On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the puzzle.'
        ],
        show_clickable_nav: true,
      }
@@ -375,7 +375,7 @@
 
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt challenged", labels: scale, required: false}, {prompt: "I felt nervous", labels: scale, required: false}, {prompt: "I felt hopeful", labels: scale, required: false}, {prompt: "I felt confident", labels: scale, required: false}, {prompt: "I felt sad", labels: scale, required: false}],
+         questions: [{prompt: "Challenged (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Nervous (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Hopeful (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Confident (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Sad (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
@@ -384,7 +384,7 @@
 
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt afraid", labels: scale, required: false}, {prompt: "I felt interested", labels: scale, required: false}, {prompt: "I felt apathetic", labels: scale, required: false}, {prompt: "I felt bored", labels: scale, required: false}, {prompt: "I felt resigned", labels: scale, required: false}],
+         questions: [{prompt: "Afraid (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Interested (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Apathetic (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Bored (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Resigned (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
@@ -400,7 +400,7 @@
        var instructions = {
          type: 'instructions',
          pages: [
-         'Now think about the cause you have just named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items (1 = completely disagree; 9 = completely agree)'
+         'Now think about the cause you have just named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items.'
          ],
          show_clickable_nav: true,
        }
@@ -410,14 +410,14 @@
 
        var attribution1 = {
            type: 'survey-likert',
-           questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people", labels: scale, required: false}, {prompt: "The cause is something that is permanent", labels: scale, required: false}, {prompt: "The cause is something that is outside of you", labels: scale, required: false}],
+           questions: [{prompt: "The cause is something that reflects an aspect of yourself (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is permanent (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is outside of you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
            show_clickable_nav: true,
        }
        timeline.push(attribution1);
 
        var attribution1_1 = {
            type: 'survey-likert',
-           questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: false}, {prompt: "The cause is something about you", labels: scale, required: false}, {prompt: "The cause is something that is changeable", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: false}],
+           questions: [{prompt: "The cause is something that is variable over time (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something about you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is changeable (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
            show_clickable_nav: true,
        }
        timeline.push(attribution1_1);
@@ -474,7 +474,7 @@
      var instructions = {
        type: 'instructions',
        pages: [
-       'On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving your last puzzle (1 = did not feel this way at all, 5 = felt so to a moderate extent; 9 = felt so to a great extent)'
+       'On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving your last puzzle.'
        ],
        show_clickable_nav: true,
      }
@@ -484,7 +484,7 @@
 
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt challenged", labels: scale, required: false}, {prompt: "I felt nervous", labels: scale, required: false}, {prompt: "I felt hopeful", labels: scale, required: false}, {prompt: "I felt confident", labels: scale, required: false}, {prompt: "I felt sad", labels: scale, required: false}],
+         questions: [{prompt: "Challenged (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Nervous (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Hopeful (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Confident (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Sad (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
@@ -493,7 +493,7 @@
 
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "I felt afraid", labels: scale, required: false}, {prompt: "I felt interested", labels: scale, required: false}, {prompt: "I felt apathetic", labels: scale, required: false}, {prompt: "I felt bored", labels: scale, required: false}, {prompt: "I felt resigned", labels: scale, required: false}],
+         questions: [{prompt: "Afraid (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Interested (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Apathetic (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Bored (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Resigned (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
@@ -509,7 +509,7 @@
        var instructions = {
          type: 'instructions',
          pages: [
-         'Now think about the cause you have named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items (1 = completely disagree; 9 = completely agree)'
+         'Now think about the cause you have named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items.'
          ],
          show_clickable_nav: true,
        }
@@ -519,14 +519,14 @@
 
        var attribution2 = {
            type: 'survey-likert',
-           questions: [{prompt: "The cause is something that reflects an aspect of yourself", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people", labels: scale, required: false}, {prompt: "The cause is something that is permanent", labels: scale, required: false}, {prompt: "The cause is something that is outside of you", labels: scale, required: false}],
+           questions: [{prompt: "The cause is something that reflects an aspect of yourself (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is permanent (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is outside of you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
            show_clickable_nav: true,
        }
        timeline.push(attribution1);
 
        var attribution2_2 = {
            type: 'survey-likert',
-           questions: [{prompt: "The cause is something that is variable over time", labels: scale, required: false}, {prompt: "The cause is something about you", labels: scale, required: false}, {prompt: "The cause is something that is changeable", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible", labels: scale, required: false}],
+           questions: [{prompt: "The cause is something that is variable over time (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something about you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is changeable (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
            show_clickable_nav: true,
        }
        timeline.push(attribution1_1);
