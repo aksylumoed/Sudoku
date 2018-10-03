@@ -32,6 +32,12 @@ jsPsych.plugins["sudoku_trial"] = (function() {
         default: '',
         description: 'So there are no repeats in randomization.'
       },
+      board_nr: {
+        type: jsPsych.plugins.parameterType.INT,
+        pretty_name: 'Board number',
+        default: -1,
+        description: 'Choose board from the set.'
+      },
       timer: {
         type: jsPsych.plugins.parameterType.BOOL,
         pretty_name: 'Timer',
@@ -521,8 +527,14 @@ jsPsych.plugins["sudoku_trial"] = (function() {
     var start = new Date().getTime();
     var elapsed;
 
+    var index;
+    // var index = Math.floor(Math.random() * boards.length);
 
-    var index = Math.floor(Math.random() * boards.length);
+    if (trial.board_nr == -1 ){
+      index = Math.floor(Math.random() * boards.length);
+    } else {
+      index = trial.board_nr;
+    }
 
     var success = false;
 

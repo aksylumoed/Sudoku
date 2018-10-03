@@ -475,8 +475,9 @@
      var s1 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
-      board_size: 'boards2x4',
-      board_set: 'a'
+      board_size: 'boards2x3',
+      board_set: 'a',
+      board_nr: 1
      }
 /*     var s2 = {
       type: 'sudoku_trial',
@@ -641,44 +642,50 @@
      timeline.push(instructions);
 
 
+     var s2 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'a',
+      board_nr: 3
+     }
+     var s3 = {
+      type: 'sudoku_trial',
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'b',
+      board_nr: 0
+     }
      var s4 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'a'
+      board_set: 'b',
+      board_nr: 2
      }
      var s5 = {
       type: 'sudoku_trial',
-      trial_duration: 120000, 
+      trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'b'
+      board_set: 'b',
+      board_nr: 4
      }
      var s6 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'c'
+      board_set: 'c',
+      board_nr: 1
      }
      var s7 = {
       type: 'sudoku_trial',
-      trial_duration: 120000, 
-      board_size: 'boards2x2',
-      board_set: 'a'
-     }
-     var s8 = {
-      type: 'sudoku_trial',
       trial_duration: 120000,  
-      board_size: 'boards2x2',
-      board_set: 'b'
-     }
-     var s9 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x2',
-      board_set: 'c'
+      board_size: 'boards2x3',
+      board_set: 'c',
+      board_nr: 3
      }
 
-     var s_array2 = [s4, s5, s6, s7, s8, s9];
+     var s_array2 = [s2, s3, s4, s5, s6, s7];
 
      var sudo_trials2 = jsPsych.randomization.shuffleNoRepeats(s_array2);
 

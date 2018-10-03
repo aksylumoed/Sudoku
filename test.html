@@ -35,14 +35,14 @@
     /* Sudoku pre-test WITHOUT TIMER */
 
    
-    var s0 = {
+/*    var s0 = {
       type: 'sudoku_trial',
       trial_duration: 600000,
       board_size: 'boards2x3',
       board_set: 'd',
       timer: true,
     }
-    timeline.push(s0);
+    timeline.push(s0);*/
 
 
 
@@ -50,60 +50,55 @@
 
      var s1 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x4',
-      board_set: 'a'
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'a',
+      board_nr: 1
      }
      var s2 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x4',
-      board_set: 'b'
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'a',
+      board_nr: 3
      }
      var s3 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x4',
-      board_set: 'c'
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'b',
+      board_nr: 0
      }
      var s4 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'a'
+      board_set: 'b',
+      board_nr: 2
      }
      var s5 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'b'
+      board_set: 'b',
+      board_nr: 4
      }
      var s6 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
+      trial_duration: 120000,  
       board_size: 'boards2x3',
-      board_set: 'c'
+      board_set: 'c',
+      board_nr: 1
      }
      var s7 = {
       type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x2',
-      board_set: 'a'
-     }
-     var s8 = {
-      type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x2',
-      board_set: 'b'
-     }
-     var s9 = {
-      type: 'sudoku_trial',
-      trial_duration: 10000,  /*currently only for one minute */
-      board_size: 'boards2x2',
-      board_set: 'c'
+      trial_duration: 120000,  
+      board_size: 'boards2x3',
+      board_set: 'c',
+      board_nr: 3
      }
 
-     var s_array = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
+     var s_array = [s1, s2, s3, s4, s5, s6, s7];
 
      var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
 
