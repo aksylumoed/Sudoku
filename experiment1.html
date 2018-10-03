@@ -57,10 +57,10 @@
 
  var welcome = {
       type: 'instructions',
-      pages: ['Hello! <br> You are invited to participate in a research study that aims to develop a new psychological instrument. This instrument will be used in the future studies investigating the role of individual psychological characteristics in problem-solving skills. We invite to participate people with different backgrounds, who are 18 years of age and older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
-      '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and solve several cognitive tasks within a time limit. You do not need to have any prior experience with these tasks, or any special knowledge. Before solving them, you will read detailed instructions explaining how to solve these tasks. We estimate that the participation will take you 25 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help develop a new instrument that will allow us to assess individual abilities to solve tasks within a given time limit. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
+      pages: ['Hello! <br> You are invited to participate in a research study that aims to develop a new psychological instrument. This instrument will be used in the future studies investigating the role of individual psychological characteristics in problem-solving skills. People that we invite to participate come from different backgrounds and are 18 years of age or older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
+      '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks within a time limit. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 25 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help develop a new instrument that will allow us to assess individual abilities to solve tasks within a given time limit. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
       '<b>CONFIDENTIALITY</b> <br> All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. <br><br> <b>YOUR RIGHTS AS A RESEARCH PARTICIPANT</b> <br> Participation in this study is voluntary. You have the right not to participate at all or to leave the study at any time. Deciding not to participate or choosing to leave the study will not result in any penalty or loss of benefits to which you are entitled.',
-      '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or concerns about the study and/or your rights as a research participant, you may contact: Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de, or BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
+      '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or would like to receive additional information about the study, you may contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de. If you have any concerns about the study or your rights as a research participant, you may contact BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
       ],
       show_clickable_nav: true,
     }
@@ -68,7 +68,7 @@
 
     var multi_choice_block = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "By participating in this research study, you agree that:<br><br> (1) You have read and understood the information about the study, including the information about risks, benefits, confidentiality policy and your rights as a research participant; <br> (2) Your questions about your participation have been answered satisfactorily and you take part in this research study voluntarily; <br> (3) Anonymized data only may be shared in public research repositories; <br> (4) You are 18 years of age and or older.",
+        questions: [{prompt: "By participating in this research study, you agree that:<br><br> (1) You have read and understood the information about the study, including the information about risks, benefits, confidentiality policy and your rights as a research participant; <br> (2) Your questions about your participation have been answered satisfactorily and you take part in this research study voluntarily; <br> (3) No personal data from which you can be identified will be made public; <br> (4) You are 18 years of age or older.",
         options: ["I agree to participate in this research study", "I disagree to participate in this research study"], 
         required: true}],
         show_clickable_nav: true,
@@ -85,11 +85,11 @@
       type: 'instructions',
       pages: [
 
-     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to evaluate your agreement with a few statements that reflect general representations that people hold about themselves and answer a few questions about your background. Second, you will solve several letter Sudoku puzzles and answer the questions related to your experiences with these puzzles.",
+     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to answer a few questions regarding the general representations that people hold about themselves and about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them.",
 
       "We value your time and effort and have tried to come up with the version of the study that is as short and as engaging as possible. <br> We would very much appreciate if you stayed focused and not get distracted while you participate. <br><br> We hope you will enjoy your participation!",
 
-      "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much you agree with it. <br><br> We encourage you to not try to come up with the most accurate answer possible. These statements reflect general perceptions, and the answer that comes to mind first is generally the best.",
+      "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much you agree with it. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best.",
       ],
       show_clickable_nav: true,
     }
@@ -101,7 +101,7 @@
 
     var gse1 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can always manage to solve difficult problems if I try hard enough.", labels: scale, required: false}, {prompt: "If someone opposes me, I can find the means and ways to get what I want.", labels: scale, required: false}, {prompt: "It is easy for me to stick to my aims and accomplish my goals.", labels: scale, required: false}, {prompt: "I am confident that I can deal efficiently with unexpected events.", labels: scale, required: false}, {prompt: "Thanks to my resourcefullness, I know how to handle unforseen situations.", labels: scale, required: false}],
+        questions: [{prompt: "I can always manage to solve difficult problems if I try hard enough.", labels: scale, required: false}, {prompt: "If someone opposes me, I can find the means and ways to get what I want.", labels: scale, required: false}, {prompt: "It is easy for me to stick to my aims and accomplish my goals.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse1);
@@ -109,7 +109,7 @@
 
     var gse2 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can solve most problems if I invest the necessary effort.", labels: scale, required: false}, {prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities.", labels: scale, required: false}, {prompt: "When I am confronted with a problem, I can usually find several solutions.", labels: scale, required: false}, {prompt: "If I am in trouble, I can usually think of a solution.", labels: scale, required: false}],
+        questions: [{prompt: "I am confident that I can deal efficiently with unexpected events.", labels: scale, required: false}, {prompt: "Thanks to my resourcefullness, I know how to handle unforseen situations.", labels: scale, required: false}, {prompt: "I can solve most problems if I invest the necessary effort.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse2);
@@ -118,17 +118,66 @@
 
     var gse3 = {
         type: 'survey-likert',
-        questions: [{prompt: "I can usually handle whatever comes my way.", labels: scale, required: false}, {prompt: "There is really no way I can solve some of the problems I have.", labels: scale, required: false}, {prompt: "Sometimes I feel that I am being pushed around in life.", labels: scale, required: false}, {prompt: "I have little control over things that happen to me", labels: scale, required: false}, {prompt: "I can do just about anything I really set my mind to", labels: scale, required: false}],
+        questions: [{prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities.", labels: scale, required: false}, {prompt: "When I am confronted with a problem, I can usually find several solutions.", labels: scale, required: false}, {prompt: "If I am in trouble, I can usually think of a solution.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse3);
 
     var gse4 = {
         type: 'survey-likert',
-        questions: [{prompt: "I often feel helpless in dealing with the problems of life.", labels: scale, required: false}, {prompt: "What happens to me in the future mostly depends on me.", labels: scale, required: false}, {prompt: "If you are reading this attentively, answer that you somewhat agree with this point.", labels: scale, required: false}, {prompt: "There is little I can do to change many of the important things in my life.", labels: scale, required: false}],
+        questions: [{prompt: "I can usually handle whatever comes my way.", labels: scale, required: false}, {prompt: "There is really no way I can solve some of the problems I have.", labels: scale, required: false}, {prompt: "Sometimes I feel that I am being pushed around in life.", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(gse4);
+
+
+    var gse5 = {
+        type: 'survey-likert',
+        questions: [{prompt: "I have little control over things that happen to me", labels: scale, required: false}, {prompt: "I can do just about anything I really set my mind to", labels: scale, required: false}, {prompt: "I often feel helpless in dealing with the problems of life.", labels: scale, required: false}],
+        show_clickable_nav: true,
+    }
+    timeline.push(gse5);
+
+    var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
+
+    var gse6 = {
+        type: 'survey-likert',
+        questions: [{prompt: "What happens to me in the future mostly depends on me.", labels: scale, required: false}, {prompt: "If you are reading this attentively, answer that you somewhat agree with this point.", labels: scale, required: false}, {prompt: "There is little I can do to change many of the important things in my life.", labels: scale, required: false}],
+        show_clickable_nav: true,
+    }
+    timeline.push(gse6);
+
+    var instructions = {
+      type: 'instructions',
+      pages: ['Thank you for answering the questions! <br><br> The people who participate in this study are from diverse backgrounds, and because of that, we would like to know more about you and your background. This information will only be analyzed at an aggregate level and used to draw general conclusions about the socio-demographic composition of the sample.'],
+      show_clickable_nav:true,
+    }
+    timeline.push(instructions);
+
+    var instructions = {
+      type: 'instructions',
+      pages: ['The statements that you will see on the next screen relate to the ways different people think about their economic situation. Please read these statements carefully and evaluate to what extent you would agree or disagree with each of them.'],
+      show_clickable_nav:true,
+    }
+    timeline.push(instructions);
+
+    var scale = ["Strongly disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
+
+    var current_status = {
+        type: 'survey-likert',
+        questions: [{prompt: "I have enough money to buy things I want.", labels: scale, required: false}, {prompt: "I don't need to worry too much about paying my bills.", labels: scale, required: false}, {prompt: "I don't think I'll have to worry about money too much in the future.", labels: scale, required: false}],
+        show_clickable_nav: true,
+    }
+    timeline.push(current_status);
+
+    var scale = ["Strongly disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
+
+    var child_status = {
+        type: 'survey-likert',
+        questions: [{prompt: "My family usually had enough money for things when I was growing up.", labels: scale, required: false}, {prompt: "I grew up in a relatively wealthy neighbourhood.", labels: scale, required: false}, {prompt: "I felt relatively wealthy compared to the other kids in my school.", labels: scale, required: false}],
+        show_clickable_nav: true,
+    }
+    timeline.push(child_status);
 
 
     var page_2_options = ["No, I have never solved Sudoku puzzles before", "Yes, I solved Sudoku once or twice", "Yes, I solve Sudoku occasionally", "Yes, I solve Sudoku regularly"];
@@ -183,7 +232,7 @@
 
     var major1 = {
       type: 'survey-text',
-      questions: [{prompt: 'What did you major in?',
+      questions: [{prompt: 'What was your main field of study?',
                   rows: 1, columns: 50}],
                show_clickable_nav: true,
     }
@@ -230,7 +279,7 @@
 
     var major2 = {
       type: 'survey-text',
-      questions: [{prompt: 'What is your major?',
+      questions: [{prompt: 'What is your main field of study?',
                   rows: 1, columns: 50}],
                show_clickable_nav: true,
     }
@@ -250,45 +299,16 @@
      }
      timeline.push(if_major2);
 
-    var instructions = {
-      type: 'instructions',
-      pages: ['Please think about your current economic situation and read the statements on the next screen. To what extent would you agree or disagree with each of these statements?'],
-      show_clickable_nav:true,
-    }
-    timeline.push(instructions);
-
-    var scale = ["Strongly disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
-
-    var current_status = {
-        type: 'survey-likert',
-        questions: [{prompt: "I have enough money to buy things I want.", labels: scale, required: false}, {prompt: "I don't need to worry too much about paying my bills.", labels: scale, required: false}, {prompt: "I don't think I'll have to worry about money too much in the future.", labels: scale, required: false}],
-        show_clickable_nav: true,
-    }
-    timeline.push(current_status);
-
-
-    var instructions = {
-      type: 'instructions',
-      pages: ['Please think about your economic situation when you were a child and read the statements on the next screen. To what extent would you agree or disagree with each of these statements?'],
-      show_clickable_nav:true,
-    }
-    timeline.push(instructions);
-
-    var child_status = {
-        type: 'survey-likert',
-        questions: [{prompt: "My family usually had enough money for things when I was growing up.", labels: scale, required: false}, {prompt: "I grew up in a relatively wealthy neighbourhood.", labels: scale, required: false}, {prompt: "I felt relatively wealthy compared to the other kids in my school.", labels: scale, required: false}],
-        show_clickable_nav: true,
-    }
-    timeline.push(child_status);
+    
 
     var age_options = ["18 - 25 years of age", "26 - 35 years of age", "36 - 45 years of age", "46 - 60 years of age", "61 years of age and older"];
 
     var age = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "In which age group do you belong?", options: age_options, required: false}],
-        show_clickable_nav: true,
-    }
-    timeline.push(age);
+            type: 'survey-multi-choice',
+            questions: [{prompt: "How old are you?", options: page_2_options, required: false}],
+            show_clickable_nav: true,
+        }
+        timeline.push(age);
 
     var sex = {
       type: 'survey-text',
@@ -302,7 +322,7 @@
 
     var ethnicity = {
           type: 'survey-multi-choice',
-          questions: [{prompt: "Which category of the following best describes your ethnicity?", options: eth_options, required: false}],
+          questions: [{prompt: "Which of the following groups do you identify with most? <br> (These categories might not perfectly represent all ethnic groups, however, we use this standard classification in order to be able to compare the results of this study with previous studies.)", options: page_2_options, required: false}],
           show_clickable_nav: true,
     }
     timeline.push(ethnicity);
@@ -311,7 +331,7 @@
       type: 'instructions',
       pages: [
 
-      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve seven letter Sudoku puzzles. You will have 120 seconds to try to solve each puzzle. At certain points, we will also ask you to answer a few questions related to the puzzles solution. <br><br> Have never solved a Sudoku puzzle before? That is not a problem; you do not need to have any prior experience or special knowledge. The next few screens will explain what Sudoku are and how to solve them.",
+      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve eight letter Sudoku puzzles. You will have 120 seconds to try to complete each puzzle. At certain points, we will also ask you a few questions related to your experiences with the puzzles. <br><br> Have never solved a Sudoku puzzle before? That is not a problem; you do not need to have any prior experience or special knowledge. The next few screens will explain what Sudoku are and how to solve them.",
 
       "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The goal of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters, respecting the three constraints mentioned earlier." ,
 
@@ -363,7 +383,7 @@
     }
     timeline.push(instructions);
 
-    var scale = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var scale = ["1 (Certain that I WILL NOT solve it)", "2", "3", "4", "5 (Uncertain)", "6", "7", "8", "9 (Certain I WILL solve it)"];
 
     var appraisal1 = {
         type: 'survey-likert',
@@ -376,7 +396,8 @@
      var appraisal_instructions = {
       type: 'instructions',
       pages: [
-      'You will now see a pull of Sudoku puzzles, similar to the ones that you will solve. Please indicate for each presented puzzle, whether you feel you can solve it or not. <br><br> The puzzles will be presented each on a new screen. You will need to answer by pressing one of the keyboard keys: <br><br> D if you feel that you can solve the puzzle correctly, and K if you do not think you can solve the puzzle correctly. <br><br> Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible.'
+      'You will now see several Sudoku puzzles, similar to the ones that you will solve. We would like to ask you to indicate for each puzzle, whether you feel that you can solve it or not. <br><br> Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format: <br><br> I am confident that I CAN solve the puzzle (Press D), <br> I am confident that I CANNOT solve the puzzle (Press K).',
+      "Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible. Please do not try to solve the puzzles; you will have a chance to do it very soon."
       ],
       show_clickable_nav: true,
     }
@@ -437,10 +458,10 @@
      var pre_test = {
       type: 'instructions',
       pages: [
-      "Thank you for your answers! You will now solve the first Sudoku. You will have 120 seconds to attempt to solve it. <br><br> Please take a minute to learn some technical tips.",
+      "Thank you for your answers! Please take a moment to learn some technical tips that will help you solve the puzzles.",
 
-      "Here are a few technical tips: <br> <br> To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one. <br> As soon as you complete the puzzle, you will be presented with the further instructions.",
-      "We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. The results obtained in this study will be used to design a new psychological instrument. That is why it is crucial that they are as accurate as possible. <br> <br> We very much value your time and effort and appreciate your cooperation. <br> <br> Please click NEXT to start solving the puzzles."
+      "Here are a few technical tips: <br> <br> To navigate through puzzle cells, you can use both the computer mouse and arrow keys. <br> If you make an error, the respective cell will be highlighted in red. To correct the error, please select the letter you would like to change and insert the correct one. <br> As soon as you complete the puzzle, you will be presented with the further instructions.",
+      "We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. The results obtained in this study will be used to design a new psychological instrument. That is why it is crucial that they are as accurate as possible. <br> <br> We very much value your time and effort and appreciate your cooperation. <br> <br> Please click NEXT to start solving your first Sudoku."
       ],
       show_clickable_nav: true,
     }
@@ -508,50 +529,55 @@
      }
      timeline.push(instructions);
 
-     var scale = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+     var scale = ["1 (Did not feel this way at all during the task)", "2", "3", "4", "5 (Felt so to a moderate extent during the task)", "6", "7", "8", "9 (Felt so to a great extent during the task)"];
 
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "Challenged (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Nervous (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Hopeful (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Confident (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Sad (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
+         questions: [{prompt: "Challenged                                        ", labels: scale, required: false}, {prompt: "Nervous                                        ", labels: scale, required: false}, {prompt: "Hopeful                                        ", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
 
+     var scale = ["1 (Did not feel this way at all during the task)", "2", "3", "4", "5 (Felt so to a moderate extent during the task)", "6", "7", "8", "9 (Felt so to a great extent during the task)"];
+
      var emotion1 = {
          type: 'survey-likert',
-         questions: [{prompt: "Afraid (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Interested (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Apathetic (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Bored (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Resigned (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
+         questions: [{prompt: "Confident                                        ", labels: scale, required: false}, {prompt: "Sad                                        ", labels: scale, required: false}, {prompt: "Afraid                                        ", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion1);
 
-     var reason1 = {
-       type: 'survey-text',
-       questions: [{prompt: 'Thinking about your result, what do you think was the primary cause of this result? Please type it in the box below:',
-                   rows: 1, columns: 50}],
-                show_clickable_nav: true,
-     }
-     timeline.push(reason1);
+      var scale = ["1 (Did not feel this way at all during the task)", "2", "3", "4", "5 (Felt so to a moderate extent during the task)", "6", "7", "8", "9 (Felt so to a great extent during the task)"];
 
-     var instructions = {
-       type: 'instructions',
-       pages: [
-       'Now think about the cause you have just named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items.'
-       ],
-       show_clickable_nav: true,
+     var emotion1 = {
+         type: 'survey-likert',
+         questions: [{prompt: "Interested                                        ", labels: scale, required: false}, {prompt: "Apathetic                                        ", labels: scale, required: false}, {prompt: "Bored                                        ", labels: scale, required: false}, {prompt: "Resigned                                        ", labels: scale, required: false}],
+         show_clickable_nav: true,
      }
-     timeline.push(instructions);
+     timeline.push(emotion1);
+
+       var instructions = {
+         type: 'instructions',
+         pages: [
+         'Now we would like to ask you to reflect on your outcome. <br><br> The next screen will present the list of reasons that people generally use to explain their successes and failures at different tasks. For each of these reasons, please evaluate the extent with which it contributed to your outcome.'
+         ],
+         show_clickable_nav: true,
+       }
+       timeline.push(instructions);
+
+       var scale = ["1 (Did not contribute at all)", "2", "3", "4", "5 (Contributed to a moderate extent)", "6", "7", "8", "9 (Contributed to a great extent)"];
 
 
      var attribution1 = {
-         type: 'survey-likert',
-         questions: [{prompt: "The cause is something that reflects an aspect of yourself (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is permanent (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is outside of you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
-         show_clickable_nav: true,
+        type: 'survey-likert',
+        questions: [{prompt: "Time available to complete the task        ", labels: scale, required: false}, {prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: false}, {prompt: "Luck                                              ", labels: scale, required: false}],
+        show_clickable_nav: true,
      }
      timeline.push(attribution1);
 
      var attribution1_1 = {
          type: 'survey-likert',
-         questions: [{prompt: "The cause is something that is variable over time (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something about you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is changeable (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something for which no one is responsible (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
+         questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: false}, {prompt: "The experience that I had with similar tasks in the past", labels: scale, required: false}, {prompt: "My capability to solve similar tasks        ", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(attribution1_1);
@@ -565,6 +591,8 @@
     }
     timeline.push(instructions);
 
+    var scale = ["1 (Certain that I WILL NOT solve it)", "2", "3", "4", "5 (Uncertain)", "6", "7", "8", "9 (Certain I WILL solve it)"];
+
     var appraisal2 = {
         type: 'survey-likert',
         questions: [{prompt: "Please indicate how certain you are that you will be able to solve the next puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: false}],
@@ -575,7 +603,8 @@
     var instructions = {
      type: 'instructions',
      pages: [
-     'You will now see a pull of Sudoku puzzles, similar to the ones that you will solve. Please indicate for each presented puzzle, whether you feel you can solve it or not. <br><br> The puzzles will be presented each on a new screen. You will need to answer by pressing one of the keyboard keys: <br><br> D if you feel that you can solve the puzzle correctly, and K if you do not think you can solve the puzzle correctly. <br><br> Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible.'
+     'You will now see several Sudoku puzzles, similar to the ones that you will solve. We would like to ask you to indicate for each puzzle, whether you feel that you can solve it or not. <br><br> Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format: <br><br> I am confident that I CAN solve the puzzle (Press D), <br> I am confident that I CANNOT solve the puzzle (Press K).',
+     "Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible. It is very important that you do not try to solve the puzzles."
      ],
      show_clickable_nav: true,
    }
@@ -695,49 +724,51 @@
      var instructions = {
        type: 'instructions',
        pages: [
-       'You have completed six more trials. Before you solve your final puzzle, we would like to once again ask a couple of questions about your experience.',
-       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving your last puzzle."
+       'You have completed six more trials. Before you solve your final puzzle, we would like to once again ask a couple of questions about your experience with the last puzzle that you have just solved.',
+       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the last puzzle."
        ],
        show_clickable_nav: true,
      }
      timeline.push(instructions);
 
+     var scale = ["1 (Did not feel this way at all during the task)", "2", "3", "4", "5 (Felt so to a moderate extent during the task)", "6", "7", "8", "9 (Felt so to a great extent during the task)"]
+
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "Challenged (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Nervous (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Hopeful (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Confident (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Sad (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
+         questions: [{prompt: "Challenged                                        ", labels: scale, required: false}, {prompt: "Nervous                                        ", labels: scale, required: false}, {prompt: "Hopeful                                        ", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
 
      var emotion2 = {
          type: 'survey-likert',
-         questions: [{prompt: "Afraid (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Interested (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Apathetic (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Bored (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}, {prompt: "Resigned (1 = Did not feel this way at all, 5 = Felt so to a moderate extent; 9 = Felt so to a great extent)", labels: scale, required: false}],
+         questions: [{prompt: "Confident                                        ", labels: scale, required: false}, {prompt: "Sad                                        ", labels: scale, required: false}, {prompt: "Afraid                                        ", labels: scale, required: false}],
          show_clickable_nav: true,
      }
      timeline.push(emotion2);
 
      var reason2 = {
-       type: 'survey-text',
-       questions: [{prompt: 'Thinking about your result, what do you think was the primary cause of this result? Please type it in the box below:',
-                   rows: 1, columns: 50}],
-                show_clickable_nav: true,
+       type: 'survey-likert',
+       questions: [{prompt: "Interested                                        ", labels: scale, required: false}, {prompt: "Apathetic                                        ", labels: scale, required: false}, {prompt: "Bored                                        ", labels: scale, required: false}, {prompt: "Resigned                                        ", labels: scale, required: false}],
+       show_clickable_nav: true,
      }
      timeline.push(reason2);
 
      var instructions = {
        type: 'instructions',
        pages: [
-       'Now think about the cause you have named. The next screen will present the items that concern your impressions or opinions of this cause of your outcome. Please assess how much you agree with each of these items.'
+       'Now we would like to ask you to reflect on the outcome of the last puzzle. <br><br> The next screen will present the list of reasons that people generally use to explain their successes and failures at different tasks. For each of these reasons, please evaluate the extent with which it contributed to your outcome.'
        ],
        show_clickable_nav: true,
      }
     timeline.push(instructions); 
 
+    var scale = ["1 (Did not contribute at all)", "2", "3", "4", "5 (Contributed to a moderate extent)", "6", "7", "8", "9 (Contributed to a great extent)"];
 
 
     var attribution2 = {
         type: 'survey-likert',
-        questions: [{prompt: "The cause is something that reflects an aspect of yourself (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is controllable by you or other people (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is permanent (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}, {prompt: "The cause is something that is outside of you (1 = Strongly disagree, 5 = Neither disagree, nor agree, 9 = Strongly agree)", labels: scale, required: false}],
+        questions: [{prompt: "Time available to complete the task        ", labels: scale, required: false}, {prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: false}, {prompt: "Luck                                              ", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(attribution1);
@@ -758,10 +789,11 @@
      }
      timeline.push(instructions);
 
+     var scale = ["1 (Certain that I WILL NOT solve it)", "2", "3", "4", "5 (Uncertain)", "6", "7", "8", "9 (Certain I WILL solve it)"];
 
       var appraisal3 = {
           type: 'survey-likert',
-          questions: [{prompt: "Please indicate how certain you are that you will be able to solve the puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: false}],
+          questions: [{prompt: "Please indicate how certain you are that you will be able to solve the next puzzle within 120 seconds timeframe (1 = I am completely certain I WILL NOT be able to solve the puzzle correctly; 5 = I am completely uncertain about the outcome; 9 = I am competely certain I WILL be able to solve the puzzle correctly.)", labels: scale, required: false}],
           show_clickable_nav: true,
       }
       timeline.push(appraisal2);
@@ -769,7 +801,8 @@
       var instructions = {
        type: 'instructions',
        pages: [
-       'You will now see a pull of Sudoku puzzles, similar to the ones that you will solve. Please indicate for each presented puzzle, whether you feel you can solve it or not. <br><br> The puzzles will be presented each on a new screen. You will need to answer by pressing one of the keyboard keys: <br><br> D if you feel that you can solve the puzzle correctly, and K if you do not think you can solve the puzzle correctly. <br><br> Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible.'
+       'You will now see several Sudoku puzzles, similar to the one that you will solve. We would like to ask you to indicate for each puzzle, whether you feel that you can solve it or not. <br><br> Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format: <br><br> I am confident that I CAN solve the puzzle (Press D), <br> I am confident that I CANNOT solve the puzzle (Press K).',
+       "Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible. It is very important that you do not try to solve the puzzles."
        ],
        show_clickable_nav: true,
      }
@@ -834,16 +867,17 @@
      }
      timeline.push(instructions);
 
-     var debrief = {
-      type: 'instructions',
-      pages: [
-      'Dear Participant, <br> You have just participated in a study that aims to develop a new psychological instrument. This explanation was part of a cover story that we told you. We were not able to provide you with the information related to the actual objective of the study in advance, because this may have seriously affected the way you responded. The real objective of this study was to test how people with different levels of confidence react to the situations of success and failure. We hypothesized that people with lower confidence would be more affected by failure and less affected by success than people with higher confidence. <br><br> To test this idea, we asked people with high and low general confidence to solve Sudoku puzzles, either allowing sufficient time for puzzles solution, or not. Because we provided some with abundant time and others - with very little time, your performance in this study is not an indicator of your actual ability to solve Sudoku puzzles.',
-      'All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes.',
-      'Please contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de or BIGSSS Ethics Committee at ethics@bigsss-bremen.de if you would like to receive additional information about the study or ask any questions.'
-      ],
-      show_clickable_nav: true,
-    }
-    timeline.push(debrief);
+      var debrief = {
+       type: 'instructions',
+       pages: [
+       'Dear Participant, <br> You have just participated in a study that aims to develop a new psychological instrument. However, this study also has other objective. We did not reveal to you the information about this objective in advance, because this may have affected the way you responded. <br><br> In addition to the development of a new instrument, we aim to test how people with different socioeconomic backgrounds appraise their ability to successfully perform at a novel task and how they react to the situations of success and failure. Because early-life economic disadvantage is associated with the lack of mastery experiences needed to build up the sense of confidence, we suggested that people who were disadvantaged in childhood would estimate their chances to succeed as lower, experience more negative emotions while solving the puzzles, and attribute their success to external and unstable factors (e.g., luck, the amount of time available to solve the puzzle).',
+       'To test this idea, we asked people with high and low economic status in childhood to fill out the psychological scales that measure confidence, appraise their ability to successfully perform at Sudoku puzzles, and solve several puzzles, either allowing sufficient time for puzzles solution or not. Please note that the amount of time available for the solution of some puzzles was too little to allow their successful solution.',
+       'All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes.',
+       'Please contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de, if you would like to receive additional information or ask any questions about the study, or BIGSSS Ethics Committee at ethics@bigsss-bremen.de in case you have any concerns regarding your participation.'
+       ],
+       show_clickable_nav: true,
+     }
+     timeline.push(debrief);
 
 
     var email = {
