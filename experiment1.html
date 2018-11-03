@@ -55,7 +55,7 @@
     };
     timeline.push(password);*/
 
- var welcome = {
+    var welcome = {
       type: 'instructions',
       pages: ['Hello! <br> You are invited to participate in a research study that aims to develop a new psychological instrument. This instrument will be used in the future studies investigating the role of individual psychological characteristics in problem-solving skills. People that we invite to participate come from different backgrounds and are 18 years of age or older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
       '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks within a time limit. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 25 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help develop a new instrument that will allow us to assess individual abilities to solve tasks within a given time limit. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
@@ -74,6 +74,7 @@
         show_clickable_nav: true,
         on_finish: function(data) {
           if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
+            save_data(jsPsych.data.get().values());
             jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');
           }
         }
@@ -94,14 +95,6 @@
       show_clickable_nav: true,
     }
     timeline.push(instructions);
-    
-    var save = {
-      type: 'call-function',
-      func: function(){
-        save_data(jsPsych.data.get().last(3).ignore('view_history').values());
-      }
-    }
-    timeline.push(save);
     
     var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
@@ -144,14 +137,6 @@
     }
     timeline.push(gse5);
 
-    var save = {
-      type: 'call-function',
-      func: function(){
-        save_data(jsPsych.data.get().last(5).values());
-      }
-    }
-    timeline.push(save);
-
     var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
     var gse6 = {
@@ -161,16 +146,22 @@
     }
     timeline.push(gse6);
 
-    var instructions = {
-      type: 'instructions',
-      pages: ['Thank you for answering the questions! <br><br> The people who participate in this study are from diverse backgrounds, and because of that, we would like to know more about you and your background. This information will only be analyzed at an aggregate level and used to draw general conclusions about the socio-demographic composition of the sample.'],
-      show_clickable_nav:true,
+        /****
+      **  FIRST SAVE
+        ****/
+
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.get().last(10).values());
+      }
     }
-    timeline.push(instructions);
+    timeline.push(save);
 
     var instructions = {
       type: 'instructions',
-      pages: ['The statements that you will see on the next screen relate to the ways different people think about their economic situation. Please read these statements carefully and evaluate to what extent you would agree or disagree with each of them.'],
+      pages: ['Thank you for answering the questions! <br><br> The people who participate in this study are from diverse backgrounds, and because of that, we would like to know more about you and your background. This information will only be analyzed at an aggregate level and used to draw general conclusions about the socio-demographic composition of the sample.',
+        'The statements that you will see on the next screen relate to the ways different people think about their economic situation. Please read these statements carefully and evaluate to what extent you would agree or disagree with each of them.'],
       show_clickable_nav:true,
     }
     timeline.push(instructions);
@@ -299,7 +290,7 @@
     }
     // timeline.push(major2);
 
-      var if_major2 = {
+    var if_major2 = {
       timeline: [major2],
       conditional_function: function(data){
         var data = jsPsych.data.get().last(1).values()[0];
@@ -345,7 +336,7 @@
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.getLastTimelineData().values());
+        save_data(jsPsych.data.get().last(13).values());
       }
     }
     timeline.push(save);
