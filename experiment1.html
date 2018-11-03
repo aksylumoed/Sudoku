@@ -98,7 +98,7 @@
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.get().last(3).values());
+        save_data(jsPsych.data.get().last(3).ignore('view_history').values());
       }
     }
     timeline.push(save);
