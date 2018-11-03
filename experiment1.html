@@ -327,6 +327,14 @@
     }
     timeline.push(ethnicity);
 
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.getLastTimelineData().values());
+      }
+    }
+    timeline.push(save);
+
     var instructions = {
       type: 'instructions',
       pages: [
@@ -898,6 +906,9 @@
     var save = {
       type: 'call-function',
       func: function(){
+        jsPsych.data.addProperties({
+          completed: true
+        });
         save_data(jsPsych.data.getLastTimelineData().values());
       }
     }
