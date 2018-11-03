@@ -36,9 +36,11 @@
 
     var timeline = [];
 
+    var subject_id = jsPsych.randomization.randomID(15);
 
-
-
+    jsPsych.data.addProperties({
+      subject: subject_id
+    });
 
 
 /*    function checklength(e1) {
@@ -153,7 +155,7 @@
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.get().last(10).values());
+        save_data(jsPsych.data.get().last(9).values());
       }
     }
     timeline.push(save);
