@@ -350,6 +350,13 @@
       show_clickable_nav: true,
     }
 
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.getLastTimelineData().values());
+      }
+    }
+    timeline.push(save);
 
 
     var ready = {
@@ -412,7 +419,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app1.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_1);
@@ -421,7 +428,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app2.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_2);
@@ -430,7 +437,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app3.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_3);
@@ -439,7 +446,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app4.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_4);
@@ -448,7 +455,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app5.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_5);
@@ -495,20 +502,20 @@
 
      var s1 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'a',
       board_nr: 1
      }
 /*     var s2 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x4',
       board_set: 'b'
      }
      var s3 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x4',
       board_set: 'c'
      }*/
@@ -618,7 +625,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app6.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_6);
@@ -627,7 +634,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app7.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_7);
@@ -636,7 +643,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app8.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_8);
@@ -645,7 +652,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app9.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_9);
@@ -654,7 +661,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app10.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_10);
@@ -673,42 +680,42 @@
 
      var s2 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'a',
       board_nr: 3
      }
      var s3 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'b',
       board_nr: 0
      }
      var s4 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'b',
       board_nr: 2
      }
      var s5 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'b',
       board_nr: 4
      }
      var s6 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'c',
       board_nr: 1
      }
      var s7 = {
       type: 'sudoku_trial',
-      trial_duration: 120000,  
+      trial_duration: 1000,  
       board_size: 'boards2x3',
       board_set: 'c',
       board_nr: 3
@@ -817,7 +824,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app11.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_11);
@@ -826,7 +833,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app12.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_12);
@@ -835,7 +842,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app13.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_13);
@@ -844,7 +851,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app14.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_14);
@@ -853,7 +860,7 @@
       type: 'image-keyboard-response',
       stimulus: 'img/app15.png',
       choices: ['d','k'],
-      trial_duration: 120000,
+      trial_duration: 1000,
       prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
     }
     timeline.push(appr_15);
@@ -911,7 +918,9 @@
       stimulus: 'Press any key to quit.'
     });
 
-   
+            /**************************************
+            *            END OF TRIAL
+            ***************************************/
 
     function save_data(data){
        var xhr = new XMLHttpRequest();

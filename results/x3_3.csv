@@ -1,0 +1,218 @@
+view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,stimulus,key_press,success_time,board_size,board_set,board_no,success
+"[{"page_index":0,"viewing_time":628280},{"page_index":1,"viewing_time":21068198},{"page_index":2,"viewing_time":6279},{"page_index":3,"viewing_time":1600}]",21704357,instructions,0,21704357,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8668,survey-multi-choice,1,21713031,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9361},{"page_index":1,"viewing_time":2463},{"page_index":2,"viewing_time":831}]",12655,instructions,2,21725686,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15154,survey-likert,3,21740843,0.0-3.0,"{"Q0":2,"Q1":1,"Q2":2}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,34833,survey-likert,4,21775676,0.0-4.0,"{"Q0":2,"Q1":2,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12340,survey-likert,5,21788018,0.0-5.0,"{"Q0":2,"Q1":2,"Q2":2}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14815,survey-likert,6,21802833,0.0-6.0,"{"Q0":2,"Q1":0,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12654,survey-likert,7,21815487,0.0-7.0,"{"Q0":2,"Q1":2,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,31275,survey-likert,8,21846763,0.0-8.0,"{"Q0":1,"Q1":2,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2500}]",2500,instructions,9,21849263,0.0-9.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3068}]",3068,instructions,10,21852332,0.0-10.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19207,survey-likert,11,21871541,0.0-11.0,"{"Q0":1,"Q1":4,"Q2":2}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12266,survey-likert,12,21883807,0.0-12.0,"{"Q0":1,"Q1":1,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5496,survey-multi-choice,13,21889304,0.0-13.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3874,survey-multi-choice,14,21893180,0.0-14.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9106,survey-multi-choice,15,21902288,0.0-15.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2652,survey-multi-choice,16,21904941,0.0-17.0-0.0,"{"Q0":"Yes, I am a university student now"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7370,survey-text,17,21912311,0.0-18.0-0.0,"{"Q0":"Biochemistry"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2018,survey-multi-choice,18,21914331,0.0-19.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6008,survey-text,19,21920340,0.0-20.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4702,survey-multi-choice,20,21925043,0.0-21.0,"{"Q0":"White"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":8520},{"page_index":1,"viewing_time":2932},{"page_index":2,"viewing_time":974},{"page_index":3,"viewing_time":3210},{"page_index":4,"viewing_time":1187},{"page_index":5,"viewing_time":14451}]",31274,instructions,21,21956318,0.0-22.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3791,html-keyboard-response,22,21960110,0.0-22.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4311}]",4311,instructions,23,21964422,0.0-23.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12137,survey-likert,24,21976561,0.0-24.0,"{"Q0":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":39264},{"page_index":1,"viewing_time":14887}]",54151,instructions,25,22030712,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3476,image-keyboard-response,26,22034191,0.0-26.0,NULL,img/app1.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1575,image-keyboard-response,27,22035768,0.0-27.0,NULL,img/app2.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1139,image-keyboard-response,28,22036909,0.0-28.0,NULL,img/app3.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1883,image-keyboard-response,29,22038795,0.0-29.0,NULL,img/app4.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2304,image-keyboard-response,30,22041101,0.0-30.0,NULL,img/app5.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2614},{"page_index":1,"viewing_time":8392},{"page_index":2,"viewing_time":7769}]",18776,instructions,31,22059877,0.0-31.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,32,22115044,0.0-32.0,NULL,NULL,NULL,55164,boards2x3,a,1,1
+"[{"page_index":0,"viewing_time":1769},{"page_index":1,"viewing_time":1637}]",3407,instructions,33,22118451,0.0-33.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,28625,survey-likert,34,22147078,0.0-34.0,"{"Q0":1,"Q1":0,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,13691,survey-likert,35,22160771,0.0-35.0,"{"Q0":8,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9949,survey-likert,36,22170721,0.0-36.0,"{"Q0":7,"Q1":0,"Q2":1,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3798}]",3799,instructions,37,22174520,0.0-37.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11805,survey-likert,38,22186327,0.0-38.0,"{"Q0":8,"Q1":8,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7066,survey-likert,39,22193394,0.0-39.0,"{"Q0":7,"Q1":8,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2995}]",2996,instructions,40,22196391,0.0-40.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5072,survey-likert,41,22201465,0.0-41.0,"{"Q0":7}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3338},{"page_index":1,"viewing_time":7837}]",11175,instructions,42,22212640,0.0-42.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3759,image-keyboard-response,43,22216400,0.0-43.0,NULL,img/app6.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1439,image-keyboard-response,44,22217840,0.0-44.0,NULL,img/app7.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1000,image-keyboard-response,45,22218844,0.0-45.0,NULL,img/app8.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,913,image-keyboard-response,46,22219757,0.0-46.0,NULL,img/app9.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,3414,image-keyboard-response,47,22223172,0.0-47.0,NULL,img/app10.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1738}]",1738,instructions,48,22224911,0.0-48.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,49,22266906,0.0-49.0,NULL,NULL,NULL,41994,boards2x3,b,4,1
+NULL,NULL,sudoku_trial,50,22369930,0.0-50.0,NULL,NULL,NULL,103021,boards2x3,a,3,1
+NULL,NULL,sudoku_trial,51,22407587,0.0-51.0,NULL,NULL,NULL,37656,boards2x3,c,3,1
+NULL,NULL,sudoku_trial,52,22450351,0.0-52.0,NULL,NULL,NULL,42761,boards2x3,c,1,1
+NULL,NULL,sudoku_trial,53,22498606,0.0-53.0,NULL,NULL,NULL,48253,boards2x3,b,2,1
+NULL,NULL,sudoku_trial,54,22544863,0.0-54.0,NULL,NULL,NULL,46256,boards2x3,b,0,1
+"[{"page_index":0,"viewing_time":3433},{"page_index":1,"viewing_time":3358}]",6791,instructions,55,22551654,0.0-55.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7175,survey-likert,56,22558830,0.0-56.0,"{"Q0":0,"Q1":0,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7821,survey-likert,57,22566653,0.0-57.0,"{"Q0":8,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9369,survey-likert,58,22576023,0.0-58.0,"{"Q0":6,"Q1":0,"Q2":2,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1415}]",1416,instructions,59,22577439,0.0-59.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9665,survey-likert,60,22587105,0.0-60.0,"{"Q0":8,"Q1":8,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7003,survey-likert,61,22594108,0.0-61.0,"{"Q0":6,"Q1":8,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2997}]",2997,instructions,62,22597105,0.0-62.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3527,survey-likert,63,22600632,0.0-63.0,"{"Q0":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2120},{"page_index":1,"viewing_time":2052}]",4173,instructions,64,22604805,0.0-64.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1916,image-keyboard-response,65,22606722,0.0-65.0,NULL,img/app11.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,687,image-keyboard-response,66,22607411,0.0-66.0,NULL,img/app12.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,573,image-keyboard-response,67,22607985,0.0-67.0,NULL,img/app13.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,553,image-keyboard-response,68,22608541,0.0-68.0,NULL,img/app14.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1073,image-keyboard-response,69,22609614,0.0-69.0,NULL,img/app15.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2304}]",2304,instructions,70,22611919,0.0-70.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":25861},{"page_index":1,"viewing_time":8174},{"page_index":2,"viewing_time":10310},{"page_index":3,"viewing_time":10202}]",54548,instructions,71,22666468,0.0-71.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14463,survey-text,72,22680931,0.0-72.0,"{"Q0":"isa.wilkie@googlemail.com"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2488},{"page_index":1,"viewing_time":1436},{"page_index":2,"viewing_time":978},{"page_index":3,"viewing_time":3820}]",8723,instructions,0,8725,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8544,survey-multi-choice,1,17273,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":38202},{"page_index":1,"viewing_time":10089},{"page_index":2,"viewing_time":11271}]",59562,instructions,2,76835,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,24741,survey-likert,3,101579,0.0-3.0,"{"Q0":3,"Q1":2,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12869,survey-likert,4,114450,0.0-4.0,"{"Q0":3,"Q1":3,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15451,survey-likert,5,129901,0.0-5.0,"{"Q0":3,"Q1":3,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14422,survey-likert,6,144326,0.0-6.0,"{"Q0":3,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,21455,survey-likert,7,165783,0.0-7.0,"{"Q0":0,"Q1":3,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,26537,survey-likert,8,192320,0.0-8.0,"{"Q0":3,"Q1":2,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":13154}]",13155,instructions,9,205475,0.0-9.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5391}]",5391,instructions,10,210867,0.0-10.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,16087,survey-likert,11,226956,0.0-11.0,"{"Q0":3,"Q1":2,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12065,survey-likert,12,239023,0.0-12.0,"{"Q0":4,"Q1":4,"Q2":4}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8620,survey-multi-choice,13,247646,0.0-13.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4634,survey-multi-choice,14,252284,0.0-14.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15846,survey-multi-choice,15,268132,0.0-15.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,23797,survey-text,16,291930,0.0-16.0-0.0,"{"Q0":"Biomedical Science Anatomy"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4382,survey-multi-choice,17,296316,0.0-19.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5224,survey-text,18,301541,0.0-20.0,"{"Q0":"Female "}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12713,survey-multi-choice,19,314258,0.0-21.0,"{"Q0":"White"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":12941},{"page_index":1,"viewing_time":9978},{"page_index":2,"viewing_time":4084},{"page_index":3,"viewing_time":2226},{"page_index":4,"viewing_time":1115},{"page_index":5,"viewing_time":693}]",31038,instructions,20,345296,0.0-22.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3867,html-keyboard-response,21,349163,0.0-22.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4043}]",4044,instructions,22,353208,0.0-23.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,20057,survey-likert,23,373267,0.0-24.0,"{"Q0":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":16487},{"page_index":1,"viewing_time":12827}]",29315,instructions,24,402582,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10338,image-keyboard-response,25,412922,0.0-26.0,NULL,img/app1.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,3918,image-keyboard-response,26,416841,0.0-27.0,NULL,img/app2.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1462,image-keyboard-response,27,418305,0.0-28.0,NULL,img/app3.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2111,image-keyboard-response,28,420417,0.0-29.0,NULL,img/app4.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2926,image-keyboard-response,29,423344,0.0-30.0,NULL,img/app5.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4191},{"page_index":1,"viewing_time":15421},{"page_index":2,"viewing_time":4562}]",24174,instructions,30,447519,0.0-31.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,31,527152,0.0-32.0,NULL,NULL,NULL,79626,boards2x3,a,1,1
+"[{"page_index":0,"viewing_time":2611},{"page_index":1,"viewing_time":5630}]",8241,instructions,32,535393,0.0-33.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,17587,survey-likert,33,552983,0.0-34.0,"{"Q0":0,"Q1":0,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7348,survey-likert,34,560333,0.0-35.0,"{"Q0":8,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19704,survey-likert,35,580040,0.0-36.0,"{"Q0":6,"Q1":0,"Q2":2,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5149}]",5149,instructions,36,585189,0.0-37.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,18246,survey-likert,37,603438,0.0-38.0,"{"Q0":1,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,13057,survey-likert,38,616498,0.0-39.0,"{"Q0":1,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4998}]",4999,instructions,39,621497,0.0-40.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10401,survey-likert,40,631899,0.0-41.0,"{"Q0":7}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5920},{"page_index":1,"viewing_time":2822}]",8742,instructions,41,640642,0.0-42.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1531,image-keyboard-response,42,642175,0.0-43.0,NULL,img/app6.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,472,image-keyboard-response,43,642647,0.0-44.0,NULL,img/app7.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1031,image-keyboard-response,44,643679,0.0-45.0,NULL,img/app8.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1455,image-keyboard-response,45,645135,0.0-46.0,NULL,img/app9.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,847,image-keyboard-response,46,645983,0.0-47.0,NULL,img/app10.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2061}]",2062,instructions,47,648045,0.0-48.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,48,747152,0.0-49.0,NULL,NULL,NULL,99105,boards2x3,c,1,1
+NULL,NULL,sudoku_trial,49,809029,0.0-50.0,NULL,NULL,NULL,61874,boards2x3,a,3,1
+NULL,NULL,sudoku_trial,50,865427,0.0-51.0,NULL,NULL,NULL,56396,boards2x3,b,4,1
+NULL,NULL,sudoku_trial,51,921217,0.0-52.0,NULL,NULL,NULL,55788,boards2x3,c,3,1
+NULL,NULL,sudoku_trial,52,981561,0.0-53.0,NULL,NULL,NULL,60342,boards2x3,b,0,1
+NULL,NULL,sudoku_trial,53,1083115,0.0-54.0,NULL,NULL,NULL,101551,boards2x3,b,2,1
+"[{"page_index":0,"viewing_time":8751},{"page_index":1,"viewing_time":8439}]",17191,instructions,54,1100306,0.0-55.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10942,survey-likert,55,1111249,0.0-56.0,"{"Q0":2,"Q1":0,"Q2":8}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8815,survey-likert,56,1120066,0.0-57.0,"{"Q0":7,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,17696,survey-likert,57,1137765,0.0-58.0,"{"Q0":6,"Q1":0,"Q2":4,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3302}]",3302,instructions,58,1141067,0.0-59.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10933,survey-likert,59,1152002,0.0-60.0,"{"Q0":1,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11967,survey-likert,60,1163972,0.0-61.0,"{"Q0":2,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5032}]",5032,instructions,61,1169004,0.0-62.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5565,survey-likert,62,1174571,0.0-63.0,"{"Q0":7}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3503},{"page_index":1,"viewing_time":1601}]",5105,instructions,63,1179676,0.0-64.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2817,image-keyboard-response,64,1182494,0.0-65.0,NULL,img/app11.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,488,image-keyboard-response,65,1182982,0.0-66.0,NULL,img/app12.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,982,image-keyboard-response,66,1183965,0.0-67.0,NULL,img/app13.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,359,image-keyboard-response,67,1184326,0.0-68.0,NULL,img/app14.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,423,image-keyboard-response,68,1184750,0.0-69.0,NULL,img/app15.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3400}]",3401,instructions,69,1188151,0.0-70.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":7956},{"page_index":1,"viewing_time":3880},{"page_index":0,"viewing_time":37038},{"page_index":1,"viewing_time":29024},{"page_index":2,"viewing_time":5183},{"page_index":3,"viewing_time":2693}]",85774,instructions,70,1273925,0.0-71.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14374,survey-text,71,1288300,0.0-72.0,"{"Q0":"cucoriedka96@gmail.com"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1173},{"page_index":1,"viewing_time":1104},{"page_index":2,"viewing_time":663},{"page_index":3,"viewing_time":689}]",3629,instructions,0,3631,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2288,survey-multi-choice,1,5929,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":852},{"page_index":1,"viewing_time":721},{"page_index":2,"viewing_time":735}]",2309,instructions,2,8240,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,23716,survey-likert,3,31963,0.0-3.0,"{"Q0":3,"Q1":2,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15249,survey-likert,4,47218,0.0-4.0,"{"Q0":2,"Q1":2,"Q2":3}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9123,survey-likert,5,56346,0.0-5.0,"{"Q0":2,"Q1":3,"Q2":2}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8722,survey-likert,6,65073,0.0-6.0,"{"Q0":2,"Q1":2,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10282,survey-likert,7,75357,0.0-7.0,"{"Q0":1,"Q1":3,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,65224,survey-likert,8,140584,0.0-8.0,"{"Q0":1,"Q1":2,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1203}]",1204,instructions,9,141791,0.0-9.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":820}]",820,instructions,10,142612,0.0-10.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12208,survey-likert,11,154821,0.0-11.0,"{"Q0":3,"Q1":3,"Q2":4}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14057,survey-likert,12,168880,0.0-12.0,"{"Q0":2,"Q1":1,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3345,survey-multi-choice,13,172231,0.0-13.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6488,survey-multi-choice,14,178728,0.0-15.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1666,survey-multi-choice,15,180399,0.0-17.0-0.0,"{"Q0":"Yes, I am a university student now"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7331,survey-text,16,187732,0.0-18.0-0.0,"{"Q0":"Computer Science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1898,survey-multi-choice,17,189633,0.0-19.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3529,survey-text,18,193164,0.0-20.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5654,survey-multi-choice,19,198819,0.0-21.0,"{"Q0":"Other"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1058},{"page_index":1,"viewing_time":1344},{"page_index":2,"viewing_time":1230},{"page_index":3,"viewing_time":490},{"page_index":4,"viewing_time":463},{"page_index":5,"viewing_time":503}]",5088,instructions,20,203908,0.0-22.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8130,html-keyboard-response,21,212039,0.0-22.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1786}]",1786,instructions,22,213827,0.0-23.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8895,survey-likert,23,222725,0.0-24.0,"{"Q0":5}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5687},{"page_index":1,"viewing_time":3905}]",9592,instructions,24,232317,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,34039,image-keyboard-response,25,266359,0.0-26.0,NULL,img/app1.png,75,NULL,NULL,NULL,NULL,NULL
+NULL,35088,image-keyboard-response,26,301447,0.0-27.0,NULL,img/app2.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,13775,image-keyboard-response,27,315224,0.0-28.0,NULL,img/app3.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,8607,image-keyboard-response,28,323831,0.0-29.0,NULL,img/app4.png,75,NULL,NULL,NULL,NULL,NULL
+NULL,21933,image-keyboard-response,29,345766,0.0-30.0,NULL,img/app5.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2303},{"page_index":1,"viewing_time":6760},{"page_index":2,"viewing_time":2640}]",11704,instructions,30,357470,0.0-31.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,31,472134,0.0-32.0,NULL,NULL,NULL,114658,boards2x3,a,1,1
+"[{"page_index":0,"viewing_time":1973},{"page_index":1,"viewing_time":5896}]",7869,instructions,32,480003,0.0-33.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,27983,survey-likert,33,507987,0.0-34.0,"{"Q0":5,"Q1":2,"Q2":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7509,survey-likert,34,515497,0.0-35.0,"{"Q0":6,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15698,survey-likert,35,531201,0.0-36.0,"{"Q0":7,"Q1":2,"Q2":0,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1266}]",1266,instructions,36,532469,0.0-37.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,34922,survey-likert,37,567395,0.0-38.0,"{"Q0":4,"Q1":6,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9971,survey-likert,38,577369,0.0-39.0,"{"Q0":6,"Q1":6,"Q2":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2972}]",2972,instructions,39,580341,0.0-40.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7496,survey-likert,40,587839,0.0-41.0,"{"Q0":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1205},{"page_index":1,"viewing_time":3000}]",4205,instructions,41,592044,0.0-42.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,16473,image-keyboard-response,42,608519,0.0-43.0,NULL,img/app6.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2957,image-keyboard-response,43,611477,0.0-44.0,NULL,img/app7.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,3617,image-keyboard-response,44,615094,0.0-45.0,NULL,img/app8.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,5328,image-keyboard-response,45,620422,0.0-46.0,NULL,img/app9.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2237,image-keyboard-response,46,622662,0.0-47.0,NULL,img/app10.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5132}]",5134,instructions,47,627797,0.0-48.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,sudoku_trial,48,725164,0.0-49.0,NULL,NULL,NULL,97362,boards2x3,b,4,1
+NULL,NULL,sudoku_trial,49,833323,0.0-50.0,NULL,NULL,NULL,108155,boards2x3,c,3,1
+NULL,NULL,sudoku_trial,50,932412,0.0-51.0,NULL,NULL,NULL,99086,boards2x3,c,1,1
+NULL,NULL,sudoku_trial,51,1033914,0.0-52.0,NULL,NULL,NULL,101500,boards2x3,b,2,1
+NULL,NULL,sudoku_trial,52,1107075,0.0-53.0,NULL,NULL,NULL,73158,boards2x3,a,3,1
+NULL,NULL,sudoku_trial,53,1190745,0.0-54.0,NULL,NULL,NULL,83666,boards2x3,b,0,1
+"[{"page_index":0,"viewing_time":1385},{"page_index":1,"viewing_time":1480}]",2866,instructions,54,1193611,0.0-55.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,24917,survey-likert,55,1218530,0.0-56.0,"{"Q0":3,"Q1":0,"Q2":7}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9140,survey-likert,56,1227671,0.0-57.0,"{"Q0":7,"Q1":0,"Q2":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8637,survey-likert,57,1236314,0.0-58.0,"{"Q0":8,"Q1":0,"Q2":0,"Q3":0}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9208}]",9208,instructions,58,1245522,0.0-59.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,34367,survey-likert,59,1279893,0.0-60.0,"{"Q0":4,"Q1":6,"Q2":1}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7035,survey-likert,60,1286933,0.0-61.0,"{"Q0":6,"Q1":6,"Q2":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6780}]",6781,instructions,61,1293714,0.0-62.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9072,survey-likert,62,1302789,0.0-63.0,"{"Q0":6}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2306},{"page_index":1,"viewing_time":2425}]",4731,instructions,63,1307520,0.0-64.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4082,image-keyboard-response,64,1311603,0.0-65.0,NULL,img/app11.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2112,image-keyboard-response,65,1313715,0.0-66.0,NULL,img/app12.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,2431,image-keyboard-response,66,1316148,0.0-67.0,NULL,img/app13.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,1055,image-keyboard-response,67,1317203,0.0-68.0,NULL,img/app14.png,68,NULL,NULL,NULL,NULL,NULL
+NULL,4015,image-keyboard-response,68,1321220,0.0-69.0,NULL,img/app15.png,68,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2075}]",2075,instructions,69,1323295,0.0-70.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":22769},{"page_index":1,"viewing_time":7481},{"page_index":2,"viewing_time":1624},{"page_index":3,"viewing_time":2976}]",34850,instructions,70,1358145,0.0-71.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9447,survey-text,71,1367594,0.0-72.0,"{"Q0":"jai41khanna@gmail.com"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
