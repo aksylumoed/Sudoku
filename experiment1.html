@@ -391,7 +391,7 @@
      }
      timeline.push(if_node);
 
-     var instructions = {
+    var instructions = {
       type: 'instructions',
       pages: [
       'Before you solve your first Sudoku puzzle, we would like to know how you estimate your chances to be successful at the puzzle solution.'
@@ -410,7 +410,7 @@
     timeline.push(appraisal1);
 
 
-     var appraisal_instructions = {
+    var appraisal_instructions = {
       type: 'instructions',
       pages: [
       'You will now see several Sudoku puzzles, similar to the ones that you will solve. We would like to ask you to indicate for each puzzle, whether you feel that you can solve it or not. <br><br> Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format: <br><br> I am confident that I CAN solve the puzzle (Press D), <br> I am confident that I CANNOT solve the puzzle (Press K).',
@@ -483,6 +483,14 @@
       show_clickable_nav: true,
     }
     timeline.push(pre_test);
+
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.get().last(11).values());
+      }
+    }
+    timeline.push(save);
 
 
     /* Sudoku pre-test WITHOUT TIMER */
@@ -676,7 +684,13 @@
     }
     timeline.push(appr_10);
 
-
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.get().last(17).values());
+      }
+    }
+    timeline.push(save);
 
     var instructions = {
        type: 'instructions',
@@ -737,6 +751,14 @@
 
 
      timeline.push.apply(timeline, sudo_trials2);
+
+     var save = {
+       type: 'call-function',
+       func: function(){
+         save_data(jsPsych.data.get().last(8).values());
+       }
+     }
+     timeline.push(save);
 
      var instructions = {
        type: 'instructions',
@@ -911,7 +933,7 @@
         jsPsych.data.addProperties({
           completed: true
         });
-        save_data(jsPsych.data.getLastTimelineData().values());
+        save_data(jsPsych.data.get().last(20).values());
       }
     }
     timeline.push(save);
