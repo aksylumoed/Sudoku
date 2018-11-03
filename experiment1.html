@@ -98,7 +98,7 @@
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.getLastTimelineData().values());
+        save_data(jsPsych.data.get().last(3).values());
       }
     }
     timeline.push(save);
@@ -143,6 +143,14 @@
         show_clickable_nav: true,
     }
     timeline.push(gse5);
+
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.get().last(5).values());
+      }
+    }
+    timeline.push(save);
 
     var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
@@ -333,6 +341,15 @@
     }
     timeline.push(ethnicity);
 
+
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.getLastTimelineData().values());
+      }
+    }
+    timeline.push(save);
+
     var instructions = {
       type: 'instructions',
       pages: [
@@ -356,13 +373,6 @@
       show_clickable_nav: true,
     }
 
-    var save = {
-      type: 'call-function',
-      func: function(){
-        save_data(jsPsych.data.getLastTimelineData().values());
-      }
-    }
-    timeline.push(save);
 
 
     var ready = {
