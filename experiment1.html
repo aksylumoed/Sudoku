@@ -898,7 +898,7 @@
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.get().values());
+        save_data(jsPsych.data.getLastTimelineData().values());
       }
     }
     timeline.push(save);
