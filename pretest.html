@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trial Experiment</title>
+
+
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku.css">
+    <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
+    <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
+    <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="jsPsych/jspsych.js"></script>
+
+    
+    <script type="text/javascript" src="jsPsych/jspsych-plugin-sudoku.js"></script>
+    <script type="text/javascript" src="sudoku.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-likert.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-image-keyboard-response.js" ></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-multi-choice.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-call-function.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-instructions.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-text.js"></script>
+    <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css">
+
+    
+  </head>
+  <body>
+  <script>
+
+    var timeline = [];
+
+    var subject_id = jsPsych.randomization.randomID(15);
+    console.log(subject_id);
+
+
+
+    var welcome = {
+      type: 'instructions',
+      pages: ['Hello! <br> You are invited to participate in a research study that aims to assess individuals’ problem-solving skills at thinking tasks. People that we invite to participate come from different backgrounds and are 18 years of age or older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
+      '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks with a time limit. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 10 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help assess individual abilities to solve tasks with different difficulty levels. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
+      '<b>CONFIDENTIALITY</b> <br> All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. <br><br> <b>YOUR RIGHTS AS A RESEARCH PARTICIPANT</b> <br> Participation in this study is voluntary. You have the right not to participate at all or to leave the study at any time. Deciding not to participate or choosing to leave the study will not result in any penalty or loss of benefits to which you are entitled.',
+      '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or would like to receive additional information about the study, you may contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de. If you have any concerns about the study or your rights as a research participant, you may contact BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(welcome);
+
+    var multi_choice_block = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "By participating in this research study, you agree that:<br><br> (1) You have read and understood the information about the study, including the information about risks, benefits, confidentiality policy and your rights as a research participant; <br> (2) Your questions about your participation have been answered satisfactorily and you take part in this research study voluntarily; <br> (3) No personal data from which you can be identified will be made public; <br> (4) You are 18 years of age or older.",
+        options: ["I agree to participate in this research study", "I disagree to participate in this research study"], 
+        required: true}],
+        show_clickable_nav: true,
+        on_finish: function(data) {
+          if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
+            // save_data(jsPsych.data.get().values());
+            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');   // NOT WORKING
+          }
+        },
+    }
+    timeline.push(multi_choice_block);
+
+
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to answer a few questions regarding the general representations that people hold about themselves and about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them. <br> <br> We hope you will enjoy your participation!",
+
+      "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much you agree with it. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best.",
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(instructions);
+
+
+    var page_2_options = ["No, I have never solved Sudoku puzzles before", "Yes, I solved Sudoku once or twice", "Yes, I solve Sudoku occasionally", "Yes, I solve Sudoku regularly"];
+
+    var sudoku_experience = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Have you ever solved Sudoku puzzles before?", options: page_2_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(sudoku_experience);
+
+
+
+/*those who picked first two options (never solved sudoku and tried once or twice) should skip the next question; those who picked the 3rd and 4th options should answer the next question).*/
+
+    var page_2_options = ["Very bad", "Rather bad", "Average", "Rather good", "Very good"];
+
+    var sudoku_competence = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "How good are you at Sudoku?", options: page_2_options, required: false}],
+        show_clickable_nav: true,
+    }
+        // timeline.push(sudoku_competence);
+
+    var if_node = {
+        timeline: [sudoku_competence],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if((JSON.parse(data.responses).Q0 == "No, I have never solved Sudoku puzzles before") || (JSON.parse(data.responses).Q0 == "Yes, I solved Sudoku once or twice")){
+            return false;
+          } else {
+            return true;
+          }
+        }
+     }
+     timeline.push(if_node);
+
+
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What is your highest level of formal education?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu);
+
+
+    /*those who picked the last two options (undergrad and grad degrees should answer the next question (major1)) and skip (Student and Major2 questions. Those who picked the second option (high school) should skip major 1 questions and answer Student question. Those who picked the first option (less than four years of high school) should skip the next three questions (major1, student and major2) and get to the next instructions*/
+
+    var major1 = {
+      type: 'survey-text',
+      questions: [{prompt: 'What was your main field of study?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    // timeline.push(major1);
+
+    var page_2_options = ["Yes, I am a university student now", "No, I am not a student"];
+
+    var student = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Are you a university student now?", options: page_2_options, required: false}],
+        show_clickable_nav: true,
+    }
+    // timeline.push(student);
+
+    var if_major1 = {
+        timeline: [major1],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if((JSON.parse(data.responses).Q0 == "Undergraduate degree (e.g., BA)") || (JSON.parse(data.responses).Q0 == "Graduate degree (e.g., MA, MSc)")){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_major1);
+
+    var if_student = {
+        timeline: [student],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if((JSON.parse(data.responses).Q0 == "High school (four years or more)")){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_student);
+
+
+     /* those who answer YES should answer the next question (major2), others go to the next Instructions */
+
+    var major2 = {
+      type: 'survey-text',
+      questions: [{prompt: 'What is your main field of study?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+
+
+    var if_major2 = {
+      timeline: [major2],
+      conditional_function: function(data){
+        var data = jsPsych.data.get().last(1).values()[0];
+        // console.log(JSON.parse(data.responses).Q0);
+        if((JSON.parse(data.responses).Q0 == "Yes, I am a university student now")){
+          return true;
+        } else {
+          return false;
+        }
+      }
+     }
+     timeline.push(if_major2);
+
+
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu_mother = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_mother);
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu_father = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_father);
+
+    var social_options = ["Upper middle class", "Middle class", "Lower middle class", "Skilled working class", "Semi- or unskilled working class"];
+
+    var social = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social);
+
+    var social_now = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social_now);
+
+    var sex = {
+      type: 'survey-text',
+      questions: [{prompt: 'What gender do you identify with?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(sex);
+
+
+
+    var age_options = ["18 - 25 years of age", "26 - 35 years of age", "36 - 45 years of age", "46 - 60 years of age", "61 years of age and older"];
+
+    var age = {
+            type: 'survey-multi-choice',
+            questions: [{prompt: "How old are you?", options: age_options, required: false}],
+            show_clickable_nav: true,
+        }
+        timeline.push(age);
+
+
+    var save = {
+      type: 'call-function',
+      func: function(){
+        save_data(jsPsych.data.get().last(13).values());
+      }
+    }
+    timeline.push(save);
+
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve eight letter Sudoku puzzles. You will have <b>3 minutes<b/> for the puzzles’ solution. If you are new to Sudoku, that is not a problem. The next few screens will explain what Sudoku are and how to solve them.",
+
+      "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The goal of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters, respecting the three constraints mentioned earlier." ,
+
+
+      "Let’s have a look at this puzzle and one possible way to go about the solution. <br> <img src='img/2.png'></img> <br>The most important thing to keep in mind is that each Line, Column and Region should contain each letter (A B C D E F) only once. <br><br> Please click NEXT to see the solution. ",
+
+      "<img src='img/3.png'></img> <br><br> Step 1: <br><br> Look at Regions that already contain five letters out of six. These are Regions 1, 2 and 4. Fill the missing letters: F in Region 1 and E in Regions 2 and 4. ",
+
+      "<img src='img/4.png'></img> <br><br> Step 2: <br><br> Look at the Columns and Lines that already contain five letters out of six. These are Columns 1, 5 and 6, and Line 6. Fill the missing letters: D in Column 1, E in Column 5 and Line 6, and A in Column 6. ",
+
+      "<img src='img/5.png'></img> <br><br> Step 3: <br><br> Only three letters are missing now. Column 2 misses A and Line 5 misses D. When you fill them, you will see that the remaining letter in Column 4 is E. ",
+
+      "These technical tips will make your experiences with the puzzles smoother: <br> <br>  <ul> <div align='left'> <li>To navigate through puzzle cells, you can use both the computer mouse and arrow keys.</li>  <li>If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one.</li>  <li>As soon as you complete the puzzle, you will be automatically presented with the further instructions.</li></ul><div/> <br><br>",
+
+
+
+      ],
+      show_clickable_nav: true,
+    }
+
+
+
+    var ready = {
+      type: 'html-keyboard-response',
+      stimulus: 'Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)',
+      choices: ['r', 'c'],
+
+    }
+
+    /* Checks if the user entered R or C */
+
+    var if_node = {
+        timeline: [instructions, ready],
+        loop_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          if(data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode('c')){
+            return false;
+          } else {
+            return true;
+          }
+        }
+     }
+     timeline.push(if_node);
+
+
+    /* Sudoku pre-test WITHOUT TIMER */
+
+    var s0 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,
+      board_size: 'boards2x3',
+      board_set: 'd',
+      timer: false,
+    }
+    timeline.push(s0);
+
+    var post_test = {
+      type: 'instructions',
+      pages: [
+      'Well done! You are all set to solve Sudoku with a time limit. You will have 3 minutes to try to solve each puzzle. Once you are done with your first puzzle, you will be automatically presented with the next one. <br> <br> We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. We very much value your time and effort and appreciate your cooperation.',
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(post_test);
+
+
+
+    /* ------------- SUDOKU TRIALS ------------------- */
+
+    var s1 = {
+     type: 'sudoku_trial',
+     trial_duration: 2000,  
+     board_size: 'boards2x3',
+     board_set: 'a',
+     board_nr: 1
+    }
+
+     var s2 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'a',
+      board_nr: 3
+     }
+     var s3 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'b',
+      board_nr: 0
+     }
+     var s4 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'b',
+      board_nr: 2
+     }
+     var s5 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'b',
+      board_nr: 4
+     }
+     var s6 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'c',
+      board_nr: 1
+     }
+     var s7 = {
+      type: 'sudoku_trial',
+      trial_duration: 2000,  
+      board_size: 'boards2x3',
+      board_set: 'c',
+      board_nr: 3
+     }
+
+     var s_array2 = [s2, s3, s4, s5, s6, s7];
+
+     var sudo_trials2 = jsPsych.randomization.shuffleNoRepeats(s_array2);
+
+     timeline.push.apply(timeline, sudo_trials2);
+
+     var instructions = {
+       type: 'instructions',
+       pages: [
+       'You have completed the study. We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.',
+       "Please click NEXT to receive your MTurk unique completion code."
+       ],
+       show_clickable_nav: true,
+     }
+     timeline.push(instructions);
+
+
+
+    var end = {
+     type: 'instructions',
+     pages: [
+     'Your unique completion code is' + subject_id,
+     ],
+     show_clickable_nav: true,
+   }
+   timeline.push(end);
+
+   var save = {
+     type: 'call-function',
+     func: function(){
+       jsPsych.data.addProperties({
+         completed: true
+       });
+       save_data(jsPsych.data.get().last(13).values());
+     }
+   }
+   timeline.push(save);
+
+   
+
+     timeline.push({
+      type: 'html-keyboard-response',
+      stimulus: 'Press any key to quit.'
+    });
+
+            /**************************************
+            *            END OF TRIAL
+            ***************************************/
+
+    function save_data(data){
+       var xhr = new XMLHttpRequest();
+         xhr.open('POST', 'write_data.php');
+         xhr.setRequestHeader('Content-Type', 'application/json');
+         xhr.onload = function() {
+           if(xhr.status == 200){
+             var response = JSON.parse(xhr.responseText);
+             console.log(response);
+           }
+         };
+         xhr.send(JSON.stringify(data));
+       }
+
+    
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function() {
+        // var alldata = jsPsych.data.get();
+        // save_data(alldata);
+         // console.log(jsPsych.data.get().uniqueNames());
+         jsPsych.data.displayData();
+      }
+      // on_finish: function(){ jsPsych.data.displayData(); },
+      //   default_iti: 250
+    })
+
+
+  </script>
+  </body>
+
+</html>

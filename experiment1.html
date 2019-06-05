@@ -57,8 +57,8 @@
 
     var welcome = {
       type: 'instructions',
-      pages: ['Hello! <br> You are invited to participate in a research study that aims to develop a new psychological instrument. This instrument will be used in the future studies investigating the role of individual psychological characteristics in problem-solving skills. People that we invite to participate come from different backgrounds and are 18 years of age or older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
-      '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks within a time limit. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 25 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help develop a new instrument that will allow us to assess individual abilities to solve tasks within a given time limit. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
+      pages: ['Hello! <br> You are invited to participate in a research study that aims to assess individuals’ problem-solving skills at thinking tasks. People that we invite to participate come from different backgrounds and are 18 years of age or older. <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
+      '<b>WHAT IS INVOLED IN THE STUDY</b> <br> In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks with a time limit. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 10 minutes in total. You can stop participating at any time. <br><br> <b>RISKS</b> <br> We believe that your participation in this study does not involve any physical or psychological risks. <br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help assess individual abilities to solve tasks with different difficulty levels. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
       '<b>CONFIDENTIALITY</b> <br> All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. <br><br> <b>YOUR RIGHTS AS A RESEARCH PARTICIPANT</b> <br> Participation in this study is voluntary. You have the right not to participate at all or to leave the study at any time. Deciding not to participate or choosing to leave the study will not result in any penalty or loss of benefits to which you are entitled.',
       '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or would like to receive additional information about the study, you may contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de. If you have any concerns about the study or your rights as a research participant, you may contact BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
       ],
@@ -86,15 +86,15 @@
       type: 'instructions',
       pages: [
 
-     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to answer a few questions regarding the general representations that people hold about themselves and about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them.",
-
-      "We value your time and effort and have tried to come up with the version of the study that is as short and as engaging as possible. <br> We would very much appreciate if you stayed focused and not get distracted while you participate. <br><br> We hope you will enjoy your participation!",
+     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to answer a few questions regarding the general representations that people hold about themselves and about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them. <br> <br> We hope you will enjoy your participation!",
 
       "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much you agree with it. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best.",
       ],
       show_clickable_nav: true,
     }
     timeline.push(instructions);
+
+    /*
     
     var scale = ["Strongly disagree", "Somewhat disagree", "Somewhat agree", "Strongly agree"];
 
@@ -146,9 +146,9 @@
     }
     timeline.push(gse6);
 
-        /****
+        *//****
       **  FIRST SAVE
-        ****/
+        ****//*
 
     var save = {
       type: 'call-function',
@@ -187,6 +187,7 @@
     }
     timeline.push(child_status);
 
+    */
 
     var page_2_options = ["No, I have never solved Sudoku puzzles before", "Yes, I solved Sudoku once or twice", "Yes, I solve Sudoku occasionally", "Yes, I solve Sudoku regularly"];
 
@@ -307,7 +308,51 @@
      }
      timeline.push(if_major2);
 
-    
+
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu_mother = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_mother);
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu_father = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_father);
+
+    var social_options = ["Upper middle class", "Middle class", "Lower middle class", "Skilled working class", "Semi- or unskilled working class"];
+
+    var social = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social);
+
+    var social_now = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social_now);
+
+    var sex = {
+      type: 'survey-text',
+      questions: [{prompt: 'What gender do you identify with?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(sex);
+
+
 
     var age_options = ["18 - 25 years of age", "26 - 35 years of age", "36 - 45 years of age", "46 - 60 years of age", "61 years of age and older"];
 
@@ -318,14 +363,8 @@
         }
         timeline.push(age);
 
-    var sex = {
-      type: 'survey-text',
-      questions: [{prompt: 'Please indicate your gender.',
-                  rows: 1, columns: 50}],
-               show_clickable_nav: true,
-    }
-    timeline.push(sex);
 
+/*
     var eth_options = ["Asian/ Pacific Islander", "Black or African American", "Hispanic or Latino", "Native American or American Indian", "White", "Other"];
 
     var ethnicity = {
@@ -335,11 +374,11 @@
     }
     timeline.push(ethnicity);
 
-
+*/
     var save = {
       type: 'call-function',
       func: function(){
-        save_data(jsPsych.data.get().last(13).values());
+        save_data(jsPsych.data.get().last(15).values());
       }
     }
     timeline.push(save);
@@ -348,7 +387,7 @@
       type: 'instructions',
       pages: [
 
-      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve eight letter Sudoku puzzles. You will have 120 seconds to try to complete each puzzle. At certain points, we will also ask you a few questions related to your experiences with the puzzles. <br><br> Have never solved a Sudoku puzzle before? That is not a problem; you do not need to have any prior experience or special knowledge. The next few screens will explain what Sudoku are and how to solve them.",
+      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve eight letter Sudoku puzzles. You will have <b>3 minutes<b/> for the puzzles’ solution. If you are new to Sudoku, that is not a problem. The next few screens will explain what Sudoku are and how to solve them.",
 
       "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The goal of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters, respecting the three constraints mentioned earlier." ,
 
@@ -360,6 +399,8 @@
       "<img src='img/4.png'></img> <br><br> Step 2: <br><br> Look at the Columns and Lines that already contain five letters out of six. These are Columns 1, 5 and 6, and Line 6. Fill the missing letters: D in Column 1, E in Column 5 and Line 6, and A in Column 6. ",
 
       "<img src='img/5.png'></img> <br><br> Step 3: <br><br> Only three letters are missing now. Column 2 misses A and Line 5 misses D. When you fill them, you will see that the remaining letter in Column 4 is E. ",
+
+      "These technical tips will make your experiences with the puzzles smoother: <br> <br>  <ul> <li>To navigate through puzzle cells, you can use both the computer mouse and arrow keys.</li>  <li>If you make an error, the problem cell will be highlighted in red. To correct the error, please select the problem letter and insert the correct one.</li>  <li>As soon as you complete the puzzle, you will be automatically presented with the further instructions.</li></ul>",
 
 
 
@@ -391,6 +432,8 @@
      }
      timeline.push(if_node);
 
+    /*
+
     var instructions = {
       type: 'instructions',
       pages: [
@@ -420,11 +463,11 @@
     }
     timeline.push(appraisal_instructions);
 
-
+*/
     /********************** ADD 1ST ROUND APPRAISAL HERE*****************
     **********************************************************************/
 
-
+/*
     var appr_1 = {
       type: 'image-keyboard-response',
       stimulus: 'img/app1.png',
@@ -491,11 +534,11 @@
       }
     }
     timeline.push(save);
-
+*/
 
     /* Sudoku pre-test WITHOUT TIMER */
 
-/*    var s0 = {
+    var s0 = {
       type: 'sudoku_trial',
       trial_duration: 600000,
       board_size: 'boards2x3',
@@ -507,24 +550,23 @@
     var post_test = {
       type: 'instructions',
       pages: [
-      'The practice session is over. You are all set to start the actual test session! <br> <br> You will have 2 minutes to solve each puzzle. You can try to solve the puzzle for as long as you can until the time is up. Along with the puzzles, you will see the timer that will show how much time is left.',
-      "We will very much appreciate if you stay focused and will not get distracted while you are solving the puzzles. The results obtained in this study will be used to design a new psychological instrument. That is why it is crucial that they are as accurate as possible. <br> <br> We very much value your time and effort and appreciate your cooperation. <br> <br> Please click NEXT to start solving the puzzles."
+      'Well done! You are all set to solve Sudoku with a time limit. You will have 3 minutes to try to solve each puzzle. Once you are done with your first puzzle, you will be automatically presented with the next one. <br> <br> We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. We very much value your time and effort and appreciate your cooperation.',
       ],
       show_clickable_nav: true,
     }
-    timeline.push(post_test);*/
+    timeline.push(post_test);
 
 
 
     /* ------------- SUDOKU TRIALS ------------------- */
 
-     var s1 = {
+     /*var s1 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
       board_size: 'boards2x3',
       board_set: 'a',
       board_nr: 1
-     }
+     }*/
 /*     var s2 = {
       type: 'sudoku_trial',
       trial_duration: 120000,  
@@ -538,8 +580,8 @@
       board_set: 'c'
      }*/
 
-     var s_array = [s1 /*, s2, s3*/];
-
+     // var s_array = [s1 /*, s2, s3*/];
+/*
      var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
 
      timeline.push.apply(timeline, sudo_trials);
@@ -635,72 +677,79 @@
    }
    timeline.push(instructions);
 
-
+*/
     /********************** ADD 2ND ROUND APPRAISAL HERE*****************
     **********************************************************************/
 
-    var appr_6 = {
-      type: 'image-keyboard-response',
-      stimulus: 'img/app6.png',
-      choices: ['d','k'],
-      trial_duration: 120000,
-      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // var appr_6 = {
+    //   type: 'image-keyboard-response',
+    //   stimulus: 'img/app6.png',
+    //   choices: ['d','k'],
+    //   trial_duration: 120000,
+    //   prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // }
+    // timeline.push(appr_6);
+
+    // var appr_7 = {
+    //   type: 'image-keyboard-response',
+    //   stimulus: 'img/app7.png',
+    //   choices: ['d','k'],
+    //   trial_duration: 120000,
+    //   prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // }
+    // timeline.push(appr_7);
+
+    // var appr_8 = {
+    //   type: 'image-keyboard-response',
+    //   stimulus: 'img/app8.png',
+    //   choices: ['d','k'],
+    //   trial_duration: 120000,
+    //   prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // }
+    // timeline.push(appr_8);
+
+    // var appr_9 = {
+    //   type: 'image-keyboard-response',
+    //   stimulus: 'img/app9.png',
+    //   choices: ['d','k'],
+    //   trial_duration: 120000,
+    //   prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // }
+    // timeline.push(appr_9);
+
+    // var appr_10 = {
+    //   type: 'image-keyboard-response',
+    //   stimulus: 'img/app10.png',
+    //   choices: ['d','k'],
+    //   trial_duration: 120000,
+    //   prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    // }
+    // timeline.push(appr_10);
+
+    // var save = {
+    //   type: 'call-function',
+    //   func: function(){
+    //     save_data(jsPsych.data.get().last(17).values());
+    //   }
+    // }
+    // timeline.push(save);
+
+    // var instructions = {
+    //    type: 'instructions',
+    //    pages: [
+    //    'Thank you for your answers! You will now solve the next six puzzles. You will have 120 seconds to attempt to solve each of them. <br><br> Each puzzle will be presented on a new screen. As soon as you are done with the puzzle solution, you will be automatically presented with the next one. <br><br> Good luck!'
+    //    ],
+    //    show_clickable_nav: true,
+    //  }
+    //  timeline.push(instructions);
+
+    var s1 = {
+     type: 'sudoku_trial',
+     trial_duration: 120000,  
+     board_size: 'boards2x3',
+     board_set: 'a',
+     board_nr: 1
     }
-    timeline.push(appr_6);
-
-    var appr_7 = {
-      type: 'image-keyboard-response',
-      stimulus: 'img/app7.png',
-      choices: ['d','k'],
-      trial_duration: 120000,
-      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
-    }
-    timeline.push(appr_7);
-
-    var appr_8 = {
-      type: 'image-keyboard-response',
-      stimulus: 'img/app8.png',
-      choices: ['d','k'],
-      trial_duration: 120000,
-      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
-    }
-    timeline.push(appr_8);
-
-    var appr_9 = {
-      type: 'image-keyboard-response',
-      stimulus: 'img/app9.png',
-      choices: ['d','k'],
-      trial_duration: 120000,
-      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
-    }
-    timeline.push(appr_9);
-
-    var appr_10 = {
-      type: 'image-keyboard-response',
-      stimulus: 'img/app10.png',
-      choices: ['d','k'],
-      trial_duration: 120000,
-      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>120</b> seconds <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
-    }
-    timeline.push(appr_10);
-
-    var save = {
-      type: 'call-function',
-      func: function(){
-        save_data(jsPsych.data.get().last(17).values());
-      }
-    }
-    timeline.push(save);
-
-    var instructions = {
-       type: 'instructions',
-       pages: [
-       'Thank you for your answers! You will now solve the next six puzzles. You will have 120 seconds to attempt to solve each of them. <br><br> Each puzzle will be presented on a new screen. As soon as you are done with the puzzle solution, you will be automatically presented with the next one. <br><br> Good luck!'
-       ],
-       show_clickable_nav: true,
-     }
-     timeline.push(instructions);
-
 
      var s2 = {
       type: 'sudoku_trial',
@@ -763,13 +812,13 @@
      var instructions = {
        type: 'instructions',
        pages: [
-       'You have completed six more trials. Before you solve your final puzzle, we would like to once again ask a couple of questions about your experience with the last puzzle that you have just solved.',
-       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the last puzzle."
+       'You have completed the study. We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.',
+       "Please click NEXT to receive your MTurk unique completion code."
        ],
        show_clickable_nav: true,
      }
      timeline.push(instructions);
-
+/*
      var scale = ["1 (Did not feel this way at all during the task)", "2", "3", "4", "5 (Felt so to a moderate extent during the task)", "6", "7", "8", "9 (Felt so to a great extent during the task)"]
 
      var emotion2 = {
@@ -847,11 +896,11 @@
      }
      timeline.push(instructions);
 
-
+*/
 
     /********************** ADD 3RD ROUND APPRAISAL HERE*****************
     **********************************************************************/
-
+/*
     var appr_11 = {
       type: 'image-keyboard-response',
       stimulus: 'img/app11.png',
@@ -946,7 +995,20 @@
      show_clickable_nav: true,
    }
    timeline.push(end);
+*/
 
+    var unique_code = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8);
+
+    var end = {
+     type: 'instructions',
+     pages: [
+     'Your unique completion code is' + unique_code,
+     ],
+     show_clickable_nav: true,
+   }
+   timeline.push(end);
+
+   
 
      timeline.push({
       type: 'html-keyboard-response',
