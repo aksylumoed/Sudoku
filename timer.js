@@ -87,7 +87,7 @@ pause: function() {
 
 
 function reset(){
-    var twoMinutes = 60 * 2,
+    var twoMinutes = 60 * 3,
         display = document.querySelector('#time');
     Clock.startTimer(twoMinutes, display);
     
