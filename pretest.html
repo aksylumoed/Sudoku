@@ -39,6 +39,9 @@
     var subject_id = jsPsych.randomization.randomID(15);
     console.log(subject_id);
 
+    jsPsych.data.addProperties({
+      subject: subject_id
+    });
 
 
     var welcome = {
@@ -402,7 +405,7 @@
          jsPsych.data.addProperties({
            completed: true
          });
-         save_data(jsPsych.data.get().last(10).values());
+         save_data(jsPsych.data.get().last(11).values());
        }
      }
      timeline.push(save);
