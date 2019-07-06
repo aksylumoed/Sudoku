@@ -396,6 +396,17 @@
 
      timeline.push.apply(timeline, sudo_trials2);
 
+     var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(10).values());
+       }
+     }
+     timeline.push(save);
+
      var instructions = {
        type: 'instructions',
        pages: [
@@ -423,7 +434,7 @@
        jsPsych.data.addProperties({
          completed: true
        });
-       save_data(jsPsych.data.get().last(13).values());
+       save_data(jsPsych.data.get().last(3).values());
      }
    }
    timeline.push(save);
