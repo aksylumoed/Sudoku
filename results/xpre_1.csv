@@ -1,0 +1,1001 @@
+view_history,rt,trial_type,trial_index,time_elapsed,internal_node_id,responses,stimulus,key_press,success_time,board_size,board_set,board_no,success,completed
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":34726},{"page_index":1,"viewing_time":24243},{"page_index":2,"viewing_time":6056},{"page_index":3,"viewing_time":4890}]",69917,instructions,0,69918,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5041,survey-multi-choice,1,75025,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":17608},{"page_index":1,"viewing_time":10870},{"page_index":0,"viewing_time":2711},{"page_index":1,"viewing_time":3490}]",34679,instructions,2,109706,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11608,survey-multi-choice,3,121317,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5800,survey-multi-choice,4,127118,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2999,survey-multi-choice,5,130120,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3074,survey-multi-choice,6,133198,0.0-9.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3066,survey-multi-choice,7,136266,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3946,survey-multi-choice,8,140214,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2648,survey-multi-choice,9,142864,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4150,survey-text,10,147016,0.0-13.0,"{"Q0":"jkl"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3046,survey-multi-choice,11,150069,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,150070,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":5153},{"page_index":1,"viewing_time":2503},{"page_index":2,"viewing_time":2179},{"page_index":3,"viewing_time":1339},{"page_index":4,"viewing_time":1493},{"page_index":5,"viewing_time":1009},{"page_index":6,"viewing_time":3381}]",17057,instructions,13,167127,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,1838,html-keyboard-response,14,168966,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,215461,0.0-17.0,NULL,NULL,NULL,46481,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":9172}]",9172,instructions,16,224633,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,283844,0.0-19.0,NULL,NULL,NULL,59205,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,18,339628,0.0-20.0,NULL,NULL,NULL,55774,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,19,394617,0.0-21.0,NULL,NULL,NULL,54974,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,20,454266,0.0-22.0,NULL,NULL,NULL,59640,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,21,519502,0.0-23.0,NULL,NULL,NULL,65223,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,22,561619,0.0-24.0,NULL,NULL,NULL,42109,boards2x3,c,1,1,1
+"[{"page_index":0,"viewing_time":4337},{"page_index":1,"viewing_time":3569}]",7906,instructions,23,569528,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":5421}]",5422,instructions,24,574950,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1573},{"page_index":1,"viewing_time":2867},{"page_index":2,"viewing_time":1697},{"page_index":3,"viewing_time":987}]",7125,instructions,0,7128,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4280,survey-multi-choice,1,11415,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1588},{"page_index":1,"viewing_time":1563}]",3151,instructions,2,14568,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,23611,survey-multi-choice,3,38186,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,20854,survey-multi-choice,4,59048,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,29613,survey-multi-choice,5,88666,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5624,survey-text,6,94293,0.0-6.0-0.0,"{"Q0":"History "}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19137,survey-multi-choice,7,113436,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2276,survey-multi-choice,8,115718,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3595,survey-multi-choice,9,119319,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2180,survey-multi-choice,10,121504,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3783,survey-text,11,125290,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6774,survey-multi-choice,12,132069,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1522},{"page_index":1,"viewing_time":1285},{"page_index":2,"viewing_time":1214},{"page_index":3,"viewing_time":1979}]",6001,instructions,0,6003,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2841,survey-multi-choice,1,8848,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1374},{"page_index":1,"viewing_time":1420}]",2794,instructions,2,11644,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2678,survey-multi-choice,3,14324,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2664,survey-multi-choice,4,16991,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2430,survey-multi-choice,5,19424,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4547,survey-text,6,23972,0.0-6.0-0.0,"{"Q0":"dghrfg"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4532,survey-multi-choice,7,28506,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2647,survey-multi-choice,8,31155,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2598,survey-multi-choice,9,33756,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2398,survey-multi-choice,10,36156,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4832,survey-text,11,40989,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2865,survey-multi-choice,12,43855,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,13,43856,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1407},{"page_index":1,"viewing_time":1624},{"page_index":2,"viewing_time":1333},{"page_index":3,"viewing_time":1313},{"page_index":4,"viewing_time":820},{"page_index":5,"viewing_time":870},{"page_index":6,"viewing_time":1712}]",9080,instructions,14,52936,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,1688,html-keyboard-response,15,54624,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,97319,0.0-17.0,NULL,NULL,NULL,42679,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":5771}]",5772,instructions,17,103093,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,162350,0.0-19.0,NULL,NULL,NULL,59254,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,19,215871,0.0-20.0,NULL,NULL,NULL,53516,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,20,267288,0.0-21.0,NULL,NULL,NULL,51404,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,21,321983,0.0-22.0,NULL,NULL,NULL,54677,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,22,388295,0.0-23.0,NULL,NULL,NULL,66297,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,23,430239,0.0-24.0,NULL,NULL,NULL,41932,boards2x3,b,0,1,1
+"[{"page_index":0,"viewing_time":1367},{"page_index":1,"viewing_time":1208}]",2575,instructions,24,432816,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":2141}]",2141,instructions,25,434958,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":23570},{"page_index":1,"viewing_time":1790},{"page_index":2,"viewing_time":1098},{"page_index":3,"viewing_time":1217}]",27677,instructions,0,27677,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2892,survey-multi-choice,1,30576,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1132},{"page_index":1,"viewing_time":1315}]",2447,instructions,2,33023,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2301,survey-multi-choice,3,35326,0.0-3.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3747,survey-multi-choice,4,39075,0.0-4.0-0.0,"{"Q0":"Rather bad"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3068,survey-multi-choice,5,42145,0.0-5.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3526,survey-multi-choice,6,45674,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2534,survey-multi-choice,7,48210,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3143,survey-multi-choice,8,51356,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2465,survey-multi-choice,9,53824,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7731,survey-text,10,61555,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4266,survey-multi-choice,11,65822,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,65823,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1448},{"page_index":1,"viewing_time":1711},{"page_index":2,"viewing_time":1190},{"page_index":3,"viewing_time":1522},{"page_index":4,"viewing_time":1409},{"page_index":5,"viewing_time":1409},{"page_index":6,"viewing_time":2580}]",11269,instructions,13,77092,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3657,html-keyboard-response,14,80751,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,108901,0.0-17.0,NULL,NULL,NULL,28137,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":1414}]",1414,instructions,16,110317,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,158077,0.0-19.0,NULL,NULL,NULL,47749,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,18,206028,0.0-20.0,NULL,NULL,NULL,47939,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,19,261610,0.0-21.0,NULL,NULL,NULL,55568,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,20,443128,0.0-22.0,NULL,NULL,NULL,NULL,boards2x3,b,2,,1
+NULL,NULL,sudoku_trial,21,496222,0.0-23.0,NULL,NULL,NULL,53080,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,22,575785,0.0-24.0,NULL,NULL,NULL,79547,boards2x3,c,3,1,1
+"[{"page_index":0,"viewing_time":1145},{"page_index":1,"viewing_time":1610}]",2755,instructions,23,578543,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1336}]",1336,instructions,24,579879,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":7686},{"page_index":1,"viewing_time":5616},{"page_index":2,"viewing_time":1448},{"page_index":3,"viewing_time":1232}]",15983,instructions,0,15984,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3101,survey-multi-choice,1,19087,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2231},{"page_index":1,"viewing_time":3008}]",5239,instructions,2,24327,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2519,survey-multi-choice,3,26847,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1615,survey-multi-choice,4,28463,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2247,survey-text,5,30711,0.0-6.0-0.0,"{"Q0":"jhm"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1647,survey-multi-choice,6,32359,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1527,survey-multi-choice,7,33887,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1455,survey-multi-choice,8,35343,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1639,survey-multi-choice,9,36983,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2032,survey-text,10,39015,0.0-13.0,"{"Q0":"hjm"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2071,survey-multi-choice,11,41087,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,41088,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1951},{"page_index":1,"viewing_time":1416},{"page_index":2,"viewing_time":1136},{"page_index":3,"viewing_time":880},{"page_index":4,"viewing_time":664},{"page_index":5,"viewing_time":904},{"page_index":6,"viewing_time":2320}]",9271,instructions,13,50359,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,1818,html-keyboard-response,14,52178,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,85265,0.0-17.0,NULL,NULL,NULL,33082,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":4622}]",4622,instructions,16,89887,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,142016,0.0-19.0,NULL,NULL,NULL,52128,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,18,185720,0.0-20.0,NULL,NULL,NULL,43703,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,19,230887,0.0-21.0,NULL,NULL,NULL,45167,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,20,297335,0.0-22.0,NULL,NULL,NULL,66446,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,21,343839,0.0-23.0,NULL,NULL,NULL,46503,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,22,393231,0.0-24.0,NULL,NULL,NULL,49392,boards2x3,c,3,1,1
+"[{"page_index":0,"viewing_time":1448},{"page_index":1,"viewing_time":2800}]",4248,instructions,23,397479,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":10088}]",10088,instructions,24,407567,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1239},{"page_index":1,"viewing_time":939},{"page_index":2,"viewing_time":979},{"page_index":3,"viewing_time":617}]",3775,instructions,0,3776,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2095,survey-multi-choice,1,5874,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":785},{"page_index":1,"viewing_time":842}]",1627,instructions,2,7501,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3455,survey-multi-choice,3,10957,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2011,survey-multi-choice,4,12970,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4903,survey-text,5,17874,0.0-6.0-0.0,"{"Q0":"engineering"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2683,survey-multi-choice,6,20559,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2282,survey-multi-choice,7,22843,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3658,survey-multi-choice,8,26503,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1739,survey-multi-choice,9,28243,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4008,survey-text,10,32251,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1863,survey-multi-choice,11,34115,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2196},{"page_index":1,"viewing_time":3195},{"page_index":2,"viewing_time":1941},{"page_index":3,"viewing_time":1206}]",8540,instructions,0,8546,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3366,survey-multi-choice,1,11928,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3437},{"page_index":1,"viewing_time":1848}]",5287,instructions,2,17216,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3139,survey-multi-choice,3,20369,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2039,survey-multi-choice,4,22416,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1964,survey-multi-choice,5,24388,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1975,survey-multi-choice,6,26371,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1513,survey-multi-choice,7,27893,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2193,survey-multi-choice,8,30098,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3972,survey-multi-choice,9,34078,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5389,survey-text,10,39472,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1866,survey-multi-choice,11,41345,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1918},{"page_index":1,"viewing_time":2295},{"page_index":2,"viewing_time":1207},{"page_index":3,"viewing_time":896}]",6316,instructions,0,6316,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2616,survey-multi-choice,1,8935,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3701},{"page_index":1,"viewing_time":2935}]",6636,instructions,2,15573,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3399,survey-multi-choice,3,18975,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1542,survey-multi-choice,4,20519,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1914,survey-multi-choice,5,22434,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1424,survey-multi-choice,6,23861,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2204,survey-multi-choice,7,26067,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1446,survey-multi-choice,8,27514,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6369,survey-multi-choice,9,33885,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1984,survey-multi-choice,10,35871,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2981,survey-text,11,38854,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1249,survey-multi-choice,12,40104,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1816},{"page_index":1,"viewing_time":1939},{"page_index":2,"viewing_time":1176},{"page_index":3,"viewing_time":1242}]",6174,instructions,0,6174,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2904,survey-multi-choice,1,9082,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1441},{"page_index":1,"viewing_time":947}]",2388,instructions,2,11470,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4306,survey-multi-choice,3,15778,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4131,survey-multi-choice,4,19913,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2546,survey-multi-choice,5,22460,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5769,survey-text,6,28231,0.0-6.0-0.0,"{"Q0":"math"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3019,survey-multi-choice,7,31252,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2311,survey-multi-choice,8,33565,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5253,survey-multi-choice,9,38821,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2745,survey-multi-choice,10,41570,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4396,survey-text,11,45967,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3860,survey-multi-choice,12,49830,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4277},{"page_index":1,"viewing_time":3635},{"page_index":2,"viewing_time":1353},{"page_index":3,"viewing_time":1036}]",10302,instructions,0,10305,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4857,survey-multi-choice,1,15167,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1584},{"page_index":1,"viewing_time":2472}]",4057,instructions,2,19225,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5280,survey-multi-choice,3,24507,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2848,survey-multi-choice,4,27358,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2569,survey-multi-choice,5,29930,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6227,survey-multi-choice,6,36160,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2101,survey-multi-choice,7,38264,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5998,survey-multi-choice,8,44265,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2975,survey-multi-choice,9,47242,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2931,survey-text,10,50175,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2437,survey-multi-choice,11,52614,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2462},{"page_index":1,"viewing_time":1908},{"page_index":2,"viewing_time":1914},{"page_index":3,"viewing_time":1944}]",8230,instructions,0,8233,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4354,survey-multi-choice,1,12595,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":7810},{"page_index":1,"viewing_time":4204}]",12015,instructions,2,24610,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4438,survey-multi-choice,3,29053,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2877,survey-multi-choice,4,31935,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2856,survey-multi-choice,5,34796,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5428,survey-text,6,40226,0.0-6.0-0.0,"{"Q0":"web dev"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4427,survey-multi-choice,7,44658,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2389,survey-multi-choice,8,47051,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9299,survey-multi-choice,9,56356,0.0-11.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5052,survey-multi-choice,10,61412,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3578,survey-text,11,64992,0.0-13.0,"{"Q0":"f"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4740,survey-multi-choice,12,69738,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6404},{"page_index":1,"viewing_time":5174},{"page_index":2,"viewing_time":2095},{"page_index":3,"viewing_time":2513}]",16188,instructions,0,16193,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3247,survey-multi-choice,1,19456,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":12761},{"page_index":1,"viewing_time":4984}]",17746,instructions,2,37204,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3729,survey-multi-choice,3,40943,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2530,survey-multi-choice,4,43487,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2612,survey-multi-choice,5,46107,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6296,survey-text,6,52406,0.0-6.0-0.0,"{"Q0":"Computer Science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4587,survey-multi-choice,7,57003,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1834,survey-multi-choice,8,58839,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5373,survey-multi-choice,9,64223,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3350,survey-multi-choice,10,67582,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3887,survey-text,11,71475,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2032,survey-multi-choice,12,73511,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1811},{"page_index":1,"viewing_time":3473},{"page_index":2,"viewing_time":4902},{"page_index":3,"viewing_time":2873}]",13059,instructions,0,13061,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7414,survey-multi-choice,1,20478,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6684},{"page_index":1,"viewing_time":1568}]",8252,instructions,2,28731,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5464,survey-multi-choice,3,34198,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2213,survey-multi-choice,4,36413,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2479,survey-multi-choice,5,38893,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5134,survey-text,6,44027,0.0-6.0-0.0,"{"Q0":"Sociology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4968,survey-multi-choice,7,48997,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1327,survey-multi-choice,8,50325,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2951,survey-multi-choice,9,53277,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1501,survey-multi-choice,10,54780,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3348,survey-text,11,58131,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1793,survey-multi-choice,12,59925,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9043},{"page_index":1,"viewing_time":1567},{"page_index":2,"viewing_time":1030},{"page_index":3,"viewing_time":1122}]",12763,instructions,0,12764,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2415,survey-multi-choice,1,15183,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1027},{"page_index":1,"viewing_time":894}]",1921,instructions,2,17105,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5788,survey-multi-choice,3,22895,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2243,survey-multi-choice,4,25140,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3380,survey-text,5,28520,0.0-6.0-0.0,"{"Q0":"art"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2887,survey-multi-choice,6,31409,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2071,survey-multi-choice,7,33482,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4211,survey-multi-choice,8,37694,0.0-11.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3390,survey-multi-choice,9,41087,0.0-12.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4648,survey-text,10,45736,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2673,survey-multi-choice,11,48410,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2217},{"page_index":1,"viewing_time":2239},{"page_index":2,"viewing_time":1080},{"page_index":3,"viewing_time":956}]",6493,instructions,0,6494,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2429,survey-multi-choice,1,8926,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5155},{"page_index":1,"viewing_time":3768}]",8923,instructions,2,17850,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3963,survey-multi-choice,3,21813,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2346,survey-multi-choice,4,24162,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1518,survey-multi-choice,5,25682,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2655,survey-text,6,28337,0.0-6.0-0.0,"{"Q0":"music"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1895,survey-multi-choice,7,30233,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2579,survey-multi-choice,8,32814,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2906,survey-multi-choice,9,35721,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4038,survey-multi-choice,10,39761,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2487,survey-text,11,42250,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1726,survey-multi-choice,12,43978,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9630},{"page_index":1,"viewing_time":16844},{"page_index":2,"viewing_time":1969},{"page_index":3,"viewing_time":2253}]",30696,instructions,0,30697,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6031,survey-multi-choice,1,36730,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1174},{"page_index":1,"viewing_time":2932}]",4107,instructions,2,40837,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5359,survey-multi-choice,3,46197,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4654,survey-multi-choice,4,50853,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4109,survey-multi-choice,5,54964,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8641,survey-text,6,63606,0.0-6.0-0.0,"{"Q0":"biochemistry"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7652,survey-multi-choice,7,71259,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2270,survey-multi-choice,8,73531,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,29532,survey-multi-choice,9,103064,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3230,survey-multi-choice,10,106295,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4229,survey-text,11,110526,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2287,survey-multi-choice,12,112814,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":8756},{"page_index":1,"viewing_time":5283},{"page_index":2,"viewing_time":3344},{"page_index":3,"viewing_time":1550}]",18933,instructions,0,18933,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7539,survey-multi-choice,1,26477,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":18103},{"page_index":1,"viewing_time":8912}]",27016,instructions,2,53494,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7551,survey-multi-choice,3,61050,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9196,survey-multi-choice,4,70252,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3466,survey-multi-choice,5,73722,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6697,survey-multi-choice,6,80423,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2755,survey-multi-choice,7,83181,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9534,survey-multi-choice,8,92718,0.0-11.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6064,survey-multi-choice,9,98786,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4376,survey-text,10,103165,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1984,survey-multi-choice,11,105154,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6113},{"page_index":1,"viewing_time":7066},{"page_index":2,"viewing_time":4230},{"page_index":3,"viewing_time":3048}]",20457,instructions,0,20457,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10214,survey-multi-choice,1,30673,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":14899},{"page_index":1,"viewing_time":45906}]",60805,instructions,2,91478,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5131,survey-multi-choice,3,96610,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3523,survey-multi-choice,4,100134,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2709,survey-multi-choice,5,102844,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5469,survey-text,6,108314,0.0-6.0-0.0,"{"Q0":"Design"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3821,survey-multi-choice,7,112137,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2678,survey-multi-choice,8,114816,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5521,survey-multi-choice,9,120338,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3141,survey-multi-choice,10,123480,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4434,survey-text,11,127914,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2045,survey-multi-choice,12,129960,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6536},{"page_index":1,"viewing_time":5780},{"page_index":2,"viewing_time":6886},{"page_index":3,"viewing_time":1172}]",20375,instructions,0,20375,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4585,survey-multi-choice,1,24963,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3441},{"page_index":1,"viewing_time":1666}]",5107,instructions,2,30070,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3216,survey-multi-choice,3,33287,0.0-3.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2779,survey-multi-choice,4,36068,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3382,survey-multi-choice,5,39452,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4614,survey-text,6,44067,0.0-6.0-0.0,"{"Q0":"Computer Science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2506,survey-multi-choice,7,46575,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2720,survey-multi-choice,8,49296,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3834,survey-multi-choice,9,53133,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1990,survey-multi-choice,10,55125,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2553,survey-text,11,57679,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2607,survey-multi-choice,12,60287,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1447},{"page_index":1,"viewing_time":937},{"page_index":2,"viewing_time":656},{"page_index":3,"viewing_time":728}]",3769,instructions,0,3770,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1708,survey-multi-choice,1,5482,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1037},{"page_index":1,"viewing_time":673}]",1710,instructions,2,7193,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2423,survey-multi-choice,3,9619,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1493,survey-multi-choice,4,11113,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1551,survey-multi-choice,5,12666,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1246,survey-multi-choice,6,13915,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,802,survey-multi-choice,7,14719,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1155,survey-multi-choice,8,15876,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2537,survey-multi-choice,9,18414,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1544,survey-multi-choice,10,19961,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4029,survey-text,11,23991,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1328,survey-multi-choice,12,25321,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2275},{"page_index":1,"viewing_time":1122},{"page_index":2,"viewing_time":915},{"page_index":3,"viewing_time":833}]",5146,instructions,0,5146,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2446,survey-multi-choice,1,7596,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1040},{"page_index":1,"viewing_time":1004}]",2044,instructions,2,9641,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5924,survey-multi-choice,3,15566,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2572,survey-multi-choice,4,18140,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8893,survey-text,5,27034,0.0-6.0-0.0,"{"Q0":"business"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4841,survey-multi-choice,6,31877,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1356,survey-multi-choice,7,33235,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2702,survey-multi-choice,8,35940,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3730,survey-multi-choice,9,39673,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3867,survey-text,10,43541,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1453,survey-multi-choice,11,44996,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6086},{"page_index":1,"viewing_time":8739},{"page_index":2,"viewing_time":3291},{"page_index":3,"viewing_time":1929}]",20048,instructions,0,20058,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5648,survey-multi-choice,1,25715,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":15702},{"page_index":1,"viewing_time":8024}]",23728,instructions,2,49444,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4916,survey-multi-choice,3,54367,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3206,survey-multi-choice,4,57582,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2373,survey-multi-choice,5,59961,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5915,survey-multi-choice,6,65882,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2494,survey-multi-choice,7,68382,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12732,survey-multi-choice,8,81120,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2808,survey-multi-choice,9,83937,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6993,survey-text,10,90933,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2889,survey-multi-choice,11,93832,0.0-14.0,"{"Q0":"61 years of age and older"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":44680},{"page_index":1,"viewing_time":16801},{"page_index":2,"viewing_time":19350},{"page_index":3,"viewing_time":12921}]",93757,instructions,0,93762,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7148,survey-multi-choice,1,100937,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6190},{"page_index":1,"viewing_time":6753}]",12945,instructions,2,113884,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12876,survey-multi-choice,3,126774,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4604,survey-multi-choice,4,131384,0.0-4.0-0.0,"{"Q0":"Very good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8957,survey-multi-choice,5,140349,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,20261,survey-text,6,160614,0.0-6.0-0.0,"{"Q0":"networking engineering"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4104,survey-multi-choice,7,164728,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5306,survey-multi-choice,8,170048,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4034,survey-multi-choice,9,174105,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2644,survey-multi-choice,10,176765,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5654,survey-text,11,182419,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3929,survey-multi-choice,12,186354,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1394},{"page_index":1,"viewing_time":1538},{"page_index":2,"viewing_time":968},{"page_index":3,"viewing_time":1860}]",5760,instructions,0,5762,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4406,survey-multi-choice,1,10170,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2053},{"page_index":1,"viewing_time":1556}]",3609,instructions,2,13779,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3713,survey-multi-choice,3,17494,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2234,survey-multi-choice,4,19730,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6295,survey-text,5,26025,0.0-6.0-0.0,"{"Q0":"Technology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3673,survey-multi-choice,6,29700,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1619,survey-multi-choice,7,31319,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2537,survey-multi-choice,8,33857,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1664,survey-multi-choice,9,35522,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3838,survey-text,10,39361,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2603,survey-multi-choice,11,41965,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1821},{"page_index":1,"viewing_time":1449},{"page_index":2,"viewing_time":1340},{"page_index":3,"viewing_time":1609}]",6219,instructions,0,6220,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3507,survey-multi-choice,1,9735,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1814},{"page_index":1,"viewing_time":1353}]",3168,instructions,2,12904,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2926,survey-multi-choice,3,15833,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5205,survey-multi-choice,4,21041,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6859,survey-text,5,27903,0.0-6.0-0.0,"{"Q0":"BE"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3465,survey-multi-choice,6,31375,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4147,survey-multi-choice,7,35522,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2796,survey-multi-choice,8,38323,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2800,survey-multi-choice,9,41123,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11830,survey-text,10,52954,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2285,survey-multi-choice,11,55244,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":72452},{"page_index":1,"viewing_time":1027},{"page_index":2,"viewing_time":566},{"page_index":3,"viewing_time":757}]",74803,instructions,0,74803,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1766,survey-multi-choice,1,76571,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":622},{"page_index":1,"viewing_time":656}]",1278,instructions,2,77849,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2513,survey-multi-choice,3,80363,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2216,survey-multi-choice,4,82581,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3807,survey-text,5,86388,0.0-6.0-0.0,"{"Q0":"Business"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2287,survey-multi-choice,6,88676,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1071,survey-multi-choice,7,89748,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1829,survey-multi-choice,8,91577,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1584,survey-multi-choice,9,93162,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1974,survey-text,10,95136,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1158,survey-multi-choice,11,96296,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":10176},{"page_index":1,"viewing_time":3520},{"page_index":2,"viewing_time":1177},{"page_index":3,"viewing_time":1319}]",16192,instructions,0,16193,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5033,survey-multi-choice,1,21229,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4427},{"page_index":1,"viewing_time":3096}]",7523,instructions,2,28753,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4921,survey-multi-choice,3,33675,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2301,survey-multi-choice,4,35979,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2470,survey-multi-choice,5,38451,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5006,survey-text,6,43457,0.0-6.0-0.0,"{"Q0":"psychology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2648,survey-multi-choice,7,46107,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2494,survey-multi-choice,8,48603,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4567,survey-multi-choice,9,53171,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2285,survey-multi-choice,10,55460,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3949,survey-text,11,59409,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1815,survey-multi-choice,12,61226,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3964},{"page_index":1,"viewing_time":6622},{"page_index":2,"viewing_time":2050},{"page_index":3,"viewing_time":2230}]",14868,instructions,0,14872,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4480,survey-multi-choice,1,19359,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":13626},{"page_index":1,"viewing_time":3137}]",16764,instructions,2,36124,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5843,survey-multi-choice,3,41970,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3719,survey-multi-choice,4,45695,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3019,survey-multi-choice,5,48718,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5437,survey-text,6,54157,0.0-6.0-0.0,"{"Q0":"business"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5385,survey-multi-choice,7,59547,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2272,survey-multi-choice,8,61822,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5201,survey-multi-choice,9,67027,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3127,survey-multi-choice,10,70158,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4433,survey-text,11,74592,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2487,survey-multi-choice,12,77082,0.0-14.0,"{"Q0":"46 - 60 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3996},{"page_index":1,"viewing_time":8394},{"page_index":2,"viewing_time":16512},{"page_index":3,"viewing_time":1584}]",30487,instructions,0,30489,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2888,survey-multi-choice,1,33386,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3573},{"page_index":1,"viewing_time":3528}]",7101,instructions,2,40487,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3965,survey-multi-choice,3,44456,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1843,survey-multi-choice,4,46306,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4139,survey-text,5,50448,0.0-6.0-0.0,"{"Q0":"English"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2140,survey-multi-choice,6,52594,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2580,survey-multi-choice,7,55177,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4435,survey-multi-choice,8,59617,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6003,survey-multi-choice,9,65625,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3293,survey-text,10,68922,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3264,survey-multi-choice,11,72193,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":7107},{"page_index":1,"viewing_time":11952},{"page_index":2,"viewing_time":2096},{"page_index":3,"viewing_time":1528}]",22683,instructions,0,22686,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3613,survey-multi-choice,1,26302,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":21638},{"page_index":1,"viewing_time":7272}]",28911,instructions,2,55213,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8495,survey-multi-choice,3,63709,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4886,survey-multi-choice,4,68597,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2535,survey-multi-choice,5,71133,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3751,survey-multi-choice,6,74885,0.0-9.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3230,survey-multi-choice,7,78117,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10199,survey-multi-choice,8,88317,0.0-11.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4023,survey-multi-choice,9,92341,0.0-12.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4719,survey-text,10,97061,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2390,survey-multi-choice,11,99453,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":50679},{"page_index":1,"viewing_time":4512},{"page_index":2,"viewing_time":1239},{"page_index":3,"viewing_time":1704}]",58135,instructions,0,58136,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3149,survey-multi-choice,1,61288,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":751},{"page_index":1,"viewing_time":816}]",1567,instructions,2,62855,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,21391,survey-multi-choice,3,84249,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9924,survey-multi-choice,4,94176,0.0-4.0-0.0,"{"Q0":"Very good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,26143,survey-multi-choice,5,120320,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,38614,survey-text,6,158936,0.0-6.0-0.0,"{"Q0":"software development "}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7189,survey-multi-choice,7,166128,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2998,survey-multi-choice,8,169128,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8702,survey-multi-choice,9,177832,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3775,survey-multi-choice,10,181608,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7599,survey-text,11,189208,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1847,survey-multi-choice,12,191056,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":19369},{"page_index":1,"viewing_time":11137},{"page_index":2,"viewing_time":1743},{"page_index":3,"viewing_time":1247}]",33496,instructions,0,33498,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3412,survey-multi-choice,1,36915,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2049},{"page_index":1,"viewing_time":4342}]",6391,instructions,2,43306,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6254,survey-multi-choice,3,49563,0.0-3.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3591,survey-multi-choice,4,53156,0.0-4.0-0.0,"{"Q0":"Very good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4908,survey-multi-choice,5,58067,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12623,survey-text,6,70692,0.0-6.0-0.0,"{"Q0":"computer science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2356,survey-multi-choice,7,73051,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1780,survey-multi-choice,8,74835,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5942,survey-multi-choice,9,80780,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6010,survey-multi-choice,10,86795,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4555,survey-text,11,91351,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2724,survey-multi-choice,12,94080,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":8197},{"page_index":1,"viewing_time":3216},{"page_index":2,"viewing_time":27425},{"page_index":3,"viewing_time":1418}]",40258,instructions,0,40260,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2857,survey-multi-choice,1,43125,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5213},{"page_index":1,"viewing_time":2901}]",8115,instructions,2,51240,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4462,survey-multi-choice,3,55708,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2275,survey-multi-choice,4,57990,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9293,survey-text,5,67285,0.0-6.0-0.0,"{"Q0":"Biology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3926,survey-multi-choice,6,71217,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3708,survey-multi-choice,7,74931,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4879,survey-multi-choice,8,79816,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3664,survey-multi-choice,9,83486,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3968,survey-text,10,87456,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,13479,survey-multi-choice,11,100941,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":12584},{"page_index":1,"viewing_time":3212},{"page_index":2,"viewing_time":2171},{"page_index":3,"viewing_time":1415}]",19382,instructions,0,19383,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4432,survey-multi-choice,1,23818,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2040},{"page_index":1,"viewing_time":2082}]",4122,instructions,2,27940,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4190,survey-multi-choice,3,32132,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4435,survey-multi-choice,4,36568,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2180,survey-multi-choice,5,38750,0.0-7.0-0.0,"{"Q0":"Yes, I am a university student now"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4644,survey-text,6,43394,0.0-8.0-0.0,"{"Q0":"psychology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4584,survey-multi-choice,7,47980,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2605,survey-multi-choice,8,50585,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5152,survey-multi-choice,9,55740,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5458,survey-multi-choice,10,61199,0.0-12.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3575,survey-text,11,64775,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2293,survey-multi-choice,12,67069,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2402},{"page_index":1,"viewing_time":5223},{"page_index":2,"viewing_time":1197},{"page_index":3,"viewing_time":807}]",9631,instructions,0,9635,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2138,survey-multi-choice,1,11777,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1130},{"page_index":1,"viewing_time":1608}]",2739,instructions,2,14517,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2487,survey-multi-choice,3,17006,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2307,survey-multi-choice,4,19316,0.0-4.0-0.0,"{"Q0":"Very good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2033,survey-multi-choice,5,21353,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2817,survey-text,6,24173,0.0-6.0-0.0,"{"Q0":"marketing"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3508,survey-multi-choice,7,27686,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1563,survey-multi-choice,8,29253,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3951,survey-multi-choice,9,33208,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2278,survey-multi-choice,10,35491,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2231,survey-text,11,37724,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1926,survey-multi-choice,12,39654,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":17840},{"page_index":1,"viewing_time":25263},{"page_index":2,"viewing_time":5575},{"page_index":3,"viewing_time":3978}]",52657,instructions,0,52659,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15799,survey-multi-choice,1,68467,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":13580},{"page_index":1,"viewing_time":6390}]",19971,instructions,2,88438,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11499,survey-multi-choice,3,99941,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7147,survey-multi-choice,4,107092,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,14134,survey-multi-choice,5,121229,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,17474,survey-text,6,138706,0.0-6.0-0.0,"{"Q0":"mechanical engineering"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8203,survey-multi-choice,7,146918,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3662,survey-multi-choice,8,150582,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5742,survey-multi-choice,9,156329,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11663,survey-multi-choice,10,167996,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6343,survey-text,11,174340,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4722,survey-multi-choice,12,179067,0.0-14.0,"{"Q0":"46 - 60 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3237},{"page_index":1,"viewing_time":1376},{"page_index":2,"viewing_time":925},{"page_index":3,"viewing_time":920}]",6459,instructions,0,6459,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3105,survey-multi-choice,1,9565,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5368},{"page_index":1,"viewing_time":1130}]",6500,instructions,2,16065,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4062,survey-multi-choice,3,20127,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3694,survey-multi-choice,4,23821,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7872,survey-text,5,31693,0.0-6.0-0.0,"{"Q0":"computer science. "}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3780,survey-multi-choice,6,35474,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2602,survey-multi-choice,7,38077,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5753,survey-multi-choice,8,43831,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5793,survey-multi-choice,9,49625,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4569,survey-text,10,54194,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1979,survey-multi-choice,11,56174,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2739},{"page_index":1,"viewing_time":1697},{"page_index":2,"viewing_time":1540},{"page_index":3,"viewing_time":1230}]",7207,instructions,0,7208,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3490,survey-multi-choice,1,10702,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1457},{"page_index":1,"viewing_time":1560}]",3017,instructions,2,13719,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3998,survey-multi-choice,3,17720,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2257,survey-multi-choice,4,19980,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1958,survey-multi-choice,5,21940,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6618,survey-text,6,28560,0.0-6.0-0.0,"{"Q0":"solve sudoko"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2278,survey-multi-choice,7,30840,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1733,survey-multi-choice,8,32575,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2683,survey-multi-choice,9,35260,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2379,survey-multi-choice,10,37640,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2709,survey-text,11,40350,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2113,survey-multi-choice,12,42464,0.0-14.0,"{"Q0":""}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":22495},{"page_index":1,"viewing_time":4863},{"page_index":2,"viewing_time":1928},{"page_index":3,"viewing_time":2192}]",31482,instructions,0,31498,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4790,survey-multi-choice,1,36311,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2374},{"page_index":1,"viewing_time":3632}]",6007,instructions,2,42318,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5818,survey-multi-choice,3,48142,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,13010,survey-multi-choice,4,61159,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6010,survey-multi-choice,5,67175,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8062,survey-text,6,75239,0.0-6.0-0.0,"{"Q0":"PHYSICS"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5914,survey-multi-choice,7,81158,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3716,survey-multi-choice,8,84879,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4511,survey-multi-choice,9,89400,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4621,survey-multi-choice,10,94031,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5023,survey-text,11,99056,0.0-13.0,"{"Q0":"FEMALE"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2650,survey-multi-choice,12,101719,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":17840},{"page_index":1,"viewing_time":11912},{"page_index":2,"viewing_time":2343},{"page_index":3,"viewing_time":2073}]",34168,instructions,0,34169,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10883,survey-multi-choice,1,45054,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":17273},{"page_index":1,"viewing_time":7264}]",24537,instructions,2,69592,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4905,survey-multi-choice,3,74498,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4253,survey-multi-choice,4,78753,0.0-4.0-0.0,"{"Q0":"Rather bad"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2846,survey-multi-choice,5,81602,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7942,survey-text,6,89544,0.0-6.0-0.0,"{"Q0":"Business"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5095,survey-multi-choice,7,94641,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2343,survey-multi-choice,8,96986,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8751,survey-multi-choice,9,105737,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5903,survey-multi-choice,10,111641,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5142,survey-text,11,116784,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2040,survey-multi-choice,12,118825,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2722},{"page_index":1,"viewing_time":1256},{"page_index":2,"viewing_time":4641},{"page_index":3,"viewing_time":1696}]",10316,instructions,0,10316,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3151,survey-multi-choice,1,13469,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6822},{"page_index":1,"viewing_time":1145}]",7967,instructions,2,21437,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2623,survey-multi-choice,3,24062,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1774,survey-multi-choice,4,25837,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1543,survey-multi-choice,5,27381,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1622,survey-multi-choice,6,29005,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2631,survey-multi-choice,7,31639,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1598,survey-multi-choice,8,33238,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1719,survey-multi-choice,9,34959,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3535,survey-text,10,38495,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2454,survey-multi-choice,11,40952,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":8021},{"page_index":1,"viewing_time":1727},{"page_index":2,"viewing_time":1496},{"page_index":3,"viewing_time":1496}]",12740,instructions,0,12740,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3821,survey-multi-choice,1,16598,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1545},{"page_index":1,"viewing_time":1292}]",2850,instructions,2,19448,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7444,survey-multi-choice,3,26901,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4356,survey-multi-choice,4,31264,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5038,survey-text,5,36304,0.0-6.0-0.0,"{"Q0":"good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19117,survey-multi-choice,6,55423,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2221,survey-multi-choice,7,57645,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12286,survey-multi-choice,8,69935,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3213,survey-multi-choice,9,73149,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6850,survey-text,10,79999,0.0-13.0,"{"Q0":"yes"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7744,survey-multi-choice,11,87751,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9485},{"page_index":1,"viewing_time":28128},{"page_index":2,"viewing_time":1632},{"page_index":3,"viewing_time":1168}]",40413,instructions,0,40414,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6302,survey-multi-choice,1,46720,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2086},{"page_index":1,"viewing_time":2232}]",4318,instructions,2,51038,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,15085,survey-multi-choice,3,66126,0.0-3.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6550,survey-multi-choice,4,72678,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5309,survey-multi-choice,5,77990,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19927,survey-text,6,97918,0.0-6.0-0.0,"{"Q0":"Computer Science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8246,survey-multi-choice,7,106166,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,16297,survey-multi-choice,8,122464,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5420,survey-multi-choice,9,127887,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4229,survey-multi-choice,10,132119,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12951,survey-text,11,145071,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2935,survey-multi-choice,12,148007,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9472},{"page_index":1,"viewing_time":2921},{"page_index":2,"viewing_time":2040},{"page_index":3,"viewing_time":1640}]",16074,instructions,0,16076,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3057,survey-multi-choice,1,19136,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1599},{"page_index":1,"viewing_time":4821}]",6420,instructions,2,25556,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3979,survey-multi-choice,3,29537,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2140,survey-multi-choice,4,31679,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1558,survey-multi-choice,5,33239,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4200,survey-multi-choice,6,37441,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3178,survey-multi-choice,7,40620,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2599,survey-multi-choice,8,43221,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2258,survey-multi-choice,9,45481,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3840,survey-text,10,49323,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2117,survey-multi-choice,11,51443,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3200},{"page_index":1,"viewing_time":3345},{"page_index":2,"viewing_time":2128},{"page_index":3,"viewing_time":1120}]",9794,instructions,0,9796,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3923,survey-multi-choice,1,13723,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":951},{"page_index":1,"viewing_time":1319}]",2271,instructions,2,15995,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2582,survey-multi-choice,3,18579,0.0-3.0,"{"Q0":"Yes, I solve Sudoku regularly"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3452,survey-multi-choice,4,22035,0.0-4.0-0.0,"{"Q0":"Very good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2630,survey-multi-choice,5,24667,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7599,survey-text,6,32268,0.0-6.0-0.0,"{"Q0":"COMPUTER SCIENCE"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1508,survey-multi-choice,7,33780,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1989,survey-multi-choice,8,35771,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2214,survey-multi-choice,9,37987,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1943,survey-multi-choice,10,39932,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3534,survey-text,11,43467,0.0-13.0,"{"Q0":"MALE"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2302,survey-multi-choice,12,45771,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,13,43979,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":4617},{"page_index":1,"viewing_time":6037},{"page_index":2,"viewing_time":6188},{"page_index":3,"viewing_time":1588},{"page_index":4,"viewing_time":1900},{"page_index":5,"viewing_time":784},{"page_index":6,"viewing_time":2044}]",23158,instructions,14,67137,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3512,html-keyboard-response,15,70651,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,101166,0.0-17.0,NULL,NULL,NULL,30511,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":2731}]",2731,instructions,17,103897,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,154154,0.0-19.0,NULL,NULL,NULL,50256,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,19,208729,0.0-20.0,NULL,NULL,NULL,54573,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,20,263974,0.0-21.0,NULL,NULL,NULL,55244,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,21,300918,0.0-22.0,NULL,NULL,NULL,36943,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,22,341228,0.0-23.0,NULL,NULL,NULL,40309,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,23,389147,0.0-24.0,NULL,NULL,NULL,47918,boards2x3,b,2,1,1
+"[{"page_index":0,"viewing_time":1507},{"page_index":1,"viewing_time":1295}]",2802,instructions,24,391949,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":11521}]",11521,instructions,25,403470,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":8328},{"page_index":1,"viewing_time":22478},{"page_index":2,"viewing_time":3933},{"page_index":3,"viewing_time":1446}]",36186,instructions,0,36187,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5966,survey-multi-choice,1,42157,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":5996},{"page_index":1,"viewing_time":2146}]",8142,instructions,2,50300,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5582,survey-multi-choice,3,55886,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4400,survey-multi-choice,4,60289,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5029,survey-text,5,65321,0.0-6.0-0.0,"{"Q0":"English"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2788,survey-multi-choice,6,68112,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4969,survey-multi-choice,7,73083,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8647,survey-multi-choice,8,81735,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4197,survey-multi-choice,9,85935,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3932,survey-text,10,89868,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4007,survey-multi-choice,11,93876,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1930},{"page_index":1,"viewing_time":1990},{"page_index":2,"viewing_time":24310},{"page_index":3,"viewing_time":2049}]",30280,instructions,0,30281,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3236,survey-multi-choice,1,33521,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1520},{"page_index":1,"viewing_time":10374}]",11894,instructions,2,45415,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,93812,survey-multi-choice,3,139229,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8107,survey-multi-choice,4,147339,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4479,survey-multi-choice,5,151820,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11188,survey-text,6,163009,0.0-6.0-0.0,"{"Q0":"computer"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5089,survey-multi-choice,7,168101,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4956,survey-multi-choice,8,173059,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3478,survey-multi-choice,9,176539,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3439,survey-multi-choice,10,179979,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6399,survey-text,11,186380,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,44813,survey-multi-choice,12,231194,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":307965},{"page_index":1,"viewing_time":1316},{"page_index":2,"viewing_time":849},{"page_index":3,"viewing_time":625}]",310756,instructions,0,310757,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2333,survey-multi-choice,1,313097,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6286},{"page_index":1,"viewing_time":1036}]",7322,instructions,2,320419,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2738,survey-multi-choice,3,323159,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2802,survey-multi-choice,4,325963,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6704,survey-text,5,332669,0.0-6.0-0.0,"{"Q0":"computer science"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2691,survey-multi-choice,6,335361,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1074,survey-multi-choice,7,336436,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2653,survey-multi-choice,8,339092,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1440,survey-multi-choice,9,340534,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3318,survey-text,10,343853,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1443,survey-multi-choice,11,345298,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":413443},{"page_index":1,"viewing_time":5559},{"page_index":2,"viewing_time":3464},{"page_index":3,"viewing_time":22871}]",445340,instructions,0,445343,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5538,survey-multi-choice,1,450893,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3309},{"page_index":1,"viewing_time":1608}]",4917,instructions,2,455811,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6092,survey-multi-choice,3,461907,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2725,survey-multi-choice,4,464638,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2666,survey-multi-choice,5,467310,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10204,survey-text,6,477517,0.0-6.0-0.0,"{"Q0":"chemistry"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2362,survey-multi-choice,7,479886,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4493,survey-multi-choice,8,484381,0.0-10.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2667,survey-multi-choice,9,487053,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4386,survey-multi-choice,10,491445,0.0-12.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8703,survey-text,11,500150,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2537,survey-multi-choice,12,502695,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,13,61228,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6893},{"page_index":1,"viewing_time":1912},{"page_index":2,"viewing_time":4072},{"page_index":3,"viewing_time":2352},{"page_index":4,"viewing_time":1352},{"page_index":5,"viewing_time":911},{"page_index":6,"viewing_time":7105}]",24597,instructions,14,85826,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,2367,html-keyboard-response,15,88194,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,126388,0.0-17.0,NULL,NULL,NULL,38188,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":5389}]",5389,instructions,17,131777,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,174757,0.0-19.0,NULL,NULL,NULL,42979,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,19,215107,0.0-20.0,NULL,NULL,NULL,40348,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,20,264204,0.0-21.0,NULL,NULL,NULL,49094,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,21,307979,0.0-22.0,NULL,NULL,NULL,43774,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,22,360875,0.0-23.0,NULL,NULL,NULL,52894,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,23,419388,0.0-24.0,NULL,NULL,NULL,58511,boards2x3,b,0,1,1
+"[{"page_index":0,"viewing_time":2028},{"page_index":1,"viewing_time":2313}]",4341,instructions,24,423730,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":5551}]",5552,instructions,25,429282,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,call-function,12,34116,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":933},{"page_index":1,"viewing_time":1504},{"page_index":2,"viewing_time":1346},{"page_index":3,"viewing_time":1246},{"page_index":4,"viewing_time":1031},{"page_index":5,"viewing_time":728},{"page_index":6,"viewing_time":1240}]",8029,instructions,13,42145,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,2977,html-keyboard-response,14,45122,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,75051,0.0-17.0,NULL,NULL,NULL,29924,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":5280}]",5281,instructions,16,80332,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,109269,0.0-19.0,NULL,NULL,NULL,28936,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,18,167187,0.0-20.0,NULL,NULL,NULL,57917,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,19,322775,0.0-21.0,NULL,NULL,NULL,155587,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,20,349541,0.0-22.0,NULL,NULL,NULL,26764,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,21,386266,0.0-23.0,NULL,NULL,NULL,36723,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,22,567243,0.0-24.0,NULL,NULL,NULL,NULL,boards2x3,b,4,,1
+"[{"page_index":0,"viewing_time":81582},{"page_index":1,"viewing_time":1795}]",83377,instructions,23,650620,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6452}]",6453,instructions,24,657073,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4623},{"page_index":1,"viewing_time":4849},{"page_index":2,"viewing_time":981},{"page_index":3,"viewing_time":967}]",11421,instructions,0,11422,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6324,survey-multi-choice,1,17750,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":9443},{"page_index":1,"viewing_time":1756}]",11200,instructions,2,28950,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4094,survey-multi-choice,3,33050,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7707,survey-multi-choice,4,40759,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,332385,survey-text,5,373146,0.0-6.0-0.0,"{"Q0":"biotech"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4475,survey-multi-choice,6,377625,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,19059,survey-multi-choice,7,396686,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5364,survey-multi-choice,8,402054,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2946,survey-multi-choice,9,405002,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4546,survey-text,10,409550,0.0-13.0,"{"Q0":"m"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3995,survey-multi-choice,11,413548,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4256},{"page_index":1,"viewing_time":10715},{"page_index":2,"viewing_time":1948},{"page_index":3,"viewing_time":1513}]",18433,instructions,0,18434,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6652,survey-multi-choice,1,25089,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2046},{"page_index":1,"viewing_time":1414}]",3460,instructions,2,28549,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8334,survey-multi-choice,3,36885,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3943,survey-multi-choice,4,40830,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3618,survey-multi-choice,5,44449,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,13367,survey-text,6,57818,0.0-6.0-0.0,"{"Q0":"computer"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2715,survey-multi-choice,7,60535,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4843,survey-multi-choice,8,65379,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3459,survey-multi-choice,9,68840,0.0-11.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4507,survey-multi-choice,10,73349,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4795,survey-text,11,78144,0.0-13.0,"{"Q0":"34"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2817,survey-multi-choice,12,80962,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1849},{"page_index":1,"viewing_time":4876},{"page_index":2,"viewing_time":3946},{"page_index":3,"viewing_time":71876}]",82548,instructions,0,82549,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3410,survey-multi-choice,1,85968,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":7679},{"page_index":1,"viewing_time":1190}]",8870,instructions,2,94839,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3869,survey-multi-choice,3,98714,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3724,survey-multi-choice,4,102442,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3938,survey-text,5,106382,0.0-6.0-0.0,"{"Q0":"biology"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2889,survey-multi-choice,6,109277,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3180,survey-multi-choice,7,112460,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3380,survey-multi-choice,8,115846,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2105,survey-multi-choice,9,117957,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3586,survey-text,10,121545,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2982,survey-multi-choice,11,124533,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,13,77085,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":8294},{"page_index":1,"viewing_time":32638},{"page_index":2,"viewing_time":14768},{"page_index":3,"viewing_time":13906},{"page_index":4,"viewing_time":5344},{"page_index":5,"viewing_time":5522},{"page_index":6,"viewing_time":7744}]",88217,instructions,14,165302,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,2697,html-keyboard-response,15,168002,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,213101,0.0-17.0,NULL,NULL,NULL,45089,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":6179}]",6179,instructions,17,219281,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,287869,0.0-19.0,NULL,NULL,NULL,68585,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,19,351060,0.0-20.0,NULL,NULL,NULL,63185,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,20,404651,0.0-21.0,NULL,NULL,NULL,53585,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,21,457011,0.0-22.0,NULL,NULL,NULL,52344,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,22,511305,0.0-23.0,NULL,NULL,NULL,54292,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,23,564861,0.0-24.0,NULL,NULL,NULL,53550,boards2x3,b,2,1,1
+"[{"page_index":0,"viewing_time":3240},{"page_index":1,"viewing_time":1798}]",5039,instructions,24,569900,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":9453}]",9454,instructions,25,579354,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":6532},{"page_index":1,"viewing_time":3401},{"page_index":2,"viewing_time":3080},{"page_index":3,"viewing_time":1642}]",14655,instructions,0,14657,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6591,survey-multi-choice,1,21251,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":10847},{"page_index":1,"viewing_time":5183}]",16030,instructions,2,37283,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3430,survey-multi-choice,3,40715,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3552,survey-multi-choice,4,44270,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7079,survey-text,5,51349,0.0-6.0-0.0,"{"Q0":"Business"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2640,survey-multi-choice,6,53991,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4490,survey-multi-choice,7,58483,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5474,survey-multi-choice,8,63960,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4355,survey-multi-choice,9,68318,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6686,survey-text,10,75005,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2035,survey-multi-choice,11,77042,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4166},{"page_index":1,"viewing_time":2358},{"page_index":2,"viewing_time":1836},{"page_index":3,"viewing_time":1448}]",9809,instructions,0,9809,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4366,survey-multi-choice,1,14176,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2059},{"page_index":1,"viewing_time":5748}]",7807,instructions,2,21988,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5609,survey-multi-choice,3,27598,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3419,survey-multi-choice,4,31018,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3173,survey-multi-choice,5,34192,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2747,survey-multi-choice,6,36940,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5739,survey-multi-choice,7,42680,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2565,survey-multi-choice,8,45246,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8083,survey-multi-choice,9,53330,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9405,survey-multi-choice,10,62736,0.0-12.0,"{"Q0":"Semi- or unskilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5300,survey-text,11,68036,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1875,survey-multi-choice,12,69912,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,13,25322,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1151},{"page_index":1,"viewing_time":1200},{"page_index":2,"viewing_time":176},{"page_index":3,"viewing_time":208},{"page_index":4,"viewing_time":232},{"page_index":5,"viewing_time":497},{"page_index":6,"viewing_time":1168}]",4632,instructions,14,29954,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,974,html-keyboard-response,15,30929,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,58371,0.0-17.0,NULL,NULL,NULL,27438,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":7029}]",7029,instructions,17,65400,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,246698,0.0-19.0,NULL,NULL,NULL,NULL,boards2x3,b,2,,1
+NULL,NULL,sudoku_trial,19,300330,0.0-20.0,NULL,NULL,NULL,53630,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,20,339155,0.0-21.0,NULL,NULL,NULL,38822,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,21,561953,0.0-22.0,NULL,NULL,NULL,NULL,boards2x3,a,3,,1
+NULL,NULL,sudoku_trial,22,600847,0.0-23.0,NULL,NULL,NULL,38892,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,23,633375,0.0-24.0,NULL,NULL,NULL,32527,boards2x3,c,1,1,1
+"[{"page_index":0,"viewing_time":3046},{"page_index":1,"viewing_time":1167}]",4213,instructions,24,637589,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":2880}]",2880,instructions,25,640470,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,call-function,12,52616,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6874},{"page_index":1,"viewing_time":15274},{"page_index":2,"viewing_time":8896},{"page_index":3,"viewing_time":5400},{"page_index":4,"viewing_time":2337},{"page_index":5,"viewing_time":2726},{"page_index":6,"viewing_time":5146}]",46653,instructions,13,99269,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,6798,html-keyboard-response,14,106069,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,174877,0.0-17.0,NULL,NULL,NULL,68802,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":2702}]",2702,instructions,16,177579,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,264553,0.0-19.0,NULL,NULL,NULL,86972,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,18,385036,0.0-20.0,NULL,NULL,NULL,120480,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,19,456188,0.0-21.0,NULL,NULL,NULL,71150,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,20,541272,0.0-22.0,NULL,NULL,NULL,85081,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,21,608385,0.0-23.0,NULL,NULL,NULL,67112,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,22,760519,0.0-24.0,NULL,NULL,NULL,152131,boards2x3,a,3,1,1
+"[{"page_index":0,"viewing_time":2008},{"page_index":1,"viewing_time":1278}]",3286,instructions,23,763805,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6968}]",6968,instructions,24,770773,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,call-function,13,49832,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6361},{"page_index":1,"viewing_time":4886},{"page_index":2,"viewing_time":2666},{"page_index":3,"viewing_time":4593},{"page_index":4,"viewing_time":2049},{"page_index":5,"viewing_time":866},{"page_index":6,"viewing_time":1458}]",22880,instructions,14,72712,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3205,html-keyboard-response,15,75919,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,16,123012,0.0-17.0,NULL,NULL,NULL,47089,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":3699}]",3699,instructions,17,126711,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,18,197424,0.0-19.0,NULL,NULL,NULL,70711,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,19,274291,0.0-20.0,NULL,NULL,NULL,76866,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,20,370779,0.0-21.0,NULL,NULL,NULL,96485,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,21,477429,0.0-22.0,NULL,NULL,NULL,106647,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,22,569773,0.0-23.0,NULL,NULL,NULL,92341,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,23,750536,0.0-24.0,NULL,NULL,NULL,NULL,boards2x3,b,2,,1
+"[{"page_index":0,"viewing_time":35307},{"page_index":1,"viewing_time":1586}]",36893,instructions,24,787430,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6458}]",6459,instructions,25,793889,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2145},{"page_index":1,"viewing_time":1005},{"page_index":2,"viewing_time":883},{"page_index":3,"viewing_time":1353}]",5387,instructions,0,5387,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2297,survey-multi-choice,1,7685,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1244},{"page_index":1,"viewing_time":1945}]",3189,instructions,2,10874,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4398,survey-multi-choice,3,15273,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1826,survey-multi-choice,4,17100,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1361,survey-multi-choice,5,18461,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1914,survey-multi-choice,6,20376,0.0-9.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1713,survey-multi-choice,7,22090,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1711,survey-multi-choice,8,23802,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2997,survey-multi-choice,9,26801,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3483,survey-text,10,30285,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2020,survey-multi-choice,11,32305,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":4668},{"page_index":1,"viewing_time":2440},{"page_index":2,"viewing_time":1256},{"page_index":3,"viewing_time":1256}]",9621,instructions,0,9622,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2931,survey-multi-choice,1,12558,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":2279},{"page_index":1,"viewing_time":1408}]",3687,instructions,2,16245,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10814,survey-multi-choice,3,27062,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7309,survey-multi-choice,4,34374,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,18758,survey-text,5,53133,0.0-6.0-0.0,"{"Q0":"finance"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5542,survey-multi-choice,6,58677,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6102,survey-multi-choice,7,64781,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,9814,survey-multi-choice,8,74597,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4246,survey-multi-choice,9,78845,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6662,survey-text,10,85509,0.0-13.0,"{"Q0":"Female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2317,survey-multi-choice,11,87829,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3432},{"page_index":1,"viewing_time":1287},{"page_index":2,"viewing_time":832},{"page_index":3,"viewing_time":889}]",6442,instructions,0,6444,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4408,survey-multi-choice,1,10859,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1341},{"page_index":1,"viewing_time":960}]",2301,instructions,2,13161,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,12971,survey-multi-choice,3,26137,0.0-3.0,"{"Q0":"No, I have never solved Sudoku puzzles before"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,8953,survey-multi-choice,4,35097,0.0-5.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2587,survey-multi-choice,5,37689,0.0-9.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1493,survey-multi-choice,6,39185,0.0-10.0,"{"Q0":"Less than four years of high school"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3243,survey-multi-choice,7,42433,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1964,survey-multi-choice,8,44401,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5837,survey-text,9,50240,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2732,survey-multi-choice,10,52976,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1553},{"page_index":1,"viewing_time":732},{"page_index":2,"viewing_time":438},{"page_index":3,"viewing_time":473}]",3197,instructions,0,3198,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1884,survey-multi-choice,1,5085,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":818},{"page_index":1,"viewing_time":604}]",1423,instructions,2,6508,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3493,survey-multi-choice,3,10003,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2560,survey-multi-choice,4,12566,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2254,survey-text,5,14820,0.0-6.0-0.0,"{"Q0":"IT"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2290,survey-multi-choice,6,17114,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1071,survey-multi-choice,7,18188,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1296,survey-multi-choice,8,19487,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1515,survey-multi-choice,9,21005,0.0-12.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2160,survey-text,10,23166,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1286,survey-multi-choice,11,24456,0.0-14.0,"{"Q0":"18 - 25 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":221116},{"page_index":1,"viewing_time":3012},{"page_index":2,"viewing_time":10514},{"page_index":3,"viewing_time":13580}]",248223,instructions,0,248223,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6433,survey-multi-choice,1,254661,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":78956},{"page_index":1,"viewing_time":7532}]",86488,instructions,2,341149,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4684,survey-multi-choice,3,345836,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2443,survey-multi-choice,4,348281,0.0-4.0-0.0,"{"Q0":"Average"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2583,survey-multi-choice,5,350866,0.0-5.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6042,survey-text,6,356908,0.0-6.0-0.0,"{"Q0":"accounting"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1976,survey-multi-choice,7,358886,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11850,survey-multi-choice,8,370738,0.0-10.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5162,survey-multi-choice,9,375902,0.0-11.0,"{"Q0":"Upper middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3679,survey-multi-choice,10,379582,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5007,survey-text,11,384590,0.0-13.0,"{"Q0":"female"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,1861,survey-multi-choice,12,386452,0.0-14.0,"{"Q0":"36 - 45 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,55246,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":4457},{"page_index":1,"viewing_time":4088},{"page_index":2,"viewing_time":3142},{"page_index":3,"viewing_time":13860},{"page_index":4,"viewing_time":6259},{"page_index":5,"viewing_time":1330},{"page_index":6,"viewing_time":1539}]",34677,instructions,13,89923,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3070,html-keyboard-response,14,92993,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,256713,0.0-17.0,NULL,NULL,NULL,163717,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":1860}]",1860,instructions,16,258573,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,339736,0.0-19.0,NULL,NULL,NULL,81160,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,18,424735,0.0-20.0,NULL,NULL,NULL,84998,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,19,502662,0.0-21.0,NULL,NULL,NULL,77921,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,20,573728,0.0-22.0,NULL,NULL,NULL,71066,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,21,652950,0.0-23.0,NULL,NULL,NULL,79216,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,22,724129,0.0-24.0,NULL,NULL,NULL,71177,boards2x3,b,4,1,1
+"[{"page_index":0,"viewing_time":1803},{"page_index":1,"viewing_time":2579}]",4384,instructions,23,728513,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":10558}]",10558,instructions,24,739071,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":3834},{"page_index":1,"viewing_time":5120},{"page_index":2,"viewing_time":3344},{"page_index":3,"viewing_time":2007}]",14307,instructions,0,14308,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3189,survey-multi-choice,1,17500,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":1455},{"page_index":1,"viewing_time":1880}]",3336,instructions,2,20836,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4278,survey-multi-choice,3,25116,0.0-3.0,"{"Q0":"Yes, I solved Sudoku once or twice"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3621,survey-multi-choice,4,28740,0.0-5.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,29063,survey-text,5,57804,0.0-6.0-0.0,"{"Q0":"marketing"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2790,survey-multi-choice,6,60596,0.0-9.0,"{"Q0":"Undergraduate degree (e.g., BA)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4389,survey-multi-choice,7,64988,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5781,survey-multi-choice,8,70772,0.0-11.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3694,survey-multi-choice,9,74469,0.0-12.0,"{"Q0":"Skilled working class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10422,survey-text,10,84892,0.0-13.0,"{"Q0":"male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,10110,survey-multi-choice,11,95005,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,72195,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":5941},{"page_index":1,"viewing_time":21559},{"page_index":2,"viewing_time":5328},{"page_index":3,"viewing_time":3456},{"page_index":4,"viewing_time":4224},{"page_index":5,"viewing_time":1496},{"page_index":6,"viewing_time":8760}]",50765,instructions,13,122960,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3254,html-keyboard-response,14,126217,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,174211,0.0-17.0,NULL,NULL,NULL,47987,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":2596}]",2598,instructions,16,176809,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,235930,0.0-19.0,NULL,NULL,NULL,59118,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,18,291218,0.0-20.0,NULL,NULL,NULL,55284,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,19,383810,0.0-21.0,NULL,NULL,NULL,92589,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,20,565721,0.0-22.0,NULL,NULL,NULL,NULL,boards2x3,b,2,,1
+NULL,NULL,sudoku_trial,21,643786,0.0-23.0,NULL,NULL,NULL,78062,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,22,713618,0.0-24.0,NULL,NULL,NULL,69830,boards2x3,c,3,1,1
+"[{"page_index":0,"viewing_time":1350},{"page_index":1,"viewing_time":2280}]",3631,instructions,23,717249,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":6977}]",6978,instructions,24,724227,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":17912},{"page_index":1,"viewing_time":4144},{"page_index":2,"viewing_time":1273},{"page_index":3,"viewing_time":1625}]",24955,instructions,0,24958,0.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,7227,survey-multi-choice,1,32193,0.0-1.0,"{"Q0":"I agree to participate in this research study"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+"[{"page_index":0,"viewing_time":14717},{"page_index":1,"viewing_time":20694}]",35412,instructions,2,67605,0.0-2.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,11066,survey-multi-choice,3,78676,0.0-3.0,"{"Q0":"Yes, I solve Sudoku occasionally"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3879,survey-multi-choice,4,82558,0.0-4.0-0.0,"{"Q0":"Rather good"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4703,survey-multi-choice,5,87264,0.0-5.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,3244,survey-multi-choice,6,90511,0.0-7.0-0.0,"{"Q0":"No, I am not a student"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4819,survey-multi-choice,7,95334,0.0-9.0,"{"Q0":"Graduate degree (e.g., MA, MSc)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,4072,survey-multi-choice,8,99410,0.0-10.0,"{"Q0":"High school (four years or more)"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,6475,survey-multi-choice,9,105890,0.0-11.0,"{"Q0":"Middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5485,survey-multi-choice,10,111380,0.0-12.0,"{"Q0":"Lower middle class"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,5262,survey-text,11,116644,0.0-13.0,"{"Q0":"Male"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,2397,survey-multi-choice,12,119044,0.0-14.0,"{"Q0":"26 - 35 years of age"}",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,call-function,12,100943,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":7016},{"page_index":1,"viewing_time":20476},{"page_index":2,"viewing_time":16853},{"page_index":3,"viewing_time":2356},{"page_index":4,"viewing_time":820},{"page_index":5,"viewing_time":716},{"page_index":6,"viewing_time":3355}]",51593,instructions,13,152536,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,2795,html-keyboard-response,14,155333,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,219373,0.0-17.0,NULL,NULL,NULL,64035,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":3856}]",3856,instructions,16,223229,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,302990,0.0-19.0,NULL,NULL,NULL,79758,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,18,403661,0.0-20.0,NULL,NULL,NULL,100667,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,19,481167,0.0-21.0,NULL,NULL,NULL,77503,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,20,562416,0.0-22.0,NULL,NULL,NULL,81246,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,21,649707,0.0-23.0,NULL,NULL,NULL,87290,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,22,718437,0.0-24.0,NULL,NULL,NULL,68727,boards2x3,c,1,1,1
+"[{"page_index":0,"viewing_time":2987},{"page_index":1,"viewing_time":1517}]",4504,instructions,23,722941,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":2956}]",2957,instructions,24,725899,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,call-function,12,48411,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1468},{"page_index":1,"viewing_time":2307},{"page_index":2,"viewing_time":4045},{"page_index":3,"viewing_time":1241},{"page_index":4,"viewing_time":1109},{"page_index":5,"viewing_time":1449},{"page_index":6,"viewing_time":1405}]",13024,instructions,13,61435,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,3253,html-keyboard-response,14,64690,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,124816,0.0-17.0,NULL,NULL,NULL,60119,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":8774}]",8774,instructions,16,133591,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,310430,0.0-19.0,NULL,NULL,NULL,176835,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,18,402629,0.0-20.0,NULL,NULL,NULL,92195,boards2x3,b,0,1,1
+NULL,NULL,sudoku_trial,19,467680,0.0-21.0,NULL,NULL,NULL,65048,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,20,547687,0.0-22.0,NULL,NULL,NULL,80004,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,21,627945,0.0-23.0,NULL,NULL,NULL,80255,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,22,812261,0.0-24.0,NULL,NULL,NULL,NULL,boards2x3,b,2,,1
+"[{"page_index":0,"viewing_time":2623},{"page_index":1,"viewing_time":1274}]",3897,instructions,23,816158,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":131098}]",131099,instructions,24,947258,0.0-26.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,call-function,12,40952,0.0-15.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+"[{"page_index":0,"viewing_time":1390},{"page_index":1,"viewing_time":13827},{"page_index":2,"viewing_time":13081},{"page_index":3,"viewing_time":1217},{"page_index":4,"viewing_time":928},{"page_index":5,"viewing_time":608},{"page_index":6,"viewing_time":1537}]",32588,instructions,13,73541,0.0-16.0-0.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,1546,html-keyboard-response,14,75088,0.0-16.0-1.0,NULL,"Are you ready to solve a practice Sudoku? <br><br> Yes, I am ready! (Press C) <br><br> Not yet, I would like to read the rules once again, please! (Press R)",67,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,15,122909,0.0-17.0,NULL,NULL,NULL,47817,boards2x3,d,0,1,1
+"[{"page_index":0,"viewing_time":6726}]",6726,instructions,16,129636,0.0-18.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+NULL,NULL,sudoku_trial,17,191270,0.0-19.0,NULL,NULL,NULL,61632,boards2x3,c,3,1,1
+NULL,NULL,sudoku_trial,18,262024,0.0-20.0,NULL,NULL,NULL,70753,boards2x3,c,1,1,1
+NULL,NULL,sudoku_trial,19,336762,0.0-21.0,NULL,NULL,NULL,74737,boards2x3,b,4,1,1
+NULL,NULL,sudoku_trial,20,427479,0.0-22.0,NULL,NULL,NULL,90715,boards2x3,b,2,1,1
+NULL,NULL,sudoku_trial,21,498809,0.0-23.0,NULL,NULL,NULL,71329,boards2x3,a,3,1,1
+NULL,NULL,sudoku_trial,22,546625,0.0-24.0,NULL,NULL,NULL,47815,boards2x3,b,0,1,1
+"[{"page_index":0,"viewing_time":1159},{"page_index":1,"viewing_time":944}]",2103,instructions,23,548728,0.0-25.0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
