@@ -4,24 +4,31 @@
     <title>Trial Experiment</title>
 
 
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-  <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku.css">
-  <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
-  <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
-  <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku.css">
+    <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
+    <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
+    <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <script src="jsPsych/jspsych.js"></script>
-    <script src="jsPsych/plugins/jspsych-fullscreen.js"></script>
-    <script src="jsPsych/plugins/jspsych-instructions.js"></script>
-    <script src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
-    <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="jsPsych/jspsych.js"></script>
 
+    
     <script type="text/javascript" src="jsPsych/jspsych-plugin-sudoku.js"></script>
     <script type="text/javascript" src="sudoku.js"></script>
     <script type="text/javascript" src="timer.js"></script>
+    
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-likert.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-image-keyboard-response.js" ></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-multi-choice.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-call-function.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-instructions.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-text.js"></script>
+    <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css">
+
     
   </head>
   <body>
@@ -29,109 +36,171 @@
 
     var timeline = [];
 
- 
+    var subject_id = jsPsych.randomization.randomID(15);
+    console.log(subject_id);
+
+    jsPsych.data.addProperties({
+      subject: subject_id
+    });
 
 
-    /* Sudoku pre-test WITHOUT TIMER */
-
-   
-/*    var s0 = {
-      type: 'sudoku_trial',
-      trial_duration: 600000,
-      board_size: 'boards2x3',
-      board_set: 'd',
-      timer: true,
-    }
-    timeline.push(s0);*/
-
-
-
-    /* ------------- SUDOKU TRIALS ------------------- */
-
-     var s1 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'a',
-      board_nr: 1
-     }
-     var s2 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'a',
-      board_nr: 3
-     }
-     var s3 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 0
-     }
-     var s4 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 2
-     }
-     var s5 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 4
-     }
-     var s6 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'c',
-      board_nr: 1
-     }
-     var s7 = {
-      type: 'sudoku_trial',
-      trial_duration: 120000,  
-      board_size: 'boards2x3',
-      board_set: 'c',
-      board_nr: 3
-     }
-
-     var s_array = [s1, s2, s3, s4, s5, s6, s7];
-
-     var sudo_trials = jsPsych.randomization.shuffleNoRepeats(s_array);
-
-
-     timeline.push.apply(timeline, sudo_trials);
-
-     var end_trial = {
+    var welcome = {
       type: 'instructions',
-      pages: [
-      'ADD TEXT'
+      pages: ['Hello! <br> You are invited to participate in a research study that aims to assess individuals’ problem-solving skills at thinking tasks. People that we invite to participate come from different backgrounds. <font color="red">In order to participate, you will need a laptop or a computer.</font>  <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
+      '<b>WHAT IS INVOLVED IN THIS STUDY</b> <br>In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks with different time limits. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 20 minutes in total. You can stop participating at any time. <br><br> Because we want to ensure that different groups of people are represented in the study, we will ask you a couple of questions to assess whether you are still eligible to participate. If you do not qualify for this study, you will not be able to participate.',
+      '<b>RISKS</b> <br>We believe that your participation in this study does not involve any physical risks. However, some of the questions are sensitive (questions related to your childhood experiences) and might make some people uncomfortable. If answering these questions makes you uncomfortable, feel free to close the survey now or at any point during the survey.<br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help assess individual abilities to solve tasks with different difficulty levels. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
+      '<b>CONFIDENTIALITY</b> <br> All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. <br><br> <b>YOUR RIGHTS AS A RESEARCH PARTICIPANT</b> <br> Participation in this study is voluntary. You have the right not to participate at all or to leave the study at any time. Deciding not to participate or choosing to leave the study will not result in any penalty or loss of benefits to which you are entitled.',
+      '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or would like to receive additional information about the study, you may contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de. If you have any concerns about the study or your rights as a research participant, you may contact BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
       ],
       show_clickable_nav: true,
     }
-    timeline.push(end_trial);
+    timeline.push(welcome);
+
+    var multi_choice_block = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "By participating in this research study, you agree that:<br><br> (1) You have read and understood the information about the study, including the information about risks, benefits, confidentiality policy and your rights as a research participant; <br> (2) Your questions about your participation have been answered satisfactorily and you take part in this research study voluntarily; <br> (3) No personal data from which you can be identified will be made public; <br> (4) You are 18 years of age or older.",
+        options: ["I agree to participate in this research study", "I disagree to participate in this research study"], 
+        required: true}],
+        show_clickable_nav: true,
+        on_finish: function(data) {
+          if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
+            // save_data(jsPsych.data.get().values());
+            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');   
+          }
+        },
+    }
+    timeline.push(multi_choice_block);
+
+
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+     "Thank you for agreeing to participate in the study! <br><br> We will now ask you a couple of questions to determine whether or not you are eligible to participate."
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(instructions);
+
+    var age_options = ["18 - 21 years of age", "22 - 25 years of age", "26 - 29 years of age", "30 - 35 years of age", "More than 35 years old"];
+
+    var age = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "How old are you?", options: age_options, required: true}],
+        show_clickable_nav: true,
+        on_finish: function(data) {
+          if (JSON.parse(data.responses).Q0 == "More than 35 years old" || JSON.parse(data.responses).Q0 == "18 - 21 years of age") {
+            jsPsych.endExperiment();
+            window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+          }
+        }
+    }
+    timeline.push(age);
+
+    var hardship = {
+        type: 'survey-multi-choice',
+          questions: [{prompt: "Did your family experience economic hardship when you were under 18 years of age?", 
+          options: ["Yes, my family were under severe financial strain", "No, my family did not experience economic hardship"], required: true}],
+          show_clickable_nav: true,
+          // on_finish: function(data) {
+          //   if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain" || JSON.parse(data.responses).Q0 == "No, my family did not experience economic hardship") {
+
+          //     /* Solve QOUTA PROBLEM!! */
+              
+          //     jsPsych.endExperiment();
+          //     window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+          //   }
+        }
+        timeline.push(hardship);
+    // }
+
+    // var read = {
+    //    type: 'call-function',
+    //    func: function(){
+    //      jsPsych.data.addProperties({
+    //        completed: true
+    //      });
+    //      check_responses();
+    //    }
+    //  }
+    //  timeline.push(read);
+   
+
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+     "You are eligible to participate in the study. Please take a moment to learn what your participation involves. <br><br> First, we will ask you to answer a few questions about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them. <br><br> We hope you will enjoy your participation!",
+     "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much it represents you. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best."
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(instructions);
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(11).values());
+       }
+     }
+     timeline.push(save);
+
 
      timeline.push({
-      type: 'html-keyboard-response.',
+      type: 'html-keyboard-response',
       stimulus: 'Press any key to quit.'
     });
 
-    //  // exit fullscreen mode
-    // timeline.push({
-    //   type: 'fullscreen',
-    //   fullscreen_mode: false
-    // });
+            /**************************************
+            *            END OF TRIAL
+            ***************************************/
 
+    function save_data(data){
+       var xhr = new XMLHttpRequest();
+         xhr.open('POST', 'write_data.php');
+         xhr.setRequestHeader('Content-Type', 'application/json');
+         xhr.onload = function() {
+           if(xhr.status == 200){
+             var response = JSON.parse(xhr.responseText);
+             console.log(response);
+           }
+         };
+      xhr.send(JSON.stringify(data));
+    }
+
+    function check_responses(data) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'qouta_read.php');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onload = function() {
+        if(xhr.status == 200){
+          var response = JSON.parse(xhr.responseText);
+          console.log(response);
+        }
+      };
+      // xhr.send()
+    }
+
+    
+
+    
     jsPsych.init({
       timeline: timeline,
-      on_finish: function(){ jsPsych.data.displayData(); },
-        default_iti: 250
+      on_finish: function() {
+        // var alldata = jsPsych.data.get();
+        // save_data(alldata);
+         // console.log(jsPsych.data.get().uniqueNames());
+         jsPsych.data.displayData();
+      }
+      // on_finish: function(){ jsPsych.data.displayData(); },
+      //   default_iti: 250
     })
 
 
+  </script>
+  </body>
 
-  </script></body>
 </html>

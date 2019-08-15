@@ -46,8 +46,8 @@
 
     var welcome = {
       type: 'instructions',
-      pages: ['Hello! <br> You are invited to participate in a research study that aims to assess individuals’ problem-solving skills at thinking tasks. People that we invite to participate come from different backgrounds.<br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
-      '<b>In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks with different time limits. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 20 minutes in total. You can stop participating at any time. <br><br> Because we want to ensure that different groups of people are represented in the study, we will ask you a couple of questions to assess whether you are still eligible to participate. If you do not qualify for this study, you will not be able to participate.',
+      pages: ['Hello! <br> You are invited to participate in a research study that aims to assess individuals’ problem-solving skills at thinking tasks. People that we invite to participate come from different backgrounds. <font color="red">In order to participate, you will need a laptop or a computer.</font>  <br> <br> Please take whatever time you need to decide whether or not you want to participate in the study. The decision to join, or not to join, is up to you.',
+      '<b>WHAT IS INVOLVED IN THIS STUDY</b> <br>In this study, we will ask you to answer a few questions about yourself and complete several thinking tasks with different time limits. You do not need to have any prior experience with these tasks or any special knowledge. Before solving them, you will read detailed instructions explaining how to do these tasks. We estimate that the participation will take you 20 minutes in total. You can stop participating at any time. <br><br> Because we want to ensure that different groups of people are represented in the study, we will ask you a couple of questions to assess whether you are still eligible to participate. If you do not qualify for this study, you will not be able to participate.',
       '<b>RISKS</b> <br>We believe that your participation in this study does not involve any physical risks. However, some of the questions are sensitive (questions related to your childhood experiences) and might make some people uncomfortable. If answering these questions makes you uncomfortable, feel free to close the survey now or at any point during the survey.<br><br> <b>BENEFITS TO TAKING PART IN THE STUDY</b> <br> The study results will help assess individual abilities to solve tasks with different difficulty levels. You might find it fun to solve the tasks; however, we cannot guarantee that you personally will experience any other benefits from participating in this study.',
       '<b>CONFIDENTIALITY</b> <br> All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. <br><br> <b>YOUR RIGHTS AS A RESEARCH PARTICIPANT</b> <br> Participation in this study is voluntary. You have the right not to participate at all or to leave the study at any time. Deciding not to participate or choosing to leave the study will not result in any penalty or loss of benefits to which you are entitled.',
       '<b>CONTACTS FOR QUESTIONS OR PROBLEMS</b> <br> If you have any questions or would like to receive additional information about the study, you may contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de. If you have any concerns about the study or your rights as a research participant, you may contact BIGSSS Ethics Committee at ethics@bigsss-bremen.de.'
@@ -65,42 +65,401 @@
         on_finish: function(data) {
           if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
             // save_data(jsPsych.data.get().values());
-            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');   // NOT WORKING
+            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');   
           }
         },
     }
     timeline.push(multi_choice_block);
 
 
-/********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-*/
+    var instructions = {
+      type: 'instructions',
+      pages: [
 
-//--------------   *********START CONTINUE HERE **********************------------------------
+     "Thank you for agreeing to participate in the study! <br><br> We will now ask you a couple of questions to determine whether or not you are eligible to participate."
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(instructions);
 
-/********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-********************************************************************************************
-*/
+    var age_options = ["18 - 21 years of age", "22 - 25 years of age", "26 - 29 years of age", "30 - 35 years of age", "More than 35 years old"];
+
+    var age = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "How old are you?", options: age_options, required: true}],
+        show_clickable_nav: true,
+        on_finish: function(data) {
+          if (JSON.parse(data.responses).Q0 == "More than 35 years old" || JSON.parse(data.responses).Q0 == "18 - 21 years of age") {
+            jsPsych.endExperiment();
+            window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+          }
+        }
+    }
+    timeline.push(age);
+
+    var hardship = {
+        type: 'survey-multi-choice',
+          questions: [{prompt: "Did your family experience economic hardship when you were under 18 years of age?", 
+          options: ["Yes, my family were under severe financial strain", "No, my family did not experience economic hardship"], required: true}],
+          show_clickable_nav: true,
+          // on_finish: function(data) {
+          //   if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain" || JSON.parse(data.responses).Q0 == "No, my family did not experience economic hardship") {
+
+          //     /* Solve QOUTA PROBLEM!! */
+              
+          //     jsPsych.endExperiment();
+          //     window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+          //   }
+        }
+    // }
+// 
+    
+    var instructions = {
+      type: 'instructions',
+      pages: [
+
+     "You are eligible to participate in the study. Please take a moment to learn what your participation involves. <br><br> First, we will ask you to answer a few questions about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them. <br><br> We hope you will enjoy your participation!",
+     "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much it represents you. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best."
+      ],
+      show_clickable_nav: true,
+    }
+    timeline.push(instructions);
+
+
+    var scale = ["1 (Does not represent me at all)", "2", "3", "4", "5 (Represents me moderately well)", "6", "7", "8", "9 (Represents me very well)"];
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I can always solve difficult problems if I try hard enough.", labels: scale, required: true},
+        {prompt: "If someone opposes me, I can find the means and ways to get.", labels: scale, required: true},
+        {prompt: "It is easy for me to stick to my aims and accomplish", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I am confident that I can deal efficiently with unexpected events. ", labels: scale, required: true},
+        {prompt: "Thanks to my resourcefulness, I know how to handle unforeseen situations", labels: scale, required: true},
+        {prompt: "I can solve most problems if I invest the necessary effort", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities ", labels: scale, required: true},
+        {prompt: "When I am confronted with a problem, I can usually find several solutions", labels: scale, required: true},
+        {prompt: "If I am in trouble, I can usually think of a solution", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I can usually handle whatever comes my way", labels: scale, required: true},
+        {prompt: "I am really good at tasks that require thinking", labels: scale, required: true},
+        {prompt: "I am able to acquire new knowledge rapidly and easily", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I  am not a quick thinker", labels: scale, required: true},
+        {prompt: "I am good at grasping difficult concepts", labels: scale, required: true},
+        {prompt: "I consider myself smart", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "I usually can quickly figure out answers to difficult questions", labels: scale, required: true},
+        {prompt: "If you are reading this attentively, choose seven as your answer", labels: scale, required: true},
+        {prompt: "I have trouble retaining information and remembering things", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(likert);
+
 
     var instructions = {
       type: 'instructions',
       pages: [
 
-     "Thank you for agreeing to participate in the study! <br><br> Your participation will involve two types of activities. First, we will ask you to answer a few questions regarding the general representations that people hold about themselves and about your background. Second, you will complete several letter Sudoku puzzles and answer the questions regarding your experiences with these puzzles. <br> You do not need to have any knowledge or prior experience with Sudoku; we will provide detailed instructions that explain what Sudoku puzzles are and how to solve them. <br> <br> We hope you will enjoy your participation!",
-
-      "On the next screen, you will see a few statements that describe the way different people think about themselves. Please read these statements and for each indicate how much you agree with it. <br><br> There are no right or wrong answers. These statements reflect general perceptions, and the answer that comes to mind first is generally the best.",
+     "Because people who participate in this study are from diverse backgrounds, we would like to know more about you and your background.<br><br> The statements that you will see on the next screen relate to the ways different people think about their economic situation. Please read these statements carefully and evaluate to what extent you agree or disagree with each of them.",
       ],
       show_clickable_nav: true,
     }
     timeline.push(instructions);
+
+    var scale = ["Completely disagree", "Somewhat disagree", "Neither agree, nor disagree", "Somewhat agree", "Strongly agree"];
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "I have enough money to buy things I want", options: scale, required: true},
+        {prompt: "I don’t need to worry too much about paying my bills", options: scale, required: true},
+        {prompt: "I don’t think I’ll have to worry about money too much in the future", options: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "My family usually had enough money for things when I was growing up", options: scale, required: true, horizontal: true},
+        {prompt: "I grew up in a relatively wealthy neighborhood", options: scale, required: true, horizontal: true},
+        {prompt: "I felt relatively wealthy compared to the other kids in my school", options: scale, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>My family usually had enough money for things when I was growing up", options: scale, required: true, horizontal: true},
+        {prompt: "I grew up in a relatively wealthy neighborhood", options: scale, required: true, horizontal: true},
+        {prompt: "I felt relatively wealthy compared to the other kids in my school", options: scale, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var yesno = ["Yes", "No"];
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…at least two meals a day?", options: yesno, required: true, horizontal: true},
+        {prompt: "…to keep your home in a decent state of decoration? ", options: yesno, required: true, horizontal: true},
+        {prompt: "…heating to warm living areas of your home when it was cold?", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…new not second-hand clothes?", options: yesno, required: true, horizontal: true},
+        {prompt: "…to replace any worn-out furniture?", options: yesno, required: true, horizontal: true},
+        {prompt: "…to replace of repair broken electronic goods such as refrigerator or washing machine?", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…celebrations on special occasions, such as Christmas?", options: yesno, required: true, horizontal: true},
+        {prompt: "…a meal in a restaurant or pub once in a while?", options: yesno, required: true, horizontal: true},
+        {prompt: "…a holiday away from home once a year?", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><br>Did a parent or other adult in the household often swear at you, insult you, put you down or humiliate you?", options: yesno, required: true, horizontal: true},
+        {prompt: "Did a parent or other adult in the household often push, grab, slap, or throw something at you? ", options: yesno, required: true, horizontal: true},
+        {prompt: "Did you often feel that no one in your family loved you or thought you were important or special? ", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><brDid you often feel that you didn’t have enough to eat, had to wear dirty closed, and had no one to protect you?", options: yesno, required: true, horizontal: true},
+        {prompt: "Were your parents ever separated or divorced? ", options: yesno, required: true, horizontal: true},
+        {prompt: "Did you live with anyone who was who was a problem drinker or alcoholic or who used street drugs? ", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><brWas a household member depressed or mentally ill or did a household member attempt suicide? ", options: yesno, required: true, horizontal: true},
+        {prompt: "Did a household member go to prison?", options: yesno, required: true, horizontal: true},
+        {prompt: "Were you bullied or ridiculed because of your background?", options: yesno, required: true, horizontal: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+    var choices = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "When you were a child, did you participate in any extracurricular activities on a regular basis?  ", options: yesno, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(choices);
+
+
+    var father_occ = {
+      type: 'survey-text',
+      questions: [{prompt: "What was your father's occupation?",
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(father_occ);
+
+    var mother_occ = {
+      type: 'survey-text',
+      questions: [{prompt: "What was your mother's occupation?",
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(mother_occ);
+    
+
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu_mother = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_mother);
+
+    var edu_father = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu_father);
+
+
+    var social_options = ["Upper middle class", "Middle class", "Lower middle class", "Skilled working class", "Semi- or unskilled working class"];
+
+    var social = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social);
+
+    var social = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(social);
+
+
+    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
+
+    var edu = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "What is your highest level of formal education?", options: edu_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(edu);
+
+    
+    var major1 = {
+      type: 'survey-text',
+      questions: [{prompt: 'What was your main field of study?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    // timeline.push(major1);
+    
+    var page_2_options = ["Yes, I am a university student now", "No, I am not a student"];
+    
+    var student = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Are you a university student now?", options: page_2_options, required: false}],
+        show_clickable_nav: true,
+    }
+    // timeline.push(student);
+    
+    var if_major1 = {
+        timeline: [major1],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if((JSON.parse(data.responses).Q0 == "Undergraduate degree (e.g., BA)") || (JSON.parse(data.responses).Q0 == "Graduate degree (e.g., MA, MSc)")){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_major1);
+    
+    var if_student = {
+        timeline: [student],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if((JSON.parse(data.responses).Q0 == "High school (four years or more)")){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_student);
+
+     var major1 = {
+      type: 'survey-text',
+      questions: [{prompt: 'What is your main field of study?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+
+    var if_major1 = {
+        timeline: [major1],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if(JSON.parse(data.responses).Q0 == "Yes, I am a university student now"){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_major1); 
+
+
+     var iq_options = ["79 and below", "80 - 89", "90 - 99", "100 - 109", "110 - 119", "120 - 129", "130 and above", "I have never had my IQ tested"];
+
+    var iq = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "If you have ever had your IQ tested, where in the following range does your IQ score fall?", options: iq_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(iq);
+
+    var loc_options = ["England - North East", "England - North West", "England - Yorkshire and the Humber", "England - East Midlands", "England - West Midlands", "England - East of England", "England - Greater London", "England - South East", "England - South West", "Northern Ireland – Belfast", "Northern Ireland – Outer Belfast", "Northern Ireland – North", "Northern Ireland – West", "Northern Ireland – West and South", "Scotland – North", "Scotland – East Central", "Scotland – West Central", "Scotland – South East", "Scotland – South West", "Wales – East Wales and the Valleys", "Wales – West Wales"];
+
+    var loc = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Where did you spend most of your childhood? ", options: loc_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(loc);
+
+    var loc = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Where do you live now?", options: loc_options, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(loc);
+
+
+
+    var sex = {
+      type: 'survey-text',
+      questions: [{prompt: 'What gender do you identify with?',
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(sex);
+
+    var ethnic = ["English", "Welsh", "Scottish", "Northern Irish", "Bangladeshi", "Chinese", "Indian", "Irish", "Jamaican", "Nigerian", "Pakistani", "Polish", "Somali", "Other"]
+
+    var loc = {
+        type: 'survey-multi-choice',
+        questions: [{prompt: "Which of the following groups do you identify with most?", options: ethnic, required: true}],
+        show_clickable_nav: true,
+    }
+    timeline.push(loc);
+
 
 
     var page_2_options = ["No, I have never solved Sudoku puzzles before", "Yes, I solved Sudoku once or twice", "Yes, I solve Sudoku occasionally", "Yes, I solve Sudoku regularly"];
@@ -112,8 +471,7 @@
     }
     timeline.push(sudoku_experience);
 
-
-
+    
 /*those who picked first two options (never solved sudoku and tried once or twice) should skip the next question; those who picked the 3rd and 4th options should answer the next question).*/
 
     var page_2_options = ["Very bad", "Rather bad", "Average", "Rather good", "Very good"];
@@ -140,158 +498,11 @@
      timeline.push(if_node);
 
 
-
-    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
-
-    var edu = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "What is your highest level of formal education?", options: edu_options, required: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(edu);
-
-
-    /*those who picked the last two options (undergrad and grad degrees should answer the next question (major1)) and skip (Student and Major2 questions. Those who picked the second option (high school) should skip major 1 questions and answer Student question. Those who picked the first option (less than four years of high school) should skip the next three questions (major1, student and major2) and get to the next instructions*/
-
-    var major1 = {
-      type: 'survey-text',
-      questions: [{prompt: 'What was your main field of study?',
-                  rows: 1, columns: 50}],
-               show_clickable_nav: true,
-    }
-    // timeline.push(major1);
-
-    var page_2_options = ["Yes, I am a university student now", "No, I am not a student"];
-
-    var student = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "Are you a university student now?", options: page_2_options, required: false}],
-        show_clickable_nav: true,
-    }
-    // timeline.push(student);
-
-    var if_major1 = {
-        timeline: [major1],
-        conditional_function: function(data){
-          var data = jsPsych.data.get().last(1).values()[0];
-          // console.log(JSON.parse(data.responses).Q0);
-          if((JSON.parse(data.responses).Q0 == "Undergraduate degree (e.g., BA)") || (JSON.parse(data.responses).Q0 == "Graduate degree (e.g., MA, MSc)")){
-            return true;
-          } else {
-            return false;
-          }
-        }
-     }
-     timeline.push(if_major1);
-
-    var if_student = {
-        timeline: [student],
-        conditional_function: function(data){
-          var data = jsPsych.data.get().last(1).values()[0];
-          // console.log(JSON.parse(data.responses).Q0);
-          if((JSON.parse(data.responses).Q0 == "High school (four years or more)")){
-            return true;
-          } else {
-            return false;
-          }
-        }
-     }
-     timeline.push(if_student);
-
-
-     /* those who answer YES should answer the next question (major2), others go to the next Instructions */
-
-    var major2 = {
-      type: 'survey-text',
-      questions: [{prompt: 'What is your main field of study?',
-                  rows: 1, columns: 50}],
-               show_clickable_nav: true,
-    }
-
-
-    var if_major2 = {
-      timeline: [major2],
-      conditional_function: function(data){
-        var data = jsPsych.data.get().last(1).values()[0];
-        // console.log(JSON.parse(data.responses).Q0);
-        if((JSON.parse(data.responses).Q0 == "Yes, I am a university student now")){
-          return true;
-        } else {
-          return false;
-        }
-      }
-     }
-     timeline.push(if_major2);
-
-
-
-    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
-
-    var edu_mother = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(edu_mother);
-
-    var edu_options = ["Less than four years of high school", "High school (four years or more)", "Undergraduate degree (e.g., BA)", "Graduate degree (e.g., MA, MSc)"];
-
-    var edu_father = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(edu_father);
-
-    var social_options = ["Upper middle class", "Middle class", "Lower middle class", "Skilled working class", "Semi- or unskilled working class"];
-
-    var social = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(social);
-
-    var social_now = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(social_now);
-
-    var sex = {
-      type: 'survey-text',
-      questions: [{prompt: 'What gender do you identify with?',
-                  rows: 1, columns: 50}],
-               show_clickable_nav: true,
-    }
-    timeline.push(sex);
-
-
-
-    var age_options = ["18 - 25 years of age", "26 - 35 years of age", "36 - 45 years of age", "46 - 60 years of age", "61 years of age and older"];
-
-    var age = {
-            type: 'survey-multi-choice',
-            questions: [{prompt: "How old are you?", options: age_options, required: false}],
-            show_clickable_nav: true,
-        }
-        timeline.push(age);
-
-
-    var save = {
-      type: 'call-function',
-      func: function(){
-        save_data(jsPsych.data.get().last(13).values());
-      }
-    }
-    timeline.push(save);
-
     var instructions = {
       type: 'instructions',
       pages: [
 
-      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br> During this stage, you will solve eight letter Sudoku puzzles. You will have <b>3 minutes</b> for the puzzles’ solution. If you are new to Sudoku, that is not a problem. The next few screens will explain what Sudoku are and how to solve them.",
+      "Thank you for answering the questions! You will now proceed to the next stage of the study. <br><br>During this stage, you will attempt to solve three pairs of letter Sudoku puzzles with different time limits. You will have <b>2 minutes 30 seconds</b>, <b>1 minute 10 seconds</b>, and <b>30 seconds</b> for the puzzles’ solution, respectively. The less time you have, the more difficult it will be to solve the puzzles successfully. <br><br> The results of our preliminary studies showed that approximately 95% of people are successful within a 2 minutes and 30 seconds time limit, 50% - within a 1 minute 10 seconds time limit, and 5% - with a 30-second time limit. The pairs will be presented in a random order – there is an equal chance that you will get to solve easy, moderate or difficult pair first.  We will ask you a few questions about your experiences after you attempt to solve each pair of puzzles <br> <br> If you are new to Sudoku, that is not a problem. The next few screens will explain what Sudoku are and how to solve them.",
 
       "A Sudoku puzzle is a grid with several cells, that has been subdivided into several subgrids. <br> <br> <img src='img/1.png'></img> <br> <br> The goal of Sudoku is to enter letters in each cell, in such a way that: <br> <br> -  Each horizontal row (shown in red) contains each letter exactly once <br> - Each vertical column (shown in green) contains each letter exactly once <br> - Each subgrid or region (shown in blue) contains each letter exactly once <br> <br> In each Sudoku puzzle, several letters have already been entered (the 'givens'); these may not be changed. Your job is to fill the remainder of the grid with letters, respecting the three constraints mentioned earlier." ,
 
@@ -351,72 +562,593 @@
     var post_test = {
       type: 'instructions',
       pages: [
-      'Well done! You are all set to solve Sudoku with a time limit. You will have 3 minutes to try to solve each puzzle. Once you are done with your first puzzle, you will be automatically presented with the next one. <br> <br> We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. We very much value your time and effort and appreciate your cooperation.',
+      'Well done! You are all set to solve Sudoku with a time limit. <br> <br> We will very much appreciate if you stay focused and not get distracted while you are solving the puzzles. We very much value your time and effort and appreciate your cooperation.',
       ],
       show_clickable_nav: true,
     }
     timeline.push(post_test);
-
+    
 
 
     /* ------------- SUDOKU TRIALS ------------------- */
+    var session1 = [];
 
-    var s1 = {
-     type: 'sudoku_trial',
-     trial_duration: 1000,  
-     board_size: 'boards2x3',
-     board_set: 'a',
-     board_nr: 1
+    var easy = {
+      type: 'instructions',
+      pages: [
+      'Now you will attempt to solve two puzzles having <b>2 minutes and 30 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+      ],
+      show_clickable_nav: true,
     }
+    session1.push(easy);
 
-     var s2 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'a',
-      board_nr: 3
-     }
-     var s3 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 0
-     }
-     var s4 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 2
-     }
-     var s5 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'b',
-      board_nr: 4
-     }
-     var s6 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'c',
-      board_nr: 1
-     }
-     var s7 = {
-      type: 'sudoku_trial',
-      trial_duration: 1000,  
-      board_size: 'boards2x3',
-      board_set: 'c',
-      board_nr: 3
-     }
+    var sudoku_easy = {
+      timeline_variables: [
+        {clock: '150000', size: 'boards2x3', set: 'a', nr: 1},
+        {clock: '150000', size: 'boards2x3', set: 'a', nr: 3}
+      ],
+      randomize_order: true,
+      timeline: [
+        {
+          type: 'sudoku_trial',
+          trial_duration: jsPsych.timelineVariable('clock'),  
+          board_size: jsPsych.timelineVariable('size'),
+          board_set: jsPsych.timelineVariable('set'),
+          board_nr: jsPsych.timelineVariable('nr') 
+        },
+      ]
+    }
+    session1.push(sudoku_easy);
 
-     var s_array2 = [s2, s3, s4, s5, s6, s7];
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You have completed the trial. We would like to ask a couple of questions about your experiences."
+       ],
+       show_clickable_nav: true,
+     }
+     session1.push(instructions);
 
-     var sudo_trials2 = jsPsych.randomization.shuffleNoRepeats(s_array2);
+     var scale = ["1 (Very easy)", "2", "3", "4", "5 (Moderately difficult)", "6", "7", "8", "9 (Very difficult)"];
 
-     timeline.push.apply(timeline, sudo_trials2);
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (2 minutes)?", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the puzzle."
+       ],
+       show_clickable_nav: true,
+     }
+     session1.push(instructions);
+
+     var scale = ["1 (Did not feeld this way at all)", "2", "3", "4", "5 (Felt so to a moderate extent)", "6", "7", "8", "9 (Felt so to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+        {prompt: "Hopeful", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
+        {prompt: "Anxious", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
+        {prompt: "Resigned", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "Now we would like to ask you to reflect on your outcome.<br><br>The next screen will present the list of reasons that people generally use to explain their successes and failures at different tasks. For each of these reasons, please evaluate the extent with which it contributed to your outcome."
+       ],
+       show_clickable_nav: true,
+     }
+     session1.push(instructions);
+
+     var scale = ["1 (Did not contribute at all)", "2", "3", "4", "5 (Contributed to a moderate extent)", "6", "7", "8", "9 (Contributed to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
+        {prompt: "Chance/luck", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+    var scale = ["1 (I am completely certain I WILL NOT be able to solve the puzzle correctly withing a given time)", "2", "3", "4", "5 (I am completely uncertain about the outcome)", "6", "7", "8", "9 (I am completely certain I WILL be able to solve the puzzle correctly withing a given time)"];
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+      {prompt: "Hopeful", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session1.push(likert);
+
+
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You will now see several Sudoku puzzles, similar to the ones that you have just solved. Please indicate for each puzzle whether you believe that you can solve it or not having 2 minutes and 30 seconds of available time. <br><br>Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format:<br><br>I believe that I WILL be able to solve the puzzle (Press D),<br><br>I believe that I WILL NOT solve the puzzle (Press K)",
+       "Please do not try to solve the puzzles! <br><br>Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible."
+       ],
+       show_clickable_nav: true,
+     }
+     session1.push(instructions);
+
+
+     var appr_1 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app1.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>2 minutes and 30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session1.push(appr_1);
+
+    var appr_2 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app2.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in<b>2 minutes and 30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session1.push(appr_2);
+
+    var appr_3 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app3.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>2 minutes and 30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session1.push(appr_3);
+
+    var appr_4 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app4.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>2 minutes and 30 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session1.push(appr_4);
+
+    var appr_5 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app5.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>2 minutes and 30 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session1.push(appr_5);
+
+
+    //----------------------------------------------------
+
+
+    
+
+
+    var session2 = [];
+
+
+
+
+    var medium = {
+      type: 'instructions',
+      pages: [
+      'Now you will attempt to solve two puzzles having <b>1 minute and 10 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+      ],
+      show_clickable_nav: true,
+    }
+    session2.push(medium);
+
+    var sudoku_medium = {
+      timeline_variables: [
+        {clock: '70000', size: 'boards2x3', set: 'b', nr: 0},
+        {clock: '70000', size: 'boards2x3', set: 'b', nr: 2}
+      ],
+      randomize_order: true,
+      timeline: [
+        {
+          type: 'sudoku_trial',
+          trial_duration: jsPsych.timelineVariable('clock'),  
+          board_size: jsPsych.timelineVariable('size'),
+          board_set: jsPsych.timelineVariable('set'),
+          board_nr: jsPsych.timelineVariable('nr') 
+        },
+      ]
+    }
+    session2.push(sudoku_medium);
+
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You have completed the trial. We would like to ask a couple of questions about your experiences."
+       ],
+       show_clickable_nav: true,
+     }
+     session2.push(instructions);
+
+     var scale = ["1 (Very easy)", "2", "3", "4", "5 (Moderately difficult)", "6", "7", "8", "9 (Very difficult)"];
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (1 minute)?", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the puzzle."
+       ],
+       show_clickable_nav: true,
+     }
+     session2.push(instructions);
+
+     var scale = ["1 (Did not feeld this way at all)", "2", "3", "4", "5 (Felt so to a moderate extent)", "6", "7", "8", "9 (Felt so to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+        {prompt: "Hopeful", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
+        {prompt: "Anxious", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
+        {prompt: "Resigned", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "Now we would like to ask you to reflect on your outcome.<br><br>The next screen will present the list of reasons that people generally use to explain their successes and failures at different tasks. For each of these reasons, please evaluate the extent with which it contributed to your outcome."
+       ],
+       show_clickable_nav: true,
+     }
+     session2.push(instructions);
+
+     var scale = ["1 (Did not contribute at all)", "2", "3", "4", "5 (Contributed to a moderate extent)", "6", "7", "8", "9 (Contributed to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
+        {prompt: "Chance/luck", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+    var scale = ["1 (I am completely certain I WILL NOT be able to solve the puzzle correctly withing a given time)", "2", "3", "4", "5 (I am completely uncertain about the outcome)", "6", "7", "8", "9 (I am completely certain I WILL be able to solve the puzzle correctly withing a given time)"];
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+      {prompt: "Hopeful", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session2.push(likert);
+
+
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You will now see several Sudoku puzzles, similar to the ones that you have just solved. Please indicate for each puzzle whether you believe that you can solve it or not having 1 minute and 10 seconds of available time. <br><br>Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format:<br><br>I believe that I WILL be able to solve the puzzle (Press D),<br><br>I believe that I WILL NOT solve the puzzle (Press K)",
+       "Please do not try to solve the puzzles! <br><br>Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible."
+       ],
+       show_clickable_nav: true,
+     }
+     session2.push(instructions);
+
+
+     var appr_1 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app1.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>1 minute and 10 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session2.push(appr_1);
+
+    var appr_2 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app2.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in<b>1 minute and 10 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session2.push(appr_2);
+
+    var appr_3 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app3.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>1 minute and 10 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session2.push(appr_3);
+
+    var appr_4 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app4.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>1 minute and 10 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session2.push(appr_4);
+
+    var appr_5 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app5.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>1 minute and 10 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session2.push(appr_5);
+
+
+    //--------------------------------------------------
+
+
+    var session3 = [];
+
+    var hard = {
+      type: 'instructions',
+      pages: [
+      'Now you will attempt to solve two puzzles having <b>30 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+      ],
+      show_clickable_nav: true,
+    }
+    session3.push(hard);
+
+    var sudoku_hard = {
+      timeline_variables: [
+        {clock: '30000', size: 'boards2x3', set: 'b', nr: 4},
+        {clock: '30000', size: 'boards2x3', set: 'c', nr: 1}
+      ],
+      randomize_order: true,
+      timeline: [
+        {
+          type: 'sudoku_trial',
+          trial_duration: jsPsych.timelineVariable('clock'),  
+          board_size: jsPsych.timelineVariable('size'),
+          board_set: jsPsych.timelineVariable('set'),
+          board_nr: jsPsych.timelineVariable('nr') 
+        },
+      ]
+    }
+    session3.push(sudoku_hard);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You have completed the trial. We would like to ask a couple of questions about your experiences."
+       ],
+       show_clickable_nav: true,
+     }
+     session3.push(instructions);
+
+     var scale = ["1 (Very easy)", "2", "3", "4", "5 (Moderately difficult)", "6", "7", "8", "9 (Very difficult)"];
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (30 seconds)?", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "On the next screen, you will see a list of words that people use to describe how they feel. For each of these words, please indicate to what extent you felt this way while solving the puzzle."
+       ],
+       show_clickable_nav: true,
+     }
+     session3.push(instructions);
+
+     var scale = ["1 (Did not feeld this way at all)", "2", "3", "4", "5 (Felt so to a moderate extent)", "6", "7", "8", "9 (Felt so to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+        {prompt: "Hopeful", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
+        {prompt: "Anxious", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+    var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
+        {prompt: "Resigned", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "Now we would like to ask you to reflect on your outcome.<br><br>The next screen will present the list of reasons that people generally use to explain their successes and failures at different tasks. For each of these reasons, please evaluate the extent with which it contributed to your outcome."
+       ],
+       show_clickable_nav: true,
+     }
+     session3.push(instructions);
+
+     var scale = ["1 (Did not contribute at all)", "2", "3", "4", "5 (Contributed to a moderate extent)", "6", "7", "8", "9 (Contributed to a great extent)"];
+
+     var likert = {
+        type: 'survey-likert',
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
+        {prompt: "Chance/luck", labels: scale, required: true}],
+        show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+    var scale = ["1 (I am completely certain I WILL NOT be able to solve the puzzle correctly withing a given time)", "2", "3", "4", "5 (I am completely uncertain about the outcome)", "6", "7", "8", "9 (I am completely certain I WILL be able to solve the puzzle correctly withing a given time)"];
+
+    var likert = {
+      type: 'survey-likert',
+      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
+      {prompt: "Hopeful", labels: scale, required: true}],
+      show_clickable_nav: true,
+    }
+    session3.push(likert);
+
+
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You will now see several Sudoku puzzles, similar to the ones that you have just solved. Please indicate for each puzzle whether you believe that you can solve it or not having 30 seconds of available time. <br><br>Each puzzle will be presented on a new screen. You will need to give an answer by pressing one of the keyboard keys in the following format:<br><br>I believe that I WILL be able to solve the puzzle (Press D),<br><br>I believe that I WILL NOT solve the puzzle (Press K)",
+       "Please do not try to solve the puzzles! <br><br>Each puzzle will appear on a screen for a limited time, so it is very important that you give the response (press the relevant key) as quickly as possible."
+       ],
+       show_clickable_nav: true,
+     }
+     session3.push(instructions);
+
+
+     var appr_1 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app1.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session3.push(appr_1);
+
+    var appr_2 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app2.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in<b>30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session3.push(appr_2);
+
+    var appr_3 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app3.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>30 seconds</b>. <br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session3.push(appr_3);
+
+    var appr_4 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app4.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>30 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session3.push(appr_4);
+
+    var appr_5 = {
+      type: 'image-keyboard-response',
+      stimulus: 'img/app5.png',
+      choices: ['d','k'],
+      trial_duration: 120000,
+      prompt: '<p>Please indicate whether you can or cannot solve this task in <b>30 seconds</b>.<br> <br>Press <b>D</b> for <b>YES</b>, and <b>K</b> for <b>NO</b> </p>'
+    }
+    session3.push(appr_5);
+
+    //TODO: add "Thank you for your answers! You will now solve the second pair of Sudoku." !!!
+    // TODO: "Thank you for your answers! You will now solve the third, and last, pair of Sudoku."
+    //TODO: add save to each session!!
+
+    var array = [session1, session2, session3];
+
+    var sudo_trials = jsPsych.randomization.shuffle(array);
+
+    timeline.push.apply(timeline, sudo_trials.flat());
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       'You have completed all activities of this study! Please take a few moments to read the information on the next screen.',
+       "Dear Participant, <br>You have just participated in a study that aims to assess individuals’ problem-solving skills at thinking tasks. However, this study also has another objective. We did not reveal to you the information about this objective in advance, because this may have affected the way you responded. <br><br>We also aim to test how people with different socioeconomic backgrounds appraise their ability to successfully perform at tasks with different difficulty. Because early-life economic disadvantage was found to be associated with the lack of mastery experiences necessary to build up the sense of confidence, we suggested that people who were disadvantaged in childhood, when faced with an ambiguous (moderately difficult) task, would estimate their chances to succeed as lower, experience more negative emotions while solving the puzzles, and attribute their success to external and unstable factors (e.g., luck, the amount of time available to solve the puzzle), compared to those who come from more well-off backgrounds",
+       "All information collected during the study period will be kept strictly confidential. No publications or reports from this project will include identifying information on any participant. The data will be analyzed and presented at an aggregate level. There will be no record that links the data collected from you with any personal data from which you could be identified. Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes",
+       "Please contact Olga Poluektova, Ph.D. Fellow at Bremen Graduate School of Social Sciences (BIGSSS) at opoluektova@bigsss-bremen.de, if you would like to receive additional information or ask any questions about the study,<br>or BIGSSS Ethics Committee at ethics@bigsss-bremen.de in case you have any concerns regarding your participation"
+       ],
+       show_clickable_nav: true,
+     }
+     timeline.push(instructions);
+
+     var email = {
+      type: 'survey-text',
+      questions: [{prompt: "If you would like to receive the summary of the main findings, you can type in your e-mail address in the box below. We will happily share the summary with you as soon as the study is completed and the data are analyzed",
+                  rows: 1, columns: 50}],
+               show_clickable_nav: true,
+    }
+    timeline.push(email);
 
      var save = {
        type: 'call-function',
@@ -429,39 +1161,27 @@
      }
      timeline.push(save);
 
-     var instructions = {
-       type: 'instructions',
-       pages: [
-       'You have completed the study. We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.',
-       "Please click NEXT to receive your MTurk unique completion code."
-       ],
-       show_clickable_nav: true,
-     }
-     timeline.push(instructions);
+    //  var instructions = {
+    //    type: 'instructions',
+    //    pages: [
+    //    'You have completed the study. We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.',
+    //    "Please click NEXT to receive your MTurk unique completion code."
+    //    ],
+    //    show_clickable_nav: true,
+    //  }
+    //  timeline.push(instructions);
 
 
 
-    var end = {
-     type: 'instructions',
-     pages: [
-     'Your unique completion code is ' + subject_id,
-     ],
-     show_clickable_nav: true,
-   }
-   timeline.push(end);
+  //   var end = {
+  //    type: 'instructions',
+  //    pages: [
+  //    'Your unique completion code is ' + subject_id,
+  //    ],
+  //    show_clickable_nav: true,
+  //  }
+  //  timeline.push(end);
 
-   var save = {
-     type: 'call-function',
-     func: function(){
-       jsPsych.data.addProperties({
-         completed: true
-       });
-       save_data(jsPsych.data.get().last(3).values());
-     }
-   }
-   timeline.push(save);
-
-   
 
      timeline.push({
       type: 'html-keyboard-response',

@@ -86,9 +86,9 @@ pause: function() {
 // };
 
 
-function reset(){
-    var twoMinutes = 60 * 3,
+function reset(milliseconds){
+    var seconds = milliseconds / 1000,
         display = document.querySelector('#time');
-    Clock.startTimer(twoMinutes, display);
+    Clock.startTimer(seconds, display);
     
 };
