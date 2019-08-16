@@ -107,7 +107,7 @@
             
             
             if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
-              console.log(check_responses());
+              // console.log(check_responses());
               var res = check_responses();
               console.log(res);
               if(parseInt(res) < 15) {
@@ -203,7 +203,7 @@
         if(xhr.status == 200){
           var response = JSON.parse(xhr.responseText);
           console.log(response);
-          // return parseInt(response);
+          return parseInt(response);
         } else {
           var response = xhr.responseText;
           console.log(response);
