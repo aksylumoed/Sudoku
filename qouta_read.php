@@ -1,6 +1,6 @@
 <?php
 include('database_config.php');
-$data_array = json_decode(file_get_contents('php://input'), true);
+// $data_array = json_decode(file_get_contents('php://input'), true);
 
 // $response1 = 
 
@@ -11,9 +11,15 @@ try {
     $stmt = $conn->prepare("SELECT responses FROM `$table_data` WHERE  `responses` = '{"Q0":"No, my family did not experience economic hardship"}'");
     $stmt->execute();
     
+    $row = $stmt->fetch();
 
-    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    echo $result;
+    echo $row;
+
+    // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    // echo $result;
+    
+    // $r = array('success' => true);
+    // echo json_encode($r);
 
 }
 
