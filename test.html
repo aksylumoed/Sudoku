@@ -203,12 +203,13 @@
         if(xhr.status == 200){
           var response = JSON.parse(xhr.responseText);
           console.log(response);
-          return parseInt(response);
+          // return parseInt(response);
         } else {
           var response = xhr.responseText;
           console.log(response);
         }
       };
+      return JSON.parse(xhr.responseText);
     }
 
     
