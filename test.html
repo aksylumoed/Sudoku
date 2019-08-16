@@ -142,7 +142,7 @@
          jsPsych.data.addProperties({
            completed: true
          });
-         check_responses();
+         check_responses(callback);
        }
      }
      timeline.push(read);
@@ -193,6 +193,15 @@
       xhr.send(JSON.stringify(data));
     }
 
+    function callback(result) {
+      var res = parseInt(result);
+      if(res < 15) {
+        console.log("You can pass!");
+      } else {
+        console.log("You CANT pass!");
+      }
+    }
+
     function check_responses(callback) {
       console.log("Checking responses...");
       var xhr = new XMLHttpRequest();
@@ -209,17 +218,10 @@
           console.log(response);
         }
       };
-      return JSON.parse(xhr.responseText);
+      // return JSON.parse(xhr.responseText);
     }
 
-    function callback(result) {
-      var res = parseInt(result);
-      if(res < 15) {
-        console.log("You can pass!");
-      } else {
-        console.log("You CANT pass!");
-      }
-    }
+    
     
 
     
