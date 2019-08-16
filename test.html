@@ -103,11 +103,23 @@
           options: ["Yes, my family were under severe financial strain", "No, my family did not experience economic hardship"], required: true}],
           show_clickable_nav: true,
           on_finish: function(data) {
+            
+            
+            
             if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
-
-              data.hardship = true;
+              var res = check_responses();
+              if(res < 15) {
+                console.log("You can pass!");
+                data.hardship = true;
+              } else {
+                // redirect here...
+              }
             } else {
-
+              // var res = check_responses();
+              // if(res < 15) {
+              //   console.log("You can pass!");
+              //   data.hardship = true;
+              // }
               data.hardship = false;
             }
 
@@ -187,6 +199,7 @@
         if(xhr.status == 200){
           var response = xhr.responseText;
           console.log(response);
+          return response;
         } else {
           var response = xhr.responseText;
           console.log(response);

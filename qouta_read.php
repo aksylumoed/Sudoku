@@ -8,7 +8,7 @@ try {
     $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT count(responses) FROM `$table_data` WHERE  `trial_index` = 4");
+    $stmt = $conn->prepare("SELECT count(responses) FROM `$table_data` WHERE  `hardship` = true");
     $stmt->execute();
     $row = $stmt->fetch();
 
