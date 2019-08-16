@@ -5,12 +5,11 @@ include('database_config.php');
 // $response1 = 
 
 try {
-    // $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
-    // $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // $stmt = $conn->prepare("SELECT responses FROM `$table_data` WHERE  `responses` = '{"Q0":"No, my family did not experience economic hardship"}'");
     // $stmt->execute();
-    
     // $row = $stmt->fetch();
 
     // echo $row;
