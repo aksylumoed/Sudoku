@@ -12,7 +12,7 @@ try {
     $stmt->execute();
     $row = $stmt->fetch();
 
-    echo $row["count(responses)"];
+    echo json_encode($row["count(responses)"]);
 
     // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     // echo $result;
