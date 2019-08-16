@@ -102,14 +102,21 @@
           questions: [{prompt: "Did your family experience economic hardship when you were under 18 years of age?", 
           options: ["Yes, my family were under severe financial strain", "No, my family did not experience economic hardship"], required: true}],
           show_clickable_nav: true,
-          // on_finish: function(data) {
-          //   if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain" || JSON.parse(data.responses).Q0 == "No, my family did not experience economic hardship") {
+          on_finish: function(data) {
+            if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
+
+              data.hardship = true;
+            } else {
+
+              data.hardship = false;
+            }
+
 
           //     /* Solve QOUTA PROBLEM!! */
               
           //     jsPsych.endExperiment();
           //     window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
-          //   }
+            }
         }
         timeline.push(hardship);
     // }
