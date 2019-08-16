@@ -8,17 +8,17 @@ try {
     $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT responses FROM `$table_data` WHERE  `trial_index` = 4");
-    // $stmt->execute();
-    // $row = $stmt->fetch();
+    $stmt = $conn->prepare("SELECT count(responses) FROM `$table_data` WHERE  `trial_index` = 4");
+    $stmt->execute();
+    $row = $stmt->fetch();
 
-    // echo $row;
+    echo $row;
 
     // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     // echo $result;
     
-    $r = array('success' => true);
-    echo json_encode($r);
+    // $r = array('success' => true);
+    // echo json_encode($r);
 
 }
 
