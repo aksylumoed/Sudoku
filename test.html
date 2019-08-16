@@ -108,10 +108,10 @@
             
             if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
               check_responses(callback, 'qouta_read_true.php');
-              data.hardship = true;
+              data.hardship = 1;
             } else {
               check_responses(callback, 'qouta_read_false.php');
-              data.hardship = false;
+              data.hardship = 0;
             }
 
 
