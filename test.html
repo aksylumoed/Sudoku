@@ -195,10 +195,12 @@
 
     function callback(result) {
       var res = parseInt(result);
-      if(res < 15) {
+      if(res < 5) {
         console.log("You can pass!");
       } else {
         console.log("You CANT pass!");
+        jsPsych.endExperiment();
+        window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
       }
     }
 
