@@ -13,13 +13,13 @@ try {
     
     $row = $stmt->fetch();
 
-    echo $row;
+    // echo $row;
 
     // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     // echo $result;
     
-    // $r = array('success' => true);
-    // echo json_encode($r);
+    $r = array('success' => true);
+    echo json_encode($r);
 
 }
 
