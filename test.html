@@ -108,7 +108,7 @@
             
             if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
               var res = check_responses();
-              if(res < 15) {
+              if(parseInt(res) < 15) {
                 console.log("You can pass!");
                 data.hardship = true;
               } else {
