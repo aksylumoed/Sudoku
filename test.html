@@ -112,7 +112,8 @@
                 console.log("You can pass!");
                 data.hardship = true;
               } else {
-                // redirect here...
+                console.log("You can't pass!");
+                // redirect here...B
               }
             } else {
               // var res = check_responses();
@@ -191,6 +192,7 @@
     }
 
     function check_responses(data) {
+      console.log("Checking responses...");
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'qouta_read.php');
       // xhr.setRequestHeader('Content-Type', 'application/json');
