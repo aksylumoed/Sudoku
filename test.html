@@ -107,22 +107,10 @@
             
             
             if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
-              // console.log(check_responses());
-              // var res = check_responses();
-              // console.log(res);
-              // if(parseInt(res) < 15) {
-              //   console.log("You can pass!");
+              check_responses(callback, 'qouta_read_true.php');
               data.hardship = true;
-              // } else {
-              //   console.log("You can't pass!");
-                // redirect here...B
-              // }
             } else {
-              // var res = check_responses();
-              // if(res < 15) {
-              //   console.log("You can pass!");
-              //   data.hardship = true;
-              // }
+              check_responses(callback, 'qouta_read_false.php');
               data.hardship = false;
             }
 
@@ -131,21 +119,18 @@
               
           //     jsPsych.endExperiment();
           //     window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
-            }
         }
-        timeline.push(hardship);
+    }
+    timeline.push(hardship);
     // }
 
-    var read = {
-       type: 'call-function',
-       func: function(){
-         jsPsych.data.addProperties({
-           completed: true
-         });
-         check_responses(callback);
-       }
-     }
-     timeline.push(read);
+    var wait = {
+      type: 'html-keyboard-response',
+      choices: ['none'], // Y or N
+      stimulus: "<p style='text-align:center; font-size:80px;'>+</p>",
+      trial_duration: 1000,
+    }
+    timeline.push(wait);
    
 
     var instructions = {
@@ -167,11 +152,11 @@
          });
          save_data(jsPsych.data.get().last(11).values());
        }
-     }
-     timeline.push(save);
+    }
+    timeline.push(save);
 
 
-     timeline.push({
+    timeline.push({
       type: 'html-keyboard-response',
       stimulus: 'Press any key to quit.'
     });
@@ -196,18 +181,18 @@
     function callback(result) {
       var res = parseInt(result);
       if(res < 5) {
-        console.log("You can pass!");
+        console.log("Passed");
       } else {
-        console.log("You CANT pass!");
+        console.log("Qouta reached");
         jsPsych.endExperiment();
         window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
       }
     }
 
-    function check_responses(callback) {
+    function check_responses(callback, phpfile) {
       console.log("Checking responses...");
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'qouta_read.php');
+      xhr.open('GET', phpfile);
       // xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send()
       xhr.onload = function() {
@@ -223,7 +208,6 @@
       // return JSON.parse(xhr.responseText);
     }
 
-    
     
 
     
