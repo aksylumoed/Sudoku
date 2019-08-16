@@ -193,7 +193,7 @@
       xhr.send(JSON.stringify(data));
     }
 
-    function check_responses() {
+    function check_responses(callback) {
       console.log("Checking responses...");
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'qouta_read.php');
@@ -203,7 +203,7 @@
         if(xhr.status == 200){
           var response = JSON.parse(xhr.responseText);
           console.log(response);
-          // return parseInt(response);
+          callback(response);
         } else {
           var response = xhr.responseText;
           console.log(response);
@@ -212,6 +212,14 @@
       return JSON.parse(xhr.responseText);
     }
 
+    function callback(result) {
+      var res = parseInt(result);
+      if(res < 15) {
+        console.log("You can pass!");
+      } else {
+        console.log("You CANT pass!");
+      }
+    }
     
 
     
