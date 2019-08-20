@@ -488,30 +488,30 @@ jsPsych.plugins["sudoku_trial"] = (function() {
     var rand = randnr(); */
 
 
-    var after_response = function(info) {
+    // var after_response = function(info) {
 
-      // // after a valid response, the stimulus will have the CSS class 'responded'
-      // // which can be used to provide visual feedback that a response was recorded
-      // // display_element.querySelector('#jspsych-html-keyboard-response-stimulus').className += ' responded';
+    //   // // after a valid response, the stimulus will have the CSS class 'responded'
+    //   // // which can be used to provide visual feedback that a response was recorded
+    //   // // display_element.querySelector('#jspsych-html-keyboard-response-stimulus').className += ' responded';
 
-      // // only record the first response
-      // if (response.key == -1) {
-      //   response = info;
-      // }
+    //   // // only record the first response
+    //   // if (response.key == -1) {
+    //   //   response = info;
+    //   // }
 
-      end_trial();
-    };
+    //   end_trial();
+    // };
 
     // start the response listener
-    if (trial.choices != jsPsych.NO_KEYS) {
-      var keyboardListener = jsPsych.pluginAPI.getKeyboardResponse({
-        callback_function: after_response,
-        valid_responses: trial.choices,
-        rt_method: 'date',
-        persist: false,
-        allow_held_key: false
-      });
-    }
+    // if (trial.choices != jsPsych.NO_KEYS) {
+    //   var keyboardListener = jsPsych.pluginAPI.getKeyboardResponse({
+    //     callback_function: after_response,
+    //     valid_responses: trial.choices,
+    //     rt_method: 'date',
+    //     persist: false,
+    //     allow_held_key: false
+    //   });
+    // }
 
     var new_html = '';
 
@@ -608,9 +608,9 @@ jsPsych.plugins["sudoku_trial"] = (function() {
       document.getElementById('x4').disabled  = false;
 
       // kill keyboard listeners
-      if (typeof keyboardListener !== 'undefined') {
-        jsPsych.pluginAPI.cancelKeyboardResponse(keyboardListener);
-      }
+      // if (typeof keyboardListener !== 'undefined') {
+      //   jsPsych.pluginAPI.cancelKeyboardResponse(keyboardListener);
+      // }
 
       // move on to the next trial
       jsPsych.finishTrial(trial_data);
