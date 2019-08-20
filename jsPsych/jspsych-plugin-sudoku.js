@@ -618,6 +618,7 @@ jsPsych.plugins["sudoku_trial"] = (function() {
 
     if (trial.trial_duration > 0) {
       jsPsych.pluginAPI.setTimeout(function() {
+        Clock.pause();
         alert('Unfortunately, you did not solve this puzzle.')
         end_trial();
 
