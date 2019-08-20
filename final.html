@@ -102,17 +102,34 @@
           questions: [{prompt: "Did your family experience economic hardship when you were under 18 years of age?", 
           options: ["Yes, my family were under severe financial strain", "No, my family did not experience economic hardship"], required: true}],
           show_clickable_nav: true,
-          // on_finish: function(data) {
-          //   if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain" || JSON.parse(data.responses).Q0 == "No, my family did not experience economic hardship") {
+          on_finish: function(data) {
+            
+            
+            
+            if (JSON.parse(data.responses).Q0 == "Yes, my family were under severe financial strain") {
+              check_responses(callback, 'qouta_read_true.php');
+              data.hardship = 1;
+            } else {
+              check_responses(callback, 'qouta_read_false.php');
+              data.hardship = 0;
+            }
+
 
           //     /* Solve QOUTA PROBLEM!! */
               
           //     jsPsych.endExperiment();
           //     window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
-          //   }
         }
-    // }
-// 
+    }
+    timeline.push(hardship);
+
+    var wait = {
+      type: 'html-keyboard-response',
+      choices: ['none'], // Y or N
+      stimulus: "<p style='text-align:center; font-size:80px;'>+</p>",
+      trial_duration: 1000,
+    }
+    timeline.push(wait);
     
     var instructions = {
       type: 'instructions',
@@ -182,6 +199,18 @@
     }
     timeline.push(likert);
 
+    /******* CHECKPOINT 1 -- 13 trials completed ********/
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(13).values());
+       }
+     }
+     timeline.push(save);
 
     var instructions = {
       type: 'instructions',
@@ -497,6 +526,19 @@
      }
      timeline.push(if_node);
 
+     /*** CHECKPOINT 2: 29 (+ 3 ifs?) completed ****/
+
+     var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(29).values());
+       }
+     }
+     timeline.push(save);
+
 
     var instructions = {
       type: 'instructions',
@@ -567,6 +609,20 @@
       show_clickable_nav: true,
     }
     timeline.push(post_test);
+
+
+    /*CHECKPOINT 4: 5 completed */
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(5).values());
+       }
+     }
+     timeline.push(save);
     
 
 
@@ -693,6 +749,7 @@
 
 
 
+
     var instructions = {
        type: 'instructions',
        pages: [
@@ -750,16 +807,25 @@
     session1.push(appr_5);
 
 
+    /*CHECKPOINT 5: 19 completed */
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(19).values());
+       }
+     }
+     session1.push(save);
+
+
     //----------------------------------------------------
 
 
-    
-
 
     var session2 = [];
-
-
-
 
     var medium = {
       type: 'instructions',
@@ -938,6 +1004,18 @@
     }
     session2.push(appr_5);
 
+    /*CHECKPOINT 6: 19 completed */
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(19).values());
+       }
+     }
+     session2.push(save);
 
     //--------------------------------------------------
 
@@ -1120,6 +1198,19 @@
     }
     session3.push(appr_5);
 
+    /*CHECKPOINT 7: 19 completed */
+
+    var save = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: true
+         });
+         save_data(jsPsych.data.get().last(19).values());
+       }
+     }
+     session3.push(save);
+
     //TODO: add "Thank you for your answers! You will now solve the second pair of Sudoku." !!!
     // TODO: "Thank you for your answers! You will now solve the third, and last, pair of Sudoku."
     //TODO: add save to each session!!
@@ -1156,7 +1247,7 @@
          jsPsych.data.addProperties({
            completed: true
          });
-         save_data(jsPsych.data.get().last(11).values());
+         save_data(jsPsych.data.get().last(2).values());
        }
      }
      timeline.push(save);
@@ -1204,6 +1295,36 @@
          };
          xhr.send(JSON.stringify(data));
        }
+
+    function callback(result) {
+      var res = parseInt(result);
+      if(res < 10) {
+        console.log("Passed");
+      } else {
+        console.log("Qouta reached");
+        jsPsych.endExperiment();
+        window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+      }
+    }
+
+    function check_responses(callback, phpfile) {
+      console.log("Checking responses...");
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', phpfile);
+      // xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send()
+      xhr.onload = function() {
+        if(xhr.status == 200){
+          var response = JSON.parse(xhr.responseText);
+          console.log(response);
+          callback(response);
+        } else {
+          var response = xhr.responseText;
+          console.log(response);
+        }
+      };
+      // return JSON.parse(xhr.responseText);
+    }
 
     
     jsPsych.init({
