@@ -147,54 +147,54 @@
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I can always solve difficult problems if I try hard enough.", labels: scale, required: true},
-        {prompt: "If someone opposes me, I can find the means and ways to get.", labels: scale, required: true},
-        {prompt: "It is easy for me to stick to my aims and accomplish", labels: scale, required: true}],
+        questions: [{prompt: "I can always solve difficult problems if I try hard enough.", labels: scale, required: false},
+        {prompt: "If someone opposes me, I can find the means and ways to get.", labels: scale, required: false},
+        {prompt: "It is easy for me to stick to my aims and accomplish", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I am confident that I can deal efficiently with unexpected events. ", labels: scale, required: true},
-        {prompt: "Thanks to my resourcefulness, I know how to handle unforeseen situations", labels: scale, required: true},
-        {prompt: "I can solve most problems if I invest the necessary effort", labels: scale, required: true}],
+        questions: [{prompt: "I am confident that I can deal efficiently with unexpected events. ", labels: scale, required: false},
+        {prompt: "Thanks to my resourcefulness, I know how to handle unforeseen situations", labels: scale, required: false},
+        {prompt: "I can solve most problems if I invest the necessary effort", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities ", labels: scale, required: true},
-        {prompt: "When I am confronted with a problem, I can usually find several solutions", labels: scale, required: true},
-        {prompt: "If I am in trouble, I can usually think of a solution", labels: scale, required: true}],
+        questions: [{prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities ", labels: scale, required: false},
+        {prompt: "When I am confronted with a problem, I can usually find several solutions", labels: scale, required: false},
+        {prompt: "If I am in trouble, I can usually think of a solution", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I can usually handle whatever comes my way", labels: scale, required: true},
-        {prompt: "I am really good at tasks that require thinking", labels: scale, required: true},
-        {prompt: "I am able to acquire new knowledge rapidly and easily", labels: scale, required: true}],
+        questions: [{prompt: "I can usually handle whatever comes my way", labels: scale, required: false},
+        {prompt: "I am really good at tasks that require thinking", labels: scale, required: false},
+        {prompt: "I am able to acquire new knowledge rapidly and easily", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I  am not a quick thinker", labels: scale, required: true},
-        {prompt: "I am good at grasping difficult concepts", labels: scale, required: true},
-        {prompt: "I consider myself smart", labels: scale, required: true}],
+        questions: [{prompt: "I  am not a quick thinker", labels: scale, required: false},
+        {prompt: "I am good at grasping difficult concepts", labels: scale, required: false},
+        {prompt: "I consider myself smart", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "I usually can quickly figure out answers to difficult questions", labels: scale, required: true},
-        {prompt: "If you are reading this attentively, choose seven as your answer", labels: scale, required: true},
-        {prompt: "I have trouble retaining information and remembering things", labels: scale, required: true}],
+        questions: [{prompt: "I usually can quickly figure out answers to difficult questions", labels: scale, required: false},
+        {prompt: "If you are reading this attentively, choose seven as your answer", labels: scale, required: false},
+        {prompt: "I have trouble retaining information and remembering things", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(likert);
@@ -226,74 +226,66 @@
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "I have enough money to buy things I want", options: scale, required: true},
-        {prompt: "I don’t need to worry too much about paying my bills", options: scale, required: true},
-        {prompt: "I don’t think I’ll have to worry about money too much in the future", options: scale, required: true}],
+        questions: [{prompt: "I have enough money to buy things I want", options: scale, required: false, horizontal: true},
+        {prompt: "I don’t need to worry too much about paying my bills", options: scale, required: false, horizontal: true},
+        {prompt: "I don’t think I’ll have to worry about money too much in the future", options: scale, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "My family usually had enough money for things when I was growing up", options: scale, required: true, horizontal: true},
-        {prompt: "I grew up in a relatively wealthy neighborhood", options: scale, required: true, horizontal: true},
-        {prompt: "I felt relatively wealthy compared to the other kids in my school", options: scale, required: true, horizontal: true}],
-        show_clickable_nav: true,
-    }
-    timeline.push(choices);
-
-    var choices = {
-        type: 'survey-multi-choice',
-        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>My family usually had enough money for things when I was growing up", options: scale, required: true, horizontal: true},
-        {prompt: "I grew up in a relatively wealthy neighborhood", options: scale, required: true, horizontal: true},
-        {prompt: "I felt relatively wealthy compared to the other kids in my school", options: scale, required: true, horizontal: true}],
+        questions: [{prompt: "My family usually had enough money for things when I was growing up", options: scale, required: false, horizontal: true},
+        {prompt: "I grew up in a relatively wealthy neighborhood", options: scale, required: false, horizontal: true},
+        {prompt: "I felt relatively wealthy compared to the other kids in my school", options: scale, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var yesno = ["Yes", "No"];
 
+
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…at least two meals a day?", options: yesno, required: true, horizontal: true},
-        {prompt: "…to keep your home in a decent state of decoration? ", options: yesno, required: true, horizontal: true},
-        {prompt: "…heating to warm living areas of your home when it was cold?", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…at least two meals a day?", options: yesno, required: false, horizontal: true},
+        {prompt: "…to keep your home in a decent state of decoration? ", options: yesno, required: false, horizontal: true},
+        {prompt: "…heating to warm living areas of your home when it was cold?", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…new not second-hand clothes?", options: yesno, required: true, horizontal: true},
-        {prompt: "…to replace any worn-out furniture?", options: yesno, required: true, horizontal: true},
-        {prompt: "…to replace of repair broken electronic goods such as refrigerator or washing machine?", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…new not second-hand clothes?", options: yesno, required: false, horizontal: true},
+        {prompt: "…to replace any worn-out furniture?", options: yesno, required: false, horizontal: true},
+        {prompt: "…to replace of repair broken electronic goods such as refrigerator or washing machine?", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…celebrations on special occasions, such as Christmas?", options: yesno, required: true, horizontal: true},
-        {prompt: "…a meal in a restaurant or pub once in a while?", options: yesno, required: true, horizontal: true},
-        {prompt: "…a holiday away from home once a year?", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were a child, could your family afford…<br><br><br>…celebrations on special occasions, such as Christmas?", options: yesno, required: false, horizontal: true},
+        {prompt: "…a meal in a restaurant or pub once in a while?", options: yesno, required: false, horizontal: true},
+        {prompt: "…a holiday away from home once a year?", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><br>Did a parent or other adult in the household often swear at you, insult you, put you down or humiliate you?", options: yesno, required: true, horizontal: true},
-        {prompt: "Did a parent or other adult in the household often push, grab, slap, or throw something at you? ", options: yesno, required: true, horizontal: true},
-        {prompt: "Did you often feel that no one in your family loved you or thought you were important or special? ", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><br>Did a parent or other adult in the household often swear at you, insult you, put you down or humiliate you?", options: yesno, required: false, horizontal: true},
+        {prompt: "Did a parent or other adult in the household often push, grab, slap, or throw something at you? ", options: yesno, required: false, horizontal: true},
+        {prompt: "Did you often feel that no one in your family loved you or thought you were important or special? ", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><brDid you often feel that you didn’t have enough to eat, had to wear dirty closed, and had no one to protect you?", options: yesno, required: true, horizontal: true},
-        {prompt: "Were your parents ever separated or divorced? ", options: yesno, required: true, horizontal: true},
-        {prompt: "Did you live with anyone who was who was a problem drinker or alcoholic or who used street drugs? ", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><br>Did you often feel that you didn’t have enough to eat, had to wear dirty closed, and had no one to protect you?", options: yesno, required: false, horizontal: true},
+        {prompt: "Were your parents ever separated or divorced? ", options: yesno, required: false, horizontal: true},
+        {prompt: "Did you live with anyone who was who was a problem drinker or alcoholic or who used street drugs? ", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
@@ -301,16 +293,16 @@
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><brWas a household member depressed or mentally ill or did a household member attempt suicide? ", options: yesno, required: true, horizontal: true},
-        {prompt: "Did a household member go to prison?", options: yesno, required: true, horizontal: true},
-        {prompt: "Were you bullied or ridiculed because of your background?", options: yesno, required: true, horizontal: true}],
+        questions: [{prompt: "When you were growing up, during first 18 years of your life…<br><br><br>Was a household member depressed or mentally ill or did a household member attempt suicide? ", options: yesno, required: false, horizontal: true},
+        {prompt: "Did a household member go to prison?", options: yesno, required: false, horizontal: true},
+        {prompt: "Were you bullied or ridiculed because of your background?", options: yesno, required: false, horizontal: true}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
 
     var choices = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "When you were a child, did you participate in any extracurricular activities on a regular basis?  ", options: yesno, required: true}],
+        questions: [{prompt: "When you were a child, did you participate in any extracurricular activities on a regular basis?  ", options: yesno, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(choices);
@@ -338,14 +330,14 @@
 
     var edu_mother = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: true}],
+        questions: [{prompt: "What highest level of formal education did your mother achieve?", options: edu_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(edu_mother);
 
     var edu_father = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: true}],
+        questions: [{prompt: "What highest level of formal education did your father achieve?", options: edu_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(edu_father);
@@ -355,14 +347,14 @@
 
     var social = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: true}],
+        questions: [{prompt: "Which social class does your family of origin (parental family) belong to?", options: social_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(social);
 
     var social = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: true}],
+        questions: [{prompt: "Which social class would you say you belong to now?", options: social_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(social);
@@ -372,7 +364,7 @@
 
     var edu = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "What is your highest level of formal education?", options: edu_options, required: true}],
+        questions: [{prompt: "What is your highest level of formal education?", options: edu_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(edu);
@@ -449,7 +441,7 @@
 
     var iq = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "If you have ever had your IQ tested, where in the following range does your IQ score fall?", options: iq_options, required: true}],
+        questions: [{prompt: "If you have ever had your IQ tested, where in the following range does your IQ score fall?", options: iq_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(iq);
@@ -458,14 +450,14 @@
 
     var loc = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Where did you spend most of your childhood? ", options: loc_options, required: true}],
+        questions: [{prompt: "Where did you spend most of your childhood? ", options: loc_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(loc);
 
     var loc = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Where do you live now?", options: loc_options, required: true}],
+        questions: [{prompt: "Where do you live now?", options: loc_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(loc);
@@ -484,7 +476,7 @@
 
     var loc = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Which of the following groups do you identify with most?", options: ethnic, required: true}],
+        questions: [{prompt: "Which of the following groups do you identify with most?", options: ethnic, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(loc);
@@ -495,7 +487,7 @@
 
     var sudoku_experience = {
         type: 'survey-multi-choice',
-        questions: [{prompt: "Have you ever solved Sudoku puzzles before?", options: page_2_options, required: true}],
+        questions: [{prompt: "Have you ever solved Sudoku puzzles before?", options: page_2_options, required: false}],
         show_clickable_nav: true,
     }
     timeline.push(sudoku_experience);
@@ -669,7 +661,7 @@
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (2 minutes)?", labels: scale, required: true}],
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (2 minutes 30 seconds)?", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session1.push(likert);
@@ -687,24 +679,24 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-        {prompt: "Hopeful", labels: scale, required: true}],
+        questions: [{prompt: "Challenged", labels: scale, required: false},{prompt: "Nervous", labels: scale, required: false},
+        {prompt: "Hopeful", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session1.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
-        {prompt: "Anxious", labels: scale, required: true}],
+        questions: [{prompt: "Confident", labels: scale, required: false},{prompt: "Sad", labels: scale, required: false},
+        {prompt: "Anxious", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session1.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
-        {prompt: "Resigned", labels: scale, required: true}],
+        questions: [{prompt: "Interested", labels: scale, required: false},{prompt: "Bored", labels: scale, required: false},
+        {prompt: "Resigned", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session1.push(likert);
@@ -722,8 +714,8 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
-        {prompt: "Chance/luck", labels: scale, required: true}],
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: false},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: false},
+        {prompt: "Chance/luck", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session1.push(likert);
@@ -731,8 +723,8 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
-      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: false},{prompt: "My experience with similar tasks in the past", labels: scale, required: false},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session1.push(likert);
@@ -741,8 +733,7 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-      {prompt: "Hopeful", labels: scale, required: true}],
+      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 1 minute 10 seconds using the following scale: ", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session1.push(likert);
@@ -868,7 +859,7 @@
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (1 minute)?", labels: scale, required: true}],
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (1 minute 10 seconds)?", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session2.push(likert);
@@ -886,24 +877,24 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-        {prompt: "Hopeful", labels: scale, required: true}],
+        questions: [{prompt: "Challenged", labels: scale, required: false},{prompt: "Nervous", labels: scale, required: false},
+        {prompt: "Hopeful", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session2.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
-        {prompt: "Anxious", labels: scale, required: true}],
+        questions: [{prompt: "Confident", labels: scale, required: false},{prompt: "Sad", labels: scale, required: false},
+        {prompt: "Anxious", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session2.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
-        {prompt: "Resigned", labels: scale, required: true}],
+        questions: [{prompt: "Interested", labels: scale, required: false},{prompt: "Bored", labels: scale, required: false},
+        {prompt: "Resigned", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session2.push(likert);
@@ -921,8 +912,8 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
-        {prompt: "Chance/luck", labels: scale, required: true}],
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: false},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: false},
+        {prompt: "Chance/luck", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session2.push(likert);
@@ -930,8 +921,8 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
-      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: false},{prompt: "My experience with similar tasks in the past", labels: scale, required: false},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session2.push(likert);
@@ -940,8 +931,7 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-      {prompt: "Hopeful", labels: scale, required: true}],
+      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 1 minute 10 seconds using the following scale: ", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session2.push(likert);
@@ -1062,7 +1052,7 @@
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (30 seconds)?", labels: scale, required: true}],
+        questions: [{prompt: "How difficult was it to solve the Sudoku within the given time limit (30 seconds)?", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session3.push(likert);
@@ -1080,24 +1070,24 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-        {prompt: "Hopeful", labels: scale, required: true}],
+        questions: [{prompt: "Challenged", labels: scale, required: false},{prompt: "Nervous", labels: scale, required: false},
+        {prompt: "Hopeful", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session3.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Confident", labels: scale, required: true},{prompt: "Sad", labels: scale, required: true},
-        {prompt: "Anxious", labels: scale, required: true}],
+        questions: [{prompt: "Confident", labels: scale, required: false},{prompt: "Sad", labels: scale, required: false},
+        {prompt: "Anxious", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session3.push(likert);
 
     var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Interested", labels: scale, required: true},{prompt: "Bored", labels: scale, required: true},
-        {prompt: "Resigned", labels: scale, required: true}],
+        questions: [{prompt: "Interested", labels: scale, required: false},{prompt: "Bored", labels: scale, required: false},
+        {prompt: "Resigned", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session3.push(likert);
@@ -1115,8 +1105,8 @@
 
      var likert = {
         type: 'survey-likert',
-        questions: [{prompt: "Time available to complete the task", labels: scale, required: true},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: true},
-        {prompt: "Chance/luck", labels: scale, required: true}],
+        questions: [{prompt: "Time available to complete the task", labels: scale, required: false},{prompt: "My capability to deal efficiently with novel tasks", labels: scale, required: false},
+        {prompt: "Chance/luck", labels: scale, required: false}],
         show_clickable_nav: true,
     }
     session3.push(likert);
@@ -1124,8 +1114,8 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: true},{prompt: "My experience with similar tasks in the past", labels: scale, required: true},
-      {prompt: "My capability to solve similar tasks", labels: scale, required: true}],
+      questions: [{prompt: "The amount of effort that I invested in the solution of the puzzle", labels: scale, required: false},{prompt: "My experience with similar tasks in the past", labels: scale, required: false},
+      {prompt: "My capability to solve similar tasks", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session3.push(likert);
@@ -1134,8 +1124,7 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "Challenged", labels: scale, required: true},{prompt: "Nervous", labels: scale, required: true},
-      {prompt: "Hopeful", labels: scale, required: true}],
+      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 1 minute 10 seconds using the following scale: ", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session3.push(likert);
