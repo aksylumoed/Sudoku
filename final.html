@@ -733,7 +733,7 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 1 minute 10 seconds using the following scale: ", labels: scale, required: false}],
+      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 2 minutes and 30 seconds using the following scale: ", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session1.push(likert);
@@ -1010,7 +1010,7 @@
     //--------------------------------------------------
 
 
-    var session3 = [];
+    var session3 = [];    // 30 second trials
 
     var hard = {
       type: 'instructions',
@@ -1124,7 +1124,7 @@
 
     var likert = {
       type: 'survey-likert',
-      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 1 minute 10 seconds using the following scale: ", labels: scale, required: false}],
+      questions: [{prompt: "Now that you have solved two puzzles, please indicate how certain you are that you will be able to solve a similar Sudoku within 30 seconds using the following scale: ", labels: scale, required: false}],
       show_clickable_nav: true,
     }
     session3.push(likert);
