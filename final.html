@@ -1230,13 +1230,21 @@
     }
     timeline.push(email);
 
+    var resp = {
+      type: 'survey-text',
+      questions: [{prompt: "Please enter your respondent ID: ",
+                  rows: 1, columns: 40}],
+               show_clickable_nav: true,
+    }
+    timeline.push(resp);
+
      var save = {
        type: 'call-function',
        func: function(){
          jsPsych.data.addProperties({
            completed: true
          });
-         save_data(jsPsych.data.get().last(2).values());
+         save_data(jsPsych.data.get().last(3).values());
        }
      }
      timeline.push(save);
