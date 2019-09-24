@@ -90,7 +90,7 @@
         show_clickable_nav: true,
         on_finish: function(data) {
           if (JSON.parse(data.responses).Q0 == "More than 35 years old" || JSON.parse(data.responses).Q0 == "18 - 21 years of age") {
-            jsPsych.endExperiment();
+            // jsPsych.endExperiment();
             window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
           }
         }
@@ -1299,7 +1299,7 @@
         console.log("Passed");
       } else {
         console.log("Qouta reached");
-        jsPsych.endExperiment();
+        // jsPsych.endExperiment();
         window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
       }
     }
