@@ -65,7 +65,7 @@
         on_finish: function(data) {
           if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
             // save_data(jsPsych.data.get().values());
-            jsPsych.endExperiment('We thank you for your participation and will be happy to answer any questions or provide additional comments about the study.');   
+            window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")   
           }
         },
     }
