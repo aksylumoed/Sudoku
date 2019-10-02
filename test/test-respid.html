@@ -9,8 +9,9 @@
   <body></body>
   <script>
 
-  var loc = location.href;
+  var loc = location.search;
   console.log(loc);
+
   // further parsing
   var params = new URLSearchParams(loc);
   var id = params.get("id"); 
