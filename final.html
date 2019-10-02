@@ -35,9 +35,22 @@
   <script>
 
     var timeline = [];
-
-    var subject_id = jsPsych.randomization.randomID(15);
-    console.log(subject_id);
+    var subject_id = "";
+    var query = location.search;
+    // further parsing
+    var params = new URLSearchParams(query);
+    var id = params.get("id");
+    if(query === '' || id === null || id==='') {
+      console.log("No resp ID found! href:", location.href);
+      subject_id = "no respID! href: " + location.href;
+    } else {
+      console.log("Respondent ID: ", id);
+      subject_id = id;     
+    }
+    
+    // var subject_id = jsPsych.randomization.randomID(15);
+    // console.log(subject_id);
+    
 
     jsPsych.data.addProperties({
       subject: subject_id
@@ -162,7 +175,7 @@
         show_clickable_nav: true,
     }
     timeline.push(likert);
-
+     
     var likert = {
         type: 'survey-likert',
         questions: [{prompt: "I can remain calm when facing difficulties because I can rely on my coping abilities ", labels: scale, required: false},
@@ -1230,13 +1243,13 @@
     }
     timeline.push(email);
 
-    var resp = {
-      type: 'survey-text',
-      questions: [{prompt: "Please enter your respondent ID: ",
-                  rows: 1, columns: 40}],
-               show_clickable_nav: true,
-    }
-    timeline.push(resp);
+    // var resp = {
+    //   type: 'survey-text',
+    //   questions: [{prompt: "Please enter your respondent ID: ",
+    //               rows: 1, columns: 40}],
+    //            show_clickable_nav: true,
+    // }
+    // timeline.push(resp);
 
      var save = {
        type: 'call-function',
@@ -1244,7 +1257,7 @@
          jsPsych.data.addProperties({
            completed: true
          });
-         save_data(jsPsych.data.get().last(3).values());
+         save_data(jsPsych.data.get().last(2).values());
        }
      }
      timeline.push(save);
@@ -1328,7 +1341,7 @@
       timeline: timeline,
       on_finish: function() {
         // jsPsych.data.displayData();
-        window.location.replace("https://passback.lifepointspanel.com/Survey/Complete?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+        window.location.replace("https://passback.lifepointspanel.com/Survey/Complete?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836");
         // var alldata = jsPsych.data.get();
         // save_data(alldata);
          // console.log(jsPsych.data.get().uniqueNames());
