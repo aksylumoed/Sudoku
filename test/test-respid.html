@@ -14,11 +14,12 @@
   // further parsing
   var params = new URLSearchParams(query);
   var id = params.get("id");
-  if(query === '' || id === null) {
+
+  if(query === '' || id === null || id==='') {
     console.log("No resp ID found!");
     subject_id = "no_resp_ID";
   } else {
-    console.log("Respondent ID: ", id);
+    console.log("Respondent ID:", id);
     subject_id = id;     
   }
   
