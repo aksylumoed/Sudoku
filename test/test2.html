@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trial Experiment</title>
+
+
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link id="sudocss" rel="stylesheet" media="all" type="text/css" href="sudoku.css">
+    <link id="x2" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x2.css">
+    <link id="x3" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x3.css">
+    <link id="x4" rel="stylesheet" media="all" type="text/css" href="jsPsych/css/2x4.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="jsPsych/jspsych.js"></script>
+
+    
+    <script type="text/javascript" src="jsPsych/jspsych-plugin-sudoku.js"></script>
+    <script type="text/javascript" src="sudoku.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-likert.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-image-keyboard-response.js" ></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-multi-choice.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-call-function.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-instructions.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <script type="text/javascript" src="jsPsych/plugins/jspsych-survey-text.js"></script>
+    <link id="jscss" href="jsPsych/css/jspsych.css" rel="stylesheet" type="text/css">
+
+    
+  </head>
+  <body>
+  <script>
+
+    var timeline = [];
+
+    var subject_id = jsPsych.randomization.randomID(15);
+    console.log(subject_id);
+
+    jsPsych.data.addProperties({
+      subject: subject_id
+    });
+
+    var session1 = [];
+
+    var easy = {
+        type: 'instructions',
+        pages: [
+        'Now you will attempt to solve two puzzles having <b>2 minutes and 30 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+        ],
+        show_clickable_nav: true,
+        }
+    session1.push(easy);
+
+    var sudoku_easy = {
+        timeline_variables: [
+            {clock: '150000', size: 'boards2x3', set: 'a', nr: 1},
+            {clock: '150000', size: 'boards2x3', set: 'a', nr: 3}
+        ],
+        randomize_order: true,
+        timeline: [
+            {
+            type: 'sudoku_trial',
+            trial_duration: jsPsych.timelineVariable('clock'),  
+            board_size: jsPsych.timelineVariable('size'),
+            board_set: jsPsych.timelineVariable('set'),
+            board_nr: jsPsych.timelineVariable('nr') 
+            },
+        ]
+     }
+    session1.push(sudoku_easy);
+
+    var instructions = {
+    type: 'instructions',
+    pages: [
+    "You have completed the trial. We would like to ask a couple of questions about your experiences."
+    ],
+    show_clickable_nav: true,
+    }
+    session1.push(instructions);
+
+    var session2 = [];
+
+    var medium = {
+        type: 'instructions',
+        pages: [
+        'Now you will attempt to solve two puzzles having <b>1 minute and 10 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+        ],
+        show_clickable_nav: true,
+    }
+    session2.push(medium);
+
+    var sudoku_medium = {
+        timeline_variables: [
+        {clock: '70000', size: 'boards2x3', set: 'b', nr: 0},
+        {clock: '70000', size: 'boards2x3', set: 'b', nr: 2}
+        ],
+        randomize_order: true,
+        timeline: [
+        {
+            type: 'sudoku_trial',
+            trial_duration: jsPsych.timelineVariable('clock'),  
+            board_size: jsPsych.timelineVariable('size'),
+            board_set: jsPsych.timelineVariable('set'),
+            board_nr: jsPsych.timelineVariable('nr') 
+        },
+        ]
+    }
+    session2.push(sudoku_medium);
+
+
+    var instructions = {
+        type: 'instructions',
+        pages: [
+        "You have completed the trial. We would like to ask a couple of questions about your experiences."
+        ],
+        show_clickable_nav: true,
+    }
+    session2.push(instructions);
+
+    var session3 = [];
+
+    var hard = {
+      type: 'instructions',
+      pages: [
+      'Now you will attempt to solve two puzzles having <b>30 seconds</b> of time. You can attempt to solve the puzzle for as long as you can until the time is up. Once you are done with your first puzzle, you will be automatically presented with the next one.<br><br>Please click NEXT to solve Sudoku. Good luck!',
+      ],
+      show_clickable_nav: true,
+    }
+    session3.push(hard);
+
+    var sudoku_hard = {
+      timeline_variables: [
+        {clock: '30000', size: 'boards2x3', set: 'b', nr: 4},
+        {clock: '30000', size: 'boards2x3', set: 'c', nr: 1}
+      ],
+      randomize_order: true,
+      timeline: [
+        {
+          type: 'sudoku_trial',
+          trial_duration: jsPsych.timelineVariable('clock'),  
+          board_size: jsPsych.timelineVariable('size'),
+          board_set: jsPsych.timelineVariable('set'),
+          board_nr: jsPsych.timelineVariable('nr') 
+        },
+      ]
+    }
+    session3.push(sudoku_hard);
+
+    var instructions = {
+       type: 'instructions',
+       pages: [
+       "You have completed the trial. We would like to ask a couple of questions about your experiences."
+       ],
+       show_clickable_nav: true,
+     }
+     session3.push(instructions);
+
+     var array = [session1, session2, session3];
+
+    var sudo_trials = jsPsych.randomization.shuffle(array);
+
+    timeline.push.apply(timeline, sudo_trials.flat());
+
+    timeline.push({
+      type: 'html-keyboard-response',
+      stimulus: 'Press any key to quit.'
+    });
+
+            /**************************************
+            *            END OF TRIAL
+            ***************************************/
+
+    function save_data(data){
+       var xhr = new XMLHttpRequest();
+         xhr.open('POST', 'write_data.php');
+         xhr.setRequestHeader('Content-Type', 'application/json');
+         xhr.onload = function() {
+           if(xhr.status == 200){
+             var response = JSON.parse(xhr.responseText);
+             console.log(response);
+           }
+         };
+      xhr.send(JSON.stringify(data));
+    }
+
+    function callback(result) {
+      var res = parseInt(result);
+      if(res < 5) {
+        console.log("Passed");
+      } else {
+        console.log("Qouta reached");
+        jsPsych.endExperiment();
+        window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+      }
+    }
+
+    function check_responses(callback, phpfile) {
+      console.log("Checking responses...");
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', phpfile);
+      // xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send()
+      xhr.onload = function() {
+        if(xhr.status == 200){
+          var response = JSON.parse(xhr.responseText);
+          console.log(response);
+          callback(response);
+        } else {
+          var response = xhr.responseText;
+          console.log(response);
+        }
+      };
+      // return JSON.parse(xhr.responseText);
+    }
+
+    
+
+    
+    jsPsych.init({
+      timeline: timeline,
+      on_finish: function() {
+        // var alldata = jsPsych.data.get();
+        // save_data(alldata);
+         // console.log(jsPsych.data.get().uniqueNames());
+         jsPsych.data.displayData();
+      }
+      // on_finish: function(){ jsPsych.data.displayData(); },
+      //   default_iti: 250
+    })
+
+
+  </script>
+  </body>
+
+</html>
