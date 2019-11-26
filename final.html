@@ -79,13 +79,41 @@
         on_finish: function(data) {
           console.log(JSON.parse(data.responses));
           if (JSON.parse(data.responses).Q0 == "I disagree to participate in this research study") {
-            console.log("youre here!");
+            // console.log("youre here!");
             // save_data(jsPsych.data.get().values());
-            window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")   
+            // window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")   
           }
         },
     }
     timeline.push(multi_choice_block);
+
+    /* saves only if screened out */
+    var save_exit = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: false
+         });
+         console.log("saving..");
+         save_data(jsPsych.data.get().last(2).values());
+         window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+       }
+     }
+    //  timeline.push(save); // push to timeline only if screenout
+
+    var if_screened = {
+        timeline: [save_exit],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if(JSON.parse(data.responses).Q0 == "I disagree to participate in this research study"){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_screened); 
 
     var wait = {
       type: 'html-keyboard-response',
@@ -121,6 +149,33 @@
         }
     }
     timeline.push(age);
+
+    /* saves only if screened out */
+    var save_exit = {
+       type: 'call-function',
+       func: function(){
+         jsPsych.data.addProperties({
+           completed: false
+         });
+         save_data(jsPsych.data.get().last(5).values());
+         window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
+       }
+     }
+    //  timeline.push(save); // push to timeline only if screenout
+
+    var if_screened = {
+        timeline: [save_exit],
+        conditional_function: function(data){
+          var data = jsPsych.data.get().last(1).values()[0];
+          // console.log(JSON.parse(data.responses).Q0);
+          if(JSON.parse(data.responses).Q0 == "More than 35 years old" || JSON.parse(data.responses).Q0 == "18 - 21 years of age"){
+            return true;
+          } else {
+            return false;
+          }
+        }
+     }
+     timeline.push(if_screened); 
 
     var wait = {
       type: 'html-keyboard-response',
