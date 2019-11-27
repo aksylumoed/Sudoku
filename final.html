@@ -142,7 +142,7 @@
         show_clickable_nav: true,
         store_prompt: false,
         on_finish: function(data) {
-          if (JSON.parse(data.responses).Q0 == "More than 35 years old" || JSON.parse(data.responses).Q0 == "18 - 21 years of age") {
+          if (JSON.parse(data.responses).Q0 == "More than 35 years old") {
             // jsPsych.endExperiment();
             window.location.replace("https://passback.lifepointspanel.com/Survey/EarlyScreenOut?ProjectToken=ca9f3c2a-75bc-4b43-a40c-2a6ee6748836")
           }
@@ -1384,7 +1384,7 @@
 
     function callback(result) {
       var res = parseInt(result);
-      if(res < 10) {
+      if(res < 300) {
         console.log("Passed");
       } else {
         console.log("Qouta reached");
